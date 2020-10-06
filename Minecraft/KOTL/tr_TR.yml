@@ -1,0 +1,78 @@
+#    You can translate KOTL messages here.
+#             Color codes (&) supported.
+#
+#              Use \n to make new line
+#        Some messages like kit and kit items
+#        descriptions dont't support new lines
+# they are wrapped every 40 characters automatically
+#
+#     Some messages support their own placeholders
+#  
+
+# King of the Ladder Commands
+Commands:
+  Did-You-Mean: "&cBunu mu demek istemiştiniz &7/%command%&c?"
+  Are-You-Sure: "&cBunu gerçekten yapmak istiyor musun? Onaylamak için komutu &610 saniye içinde &ctekrar yazın!"
+  Removed-Game-Instance: "&aArena başarıyla silindi."
+  No-Arena-Like-That: "&cBu isimle herhangi bir arena bulunamadı!"
+  Only-By-Player: "&cBu komut sadece oyuncular tarafından kullanılabilir!"
+  No-Permission: "&cBu komutu kullanmak için yeterli yetkiye sahip değilsin!"
+  Success-Reload: "&aSistem başarıyla bütün konfigürasyon dosyalarını ve arenaları yeniledi!"
+  Player-Not-Found: "&cBu isimle herhangi bir oyuncu bulunamadı!"
+  Statistics:
+    Type-Name: "&cLütfen görüntülemek istediğiniz istatistik ismini yazın!"
+    Invalid-Name: "&cGeçersiz istatistik ismi! Var olan istatistikler: score or tours_played"
+    Header: "&8&m-------------------[&6 En iyi 10 &8&m]-------------------"
+    Format: "&e#%position% %name% - %value% &7%statistic%"
+  Stats-Command:
+    Header: "&l[-----SENİN İSTATİSTİKLERİN-----]"  
+    Header-Other: "&l[-----%player% için İSTATİSTİKLER-----]"
+    Footer: "&l[--------------------]"
+    Score: "&aSkor: &e"
+    Tours-Played: "&aOynanılan tur sayısı: &e"
+  List-Command:
+    No-Arenas-Created: "&cGösterilebilecek herhangi bir arena bulunamadı!"
+    Format: "&aVar olan arenalar: &7%list%"
+
+In-Game:
+  # Used in most game messages.
+  Plugin-Prefix: "&8[&6KOTL&8] "
+  Join: "&7%player% &badlı oyuncu oyuna katıldı!"
+  Leave: "&7%player% &badlı oyuncu oyundan ayrıldı!"
+  Chat-Format: "&7%player%: &f%message%"
+  Only-Command-Ingame-Is-Leave: "&cKomut kullanabilmek için oyundan ayrılmalısın."
+  New-King: "&bİşte yeni kral: &7%king%!"
+  Last-King-Hologram: "&bSon kral: &e%king%"
+  There-Is-No-King: "Kimse"
+  Clicked-Death-Block: "&7%player% &bölüm bloğuna tıkladı ve öldü!"
+
+# Has usage only when bossbar is enabled in config.yml
+# Also not compatible with the versions before 1.9
+Bossbar:
+  Game-Info: "&b&lDESPICAL &e&ltarafından &f&lKING OF THE LADDER &e&lOYNUYORSUN"
+  
+# In-game scoreboard messages.
+# Please do not use more than 48 chars here! COLOR CODES INCLUDED.
+Scoreboard:
+  Title: "&e&lKOTL"
+  Content:
+    # For scoreboard placeholders check our wiki
+    Playing:
+      - ""
+      - "Arena: &a%arena%"
+      - ""
+      - "Oyuncular: &a%players%"
+      - ""
+      - "Kral: &a%king%"
+      - ""
+      - "Skor: &a%score%"
+      - ""
+      - "&ewww.despical.com"
+  
+Validator:
+  Invalid-Arena-Configuration: "[KOTL] Arena %arena% bazı eksik yapılandırmalara sahip! Hata: %error%"
+  Instance-Started: "[KOTL] Arena %arena% başarıyla başlatıldı!"
+  No-Instances-Created: "[KOTL] Oluşturulmuş herhangi bir arena bulunamadı!"
+
+# Don't edit it. But who's stopping you? It's your server!
+File-Version: 0

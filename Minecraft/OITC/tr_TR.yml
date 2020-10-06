@@ -1,0 +1,203 @@
+#    You can translate One in the Chamber messages here.
+#             Color codes (&) supported.
+#
+#              Use \n to make new line
+#        Some messages like kit and kit items
+#        descriptions don't support new lines
+# they are wrapped every 40 characters automatically
+#
+#     Some messages support their own placeholders
+#                 like %player%
+
+# One in the Chamber command messages
+Commands:
+  Did-You-Mean: "&cBunu mu demek istemiştiniz &7/%command%&c?"
+  Are-You-Sure: "&cBunu gerçekten yapmak istiyor musun? Onaylamak için komutu &610 saniye içinde &ctekrar yazın!"
+  Teleported-To-The-Lobby: "&7Lobiye ışınlanıldı!"
+  Removed-Game-Instance: "&aArena başarıyla silindi!"
+  No-Arena-Like-That: "&cBu isimde bir arena bulunamadı!"
+  Look-Sign: "&cBu komutu kullanabilmek için bir tabelaya bakmalısın!"
+  Type-Arena-Name: "&cLütfen arenanın adını yazın!"
+  No-Free-Arenas: "&cHiç müsait arena bulunamadı!"
+  Statistics:
+    Type-Name: "&cLütfen görüntülemek istediğiniz istatistik ismini yazın!"
+    Invalid-Name: "&cGeçersiz istatistik ismi! Var olan istatistikler: kills, deaths, games_played, wins, loses, highest_score"
+    Header: "&8&m-------------------[&6 En iyi 10 &8&m]-------------------"
+    Format: "&e#%position% %name% - %value% &7%statistic%"
+  Only-By-Player: "&cBu komut sadece oyuncular tarafından kullanılabilir!"
+  Not-Playing: "&cBu komutu sadece oyunun içinden kullanılabilirsin!"
+  No-Permission: "&cBu komutu kullanmak için yeterli yetkiye sahip değilsin!"
+  Admin-Commands:
+    Teleported-To-Player: "&aOyuncuya ışınlanıldı!"
+    Player-Not-Found: "&cOyuncu bulunamadı!"
+    Success-Reload: "&aSistem başarıyla bütün konfigürasyon dosyalarını ve arenaları yeniledi!"
+    List-Command:
+      Format: "&aVar olan arenaları: &7%list%"
+      No-Arenas-Created: "&cGösterilebilecek herhangi bir arena bulunamadı!"
+  Stats-Command:
+    Header: "&l-----[SENİN İSTATİSTİKLERİN]-----"
+    Header-Other: "&l-----[%player% için İSTATİSTİKLER]-----"
+    Footer: "&l----------------------"
+    Kills: "&aÖldürme sayısı: &e"
+    Deaths: "&aÖlüm sayısı: &e"
+    Wins: "&aKazanma sayısı: &e"
+    Loses: "&aKaybetme sayısı: &e"
+    Highest-Score: "&aEn yüksek skor: &e"
+    Games-Played: "&aOynanan oyunlar: &e"
+  
+# In-game scoreboard messages.
+# Please do not use more than 48 chars here! COLOR CODES INCLUDED.
+Scoreboard:
+  Title: "&e&lOITC"
+  Top-Player-Format: "&f%score% &6%player%"
+  Content:
+    # Contents of scoreboard for players
+    Playing:
+      - ""
+      - "%top_player_1%"
+      - "%top_player_2%"
+      - "%top_player_3%"
+      - ""
+      - "&fHarita: &e%mapname%"
+      - "&fOyuncular: &6%players%"
+      - "&fSkor: &6%kills%"
+      - ""
+      - "&fKalan süre: &6%formatted_time%"
+      - ""
+      - "&ewww.despical.com"
+    Waiting:
+      - ""
+      - "&fOyuncular: &a%players%"
+      - ""
+      - "&fMinimum Oyuncular: &a%min_players%"
+      - ""
+      - "&fHarita: &a%mapname%"
+      - ""
+      - "&ewww.despical.com"
+    Starting:
+      - ""
+      - "&a%time% &f içinde başlıyor"
+      - ""
+      - "&fOyuncular: &a%players%"
+      - ""
+      - "&fMinimum Oyuncular: &a%min_players%"
+      - ""
+      - "&fHarita: &a%mapname%"
+      - ""
+      - "&ewww.despical.com"
+
+# Has usage only when bossbar is enabled in config.yml
+Bossbar:
+  Main-Title: "&a&lOne in the Chamber &f&l- &6&lDespical"
+  Starting-In: "&e&l%time% &f&liçinde başlıyor"
+  Waiting-For-Players: "&4&lDaha çok oyuncu için bekleniyor..."
+  In-Game-Info: "&e&lPlaying &f&lONE IN THE CHAMBER &e&lby &b&lDESPICAL"
+  Game-Ended: "&c&lOyun bitti! &b&lOITC &c&loynuyordun"
+
+In-Game:
+  #Used in most game messages.
+  Plugin-Prefix: "&8[&6OITC&8] "
+  Already-Playing: "&cZaten bir oyundasın! /oitc leave komutu kullanarak oyundan çıkabilirsin."
+  Join-No-Permission: "&cBu arenaya girebilmek için &6%permission% &cyetkisine sahip değilsin!"
+  Full-Game-No-Permission: "&cDolu oyunlara girebilmek için yeterli yetkiye sahip değilsin!"
+  No-Slots-For-Premium: "&cBu oyun tamamen öncelikli oyuncularla dolu! Üzgünüm!"
+  You-Are-Spectator: "&cArtık bir seyircisin! Şu an uçabilirsin!"
+  Only-Command-Ingame-Is-Leave: "&cKomut kullanabilmek için önce oyundan çıkmalısın. Çalışan tek komut: /oitc leave!"
+  # Join cancelled via external plugin that uses OITC API.
+  Join-Cancelled-Via-API: "&cBu oyuna giremezsin!"
+  Arena-Not-Configured: "&cArena daha hazırlanmadı! Bir yetkiliye başvurun!"
+  Game-Chat-Format: "&7%player%: &f%message%"
+  Game-Death-Format: "&7[&4☠&7] &r"
+  Spectator:
+    Spectator-Item-Name: "&b&lIşınlayıcı &7(Sağ Tıkla)"
+    Spectator-Menu-Name: "&8Işınlayıcı"
+    Target-Player-Score: "&7Skor: %score%"
+    Settings-Menu:
+      Item-Name: "&b&lİzleyici ayarları &7(Sağ Tıkla)"
+      Inventory-Name: "&8İzleyici ayarları"
+      Speed-Name: "&aHız"
+      No-Speed: "&aHız Yok"
+      Disable-Night-Vision: "&cGece Görüşünü Kapat"
+      Disable-Night-Vision-Lore:
+        - "&7Gece görüşünü kapatmak için tıklayın!"
+      Hide-Spectators: "&cİzleyicileri Gizle"
+      Hide-Spectators-Lore:
+        - "&7Diğer izleyicileri gizlemek için tıkla!"
+  Messages:
+    Lobby-Messages:
+      Start-In: "&7Oyun &b%time%&7 saniye içinde başlıyor!"
+      Waiting-For-Players: "&7Oyuncular için bekleniyor... Başlamak için en az &b%minplayers% &7oyuncuya ihtiyacımız var."
+      Enough-Players-To-Start: "&7Artık yeterli oyuncu sayısına sahibiz. Oyun birazdan başlayacak!"
+      Game-Started: "&7Oyun başladı! İlk 25'e ulaşan oyuncu kazanır!"
+      Kicked-For-Premium-Slot: "&c%player% adlı oyuncu öncelikli oyuncuya yer açabilmek için oyundan atıldı!"
+      You-Were-Kicked-For-Premium-Slot: "&cÖncelikli oyuncuya yer açılabilmesi için oyundan atıldın!"
+    Join: "&b%player% &7adlı oyuncu oyuna giriş yaptı &8(&7%players%/%maxplayers%&8)&7!"
+    Leave: "&b%player% &7adlı oyuncu oyundan çıktı &8(&7%players%/%maxplayers%&8)&7!"
+    Death: "&9%player% &eadlı oyuncu &9%killer% &etarafından öldürüldü!"
+    Kill-Streak: "&9%killer% &b%kill_streak%. &ekişiyi art arda öldürdü!"
+    Seconds-Left-Title: "&c%time% &esaniye kaldı!"
+    Seconds-Left-Subtitle: "&e%time% saniye sonra oyun bitecek"
+    Score-Subtitle: "&a&l+&6&l1"
+    Death-Subtitle: ""
+    Game-End-Messages:
+      Titles:
+        Win: "&fKazanan"
+        Lose: ""
+      Subtitles:
+        Win: "&e%winner%"
+        Lose: "&c%winner% &aoyunu kazandı!"
+      Summary-Message:
+        - "&a&m----------------------------------------------------"
+        - "&e&lOne in the Chamber"
+        - ""
+        - "&f&lKAZANAN: &f&l%winner% (%winner_score%)"
+        - ""
+        - "&8&lSIRALAMAN: &7&l%rank%"
+        - "&8&lSKORUN: &7&l%score%"
+        - "&8&lÖLÜMLERİN: &7&l%deaths%"
+        - ""
+        - "&a&m----------------------------------------------------"
+    Admin-Messages:
+      Set-Starting-In-To-0: "&bBir yetkili süreyi 0 yaptı. Oyun birazdan başlayacak!"
+      Stopped-Game: "&bBir yetkili oyunu komut kullanarak zorla bitirdi!"
+
+Signs:
+  Please-Type-Arena-Name: "&cLütfen 2. satıra arena ismini yazın!"
+  Arena-Doesnt-Exists: "&cBu isme sahip bir arena bulunamadı!"
+  Doesnt-Have-Permission: "&cBu tabelayı kırabilmek için yeterli yetkiye sahip değilsin!"
+  Sign-Created: "&aTabela başarıyla oluşturuldu!"
+  Sign-Removed: "&aTabela başarıyla silindi!"
+  Game-States:
+    Waiting: "&lBekleniyor..."
+    Inactive: "&lİnaktif..."
+    In-Game: "&lOyunda"
+    Starting: "&e&lBaşlıyor"
+    Full-Game: "&c&lDOLU"
+    Ending: "&lBitiyor"
+    Restarting: "&c&lYeniden başlatılıyor"
+  Lines:
+    - "&4&lOITC"
+    - "%state%"
+    - "%mapname%"
+    - "&5[%players%/%maxplayers%]"
+
+Arena-Selector:
+  Inventory-Title: "Arena seçici"
+  Item:
+    Lore:
+      - "&7OITC &f- &e%mapname%"
+      - " "
+      - " "
+      - "  &fAktif: %playersize%/%maxplayers%"
+      - "  &fDurum: %state%"
+      - " "
+      - " "
+      - "&eArenaya girmek için tıkla"
+
+Validator:
+  Invalid-Arena-Configuration: "[OITC] Arena %arena% bazı eksik yapılandırmalara sahip! Hata: %error%"
+  Instance-Started: "[OITC] Arena %arena% başarıyla başlatıldı!"
+  No-Instances-Created: "[OITC] Oluşturulmuş herhangi bir arena bulunamadı!"
+
+# Don't edit it. But who's stopping you? It's your server!
+File-Version: 0

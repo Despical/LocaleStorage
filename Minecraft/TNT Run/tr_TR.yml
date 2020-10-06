@@ -1,0 +1,190 @@
+#    You can translate TNT Run messages here.
+#             Color codes (&) supported.
+#
+#              Use \n to make new line
+#        Some messages like kit and kit items
+#        descriptions dont't support new lines
+# they are wrapped every 40 characters automatically
+#
+#     Some messages support their own placeholders
+#                  like %player%
+
+# TNT Run command messages
+Commands:
+  Did-You-Mean: "&cBunu mu demek istemiştiniz &7/%command%&c?"
+  Are-You-Sure: "&cBunu gerçekten yapmak istiyor musun? Onaylamak için komutu &610 saniye içinde &ctekrar yazın!"
+  Teleported-To-The-Lobby: "&7Lobiye ışınlanıldı!"
+  Removed-Game-Instance: "&aArena başarıyla silindi!"
+  No-Arena-Like-That: "&cBu isimde bir arena bulunamadı!"
+  Look-Sign: "&cBu komutu kullanabilmek için bir tabelaya bakmalısın!"
+  Type-Arena-Name: "&cLütfen arenanın adını yazın!"
+  No-Free-Arenas: "&cHiç müsait arena bulunamadı!"
+  Statistics:
+    Type-Name: "&cLütfen görüntülemek istediğiniz istatistik ismini yazın!"
+    Invalid-Name: "&cGeçersiz istatistik ismi! Var olan istatistikler: games_played, wins, loses, longest_survive and coins"
+    Header: "&8&m-------------------[&6 En iyi 10 &8&m]-------------------"
+    Format: "&e#%position% %name% - %value% &7%statistic%"
+  Only-By-Player: "&cBu komut sadece oyuncular tarafından kullanılabilir!"
+  Not-Playing: "&cBu komutu sadece oyunun içinden kullanılabilirsin!"
+  No-Permission: "&cBu komutu kullanmak için yeterli yetkiye sahip değilsin!"
+  Admin-Commands:
+    Teleported-To-Player: "&aOyuncuya ışınlanıldı!"
+    Player-Not-Found: "&cOyuncu bulunamadı!"
+    Success-Reload: "&aSistem başarıyla bütün konfigürasyon dosyalarını ve arenaları yeniledi!"
+    List-Command:
+      Format: "&aVar olan arenaları: &7%list%"
+      No-Arenas-Created: "&cGösterilebilecek herhangi bir arena bulunamadı!"
+  Stats-Command:
+    Header: "&l-----[SENİN İSTATİSTİKLERİN]-----"
+    Header-Other: "&l-----[%player% için İSTATİSTİKLER]-----"
+    Footer: "&l----------------------"
+    Wins: "&aKazanma sayısı: &e"
+    Loses: "&aKaybetme sayısı: &e"
+    Games-Played: "&aOynanılan oyunlar: &e"
+    Coins: "&aPuanlar: &e"
+    Longest-Survive: "&aEn uzun yaşayış: &e"
+  
+# In-game scoreboard messages.
+# Please do not use more than 48 chars here! COLOR CODES INCLUDED.
+Scoreboard:
+  Title: "&e&lTNTRun"
+  Content:
+    # Contents of scoreboard for players
+    Playing:
+      - "&7Zaman: %formatted_time%"
+      - ""
+      - "&fÇift Zıplama: &7%double_jumps%/5"
+      - ""
+      - "Kalan Oyuncular: &a%players%"
+      - ""
+      - "&fKazanılan Puanlar: &a%coins_earned%"
+      - ""
+      - "&ewww.despical.com"
+    Waiting:
+      - ""
+      - "&fHarita: &a%mapname%"
+      - "&fOyuncular: &a%players%/%max_players%"
+      - ""
+      - "&fOyuncular için bekleniyor..."
+      - ""
+      - "&ewww.despical.com"
+    Starting:
+      - ""
+      - "&fHarita: &a%mapname%"
+      - "&fOyuncular: &a%players%/%max_players%"
+      - ""
+      - "&a%formatted_time% içinde başlayacak ek"
+      - "&foyuncular için bekleniliyor"
+      - ""
+      - "&ewww.despical.com"
+
+# Has usage only when bossbar is enabled in config.yml
+Bossbar:
+  Main-Title: "&a&lTNT Run &f&l- &6&lDespical"
+  Starting-In: "&e&l%time% &f&liçinde başlayacak"
+  Waiting-For-Players: "&4&lDaha fazla oyuncu için bekleniyor..."
+  In-Game-Info: "&b&lDESPICAL &e&ltarafından &f&lTNT RUN &e&lOYNUYORSUN"
+  Game-Ended: "&c&lOyun sona erdi! &b&lTNT Run &c&lOYNUYORDUN"
+
+In-Game:
+  #Used in most game messages.
+  Plugin-Prefix: "&8[&6TNTRun&8] "
+  Already-Playing: "&cZaten bir oyundasın! /tntrun leave komutu kullanarak oyundan çıkabilirsin."
+  Join-No-Permission: "&cBu arenaya girebilmek için &6%permission% &cyetkisine sahip değilsin!"
+  Full-Game-No-Permission: "&cDolu oyunlara girebilmek için yeterli yetkiye sahip değilsin!"
+  No-Slots-For-Premium: "&cBu oyun tamamen öncelikli oyuncularla dolu! Üzgünüm!"
+  You-Are-Spectator: "&cArtık bir seyircisin! Şu an uçabilirsin!"
+  Only-Command-Ingame-Is-Leave: "&cKomut kullanabilmek için önce oyundan çıkmalısın. Çalışan tek komut: /tntrun leave!"
+  # Join cancelled via external plugin that uses TNTRun API.
+  Join-Cancelled-Via-API: "&cBu oyuna giremezsin!"
+  Arena-Not-Configured: "&cArena daha hazırlanmadı! Bir yetkiliye başvurun!"
+  Game-Chat-Format: "&7%player%: &f%message%"
+  Game-Death-Format: "&7[&4☠&7] &r"
+  Spectator:
+    Spectator-Item-Name: "&b&lIşınlayıcı &7(Sağ Tıkla)"
+    Spectator-Menu-Name: "&8Işınlayıcı"
+    Target-Player-Score: "&7Skor: %score%"
+    Settings-Menu:
+      Item-Name: "&b&lİzleyici ayarları &7(Sağ Tıkla)"
+      Inventory-Name: "&8İzleyici ayarları"
+      Speed-Name: "&aHız"
+      No-Speed: "&aHız Yok"
+      Disable-Night-Vision: "&cGece Görüşünü Kapat"
+      Disable-Night-Vision-Lore:
+        - "&7Gece görüşünü kapatmak için tıklayın!"
+      Hide-Spectators: "&cİzleyicileri Gizle"
+      Hide-Spectators-Lore:
+        - "&7Diğer izleyicileri gizlemek için tıkla!"
+  Messages:
+    Lobby-Messages:
+      Start-In: "&7Oyun &b%time% &7saniye içinde başlıyor!"
+      Waiting-For-Players: "&7Oyuncular için bekleniyor... Başlamak için en az &b%minplayers% &7oyuncuya ihtiyacımız var."
+      Enough-Players-To-Start: "&7Artık yeterli oyuncuya sahibiz. Oyun birazdan başlayacak!"
+      Game-Started: "&7Oyun başladı! Koşmayı kesmeyin!"
+      Kicked-For-Premium-Slot: "&c%player% adlı oyuncu öncelikli oyuncuya yer açabilmek için oyundan atıldı!"
+      You-Were-Kicked-For-Premium-Slot: "&cÖncelikli oyuncuya yer açılabilmesi için oyundan atıldın!"
+    Join: "&b%player% &7adlı oyuncu oyuna giriş yaptı &8(&7%players%/%maxplayers%&8)&7!"
+    Leave: "&b%player% &7adlı oyuncu oyundan çıktı &8(&7%players%/%maxplayers%&8)&7!"
+    Death: "&7%player% &öldü!\n&e%players% oyuncu hayatta."
+    Earned-Coin: "&e+15 ekstra puan (Yaşama bonusu)"
+    Game-End-Messages:
+      Titles:
+        Win: "&fKazanan"
+        Lose: ""
+      Subtitles:
+        Win: "&e%winner%"
+        Lose: "&c%winner% &aoyunu kazandı!"
+      Summary-Message:
+        - "&a&m----------------------------------------------------"
+        - "&e&lTNT Run"
+        - ""
+        - "&f&lKAZANAN: &f&l%winner%"
+        - ""
+        - "&8&lSKORUN: &7&l%earned_coins%"
+        - "&8&lHAYATTA KALMA SÜREN: &7&l%formatted_survive_time%"
+        - ""
+        - "&a&m----------------------------------------------------"
+    Admin-Messages:
+      Set-Starting-In-To-0: "&bBir yetkili süreyi 0 yaptı. Oyun birazdan başlayacak!"
+      Stopped-Game: "&bBir yetkili oyunu komut kullanarak zorla bitirdi!"
+
+Signs:
+  Please-Type-Arena-Name: "&cLütfen 2. satıra arena ismini yazın!"
+  Arena-Doesnt-Exists: "&cBu isme sahip bir arena bulunamadı!"
+  Doesnt-Have-Permission: "&cBu tabelayı kırabilmek için yeterli yetkiye sahip değilsin!"
+  Sign-Created: "&aTabela başarıyla oluşturuldu!"
+  Sign-Removed: "&aTabela başarıyla silindi!"
+  Game-States:
+    Waiting: "&lBekleniyor..."
+    Inactive: "&lİnaktif..."
+    In-Game: "&lOyunda"
+    Starting: "&e&lBaşlıyor"
+    Full-Game: "&c&lDOLU"
+    Ending: "&lBitiyor"
+    Restarting: "&c&lYeniden başlatılıyor"
+  Lines:
+    - "&4&lTNT Run"
+    - "%state%"
+    - "%mapname%"
+    - "&5[%players%/%maxplayers%]"
+
+Arena-Selector:
+  Inventory-Title: "Arena seçici"
+  Item:
+    Lore:
+      - "&7TNT Run &f- &e%mapname%"
+      - " "
+      - " "
+      - "  &fAktif: %playersize%/%maxplayers%"
+      - "  &fDurum: %state%"
+      - " "
+      - " "
+      - "&eArenaya giriş yapmak için tıklayın"
+
+Validator:
+  Invalid-Arena-Configuration: "[TNTRun] Arena %arena% bazı eksik yapılandırmalara sahip! Hata: %error%"
+  Instance-Started: "[TNTRun] Arena %arena% başarıyla başlatıldı!"
+  No-Instances-Created: "[TNTRun] Oluşturulmuş herhangi bir arena bulunamadı!"
+
+# Don't edit it. But who's stopping you? It's your server!
+File-Version: 0
