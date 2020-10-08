@@ -1,0 +1,203 @@
+#    You can translate One in the Chamber messages here.
+#             Color codes (&) supported.
+#
+#              Use \n to make new line
+#        Some messages like kit and kit items
+#        descriptions don't support new lines
+# they are wrapped every 40 characters automatically
+#
+#     Some messages support their own placeholders
+#                 like %player%
+
+# One in the Chamber command messages
+Commands:
+  Did-You-Mean: "&cMeintest du &7/%command%&c?"
+  Are-You-Sure: "&cBist du dir sicher den Befehl auszufuehren? Gebe den Befehl &6innerhalb 10 Sekunden &cto ein um es zu bestaetigen!"
+  Teleported-To-The-Lobby: "&7Du wurdest in die Lobby teleportiert!"
+  Removed-Game-Instance: "&aDie Spielinstanz wurde Erfolgreich entfernt."
+  No-Arena-Like-That: "&cEs gibt keine Arena mit dieser ID!"
+  Look-Sign: "&cDu musst auf ein Schild schauen um diesen Befehl auszufuehren!"
+  Type-Arena-Name: "&cBitte tippe eine Arena ID ein!"
+  No-Free-Arenas: "&cEs ist momentan keine Arena frei!"
+  Statistics:
+    Type-Name: "&cGebe den Statistik Namen ein um ihn anzusehen!"
+    Invalid-Name: "&cName der Statistik ist nicht korrekt Tipps: kills, deaths, games_played, wins, loses, highest_score"
+    Header: "&8&m-------------------[&6 Top 10 &8&m]-------------------"
+    Format: "&e#%position% %name% - %value% &7%statistic%"
+  Only-By-Player: "&cDu kannst diesen Befehl nur als Spieler ausfuehren!"
+  Not-Playing: "&cDu musst in einer laufenden Runde sein um diesen Befehl ausfuehren!"
+  No-Permission: "&cDu hast nicht die Berechtigung um das zu tun!"
+  Admin-Commands:
+    Teleported-To-Player: "&aTeleportiert zu player!"
+    Player-Not-Found: "&cSpieler nicht gefunden!"
+    Success-Reload: "&aDas System hat alle Konfigurationen und Arenas neu geladen!"
+    List-Command:
+      Format: "&aErstellte Arenen: &7%list%"
+      No-Arenas-Created: "&cEs gibt keine Arenen zum anschauen!"
+  Stats-Command:
+    Header: "&l-----[DEINE STATS]-----"
+    Header-Other: "&l-----[STATS FUER %player%]-----"
+    Footer: "&l----------------------"
+    Kills: "&aKills: &e"
+    Deaths: "&aTode: &e"
+    Wins: "&aWins: &e"
+    Loses: "&aLoses: &e"
+    Highest-Score: "&aHoehster Score: &e"
+    Games-Played: "&aSpiele gespielt: &e"
+  
+# In-game scoreboard messages.
+# Please do not use more than 48 chars here! COLOR CODES INCLUDED.
+Scoreboard:
+  Title: "&e&lOITC"
+  Top-Player-Format: "&f%score% &6%player%"
+  Content:
+    # Contents of scoreboard for players
+    Playing:
+      - ""
+      - "%top_player_1%"
+      - "%top_player_2%"
+      - "%top_player_3%"
+      - ""
+      - "&fMap: &e%mapname%"
+      - "&fSpieler: &6%players%"
+      - "&fScore: &6%kills%"
+      - ""
+      - "&fZeit uebrig: &6%formatted_time%"
+      - ""
+      - "&ewww.despical.com"
+    Waiting:
+      - ""
+      - "&fSpieler: &a%players%"
+      - ""
+      - "&fMinimale Anzahl an Spielern: &a%min_players%"
+      - ""
+      - "&fMap: &a%mapname%"
+      - ""
+      - "&ewww.despical.com"
+    Starting:
+      - ""
+      - "&fStart in: &a%time%"
+      - ""
+      - "&fSpieler: &a%players%"
+      - ""
+      - "&fMinimale Anzahl an Spielern: &a%min_players%"
+      - ""
+      - "&fMap: &a%mapname%"
+      - ""
+      - "&ewww.despical.com"
+
+# Has usage only when bossbar is enabled in config.yml
+Bossbar:
+  Main-Title: "&a&lOne in the Chamber &f&l- &6&lDespical"
+  Starting-In: "&f&lStart in: &e&l%time%"
+  Waiting-For-Players: "&4&lWarte auf mehr Spieler..."
+  In-Game-Info: "&e&lSpielt &f&lONE IN THE CHAMBER &e&lby &b&lDESPICAL"
+  Game-Ended: "&c&lDie Runde ist zu Ende! Du hast &b&lOITC &c&1gespielt"
+
+In-Game:
+  #Used in most game messages.
+  Plugin-Prefix: "&8[&6OITC&8] "
+  Already-Playing: "&cDu bist schon im Spiel! Du kannst mit /oitc leave die Runde verlassen."
+  Join-No-Permission: "&cDu hast nicht die Berechtigung &6%permission% &cum eine Arena zu betreten!"
+  Full-Game-No-Permission: "&cDu hast nicht die Berechtigung um ein volles Spiel zu betreten!"
+  No-Slots-For-Premium: "&cDas Spiel ist schon mit Premium Spielern voll! Es tut mir leid"
+  You-Are-Spectator: "&cDu bist nun ein Beobachter! Du kannst nun fliegen!"
+  Only-Command-Ingame-Is-Leave: "&cDu musst erst das Spiel verlassen um den Befehl auszufuehren. Der einzige Befehl der funktioniert ist /oitc leave!"
+  # Join cancelled via external plugin that uses OITC API.
+  Join-Cancelled-Via-API: "&cDu kannst das Spiel nicht beitreten!"
+  Arena-Not-Configured: "&cDie Arena ist noch nicht eingerichtet! Kontaktiere ein Teammitglied!"
+  Game-Chat-Format: "&7%player%: &f%message%"
+  Game-Death-Format: "&7[&4☠&7] &r"
+  Spectator:
+    Spectator-Item-Name: "&b&lTeleporter &7(Rechtsklick)"
+    Spectator-Menu-Name: "&8Teleporter"
+    Target-Player-Score: "&7Score: %score%"
+    Settings-Menu:
+      Item-Name: "&b&lBeobachter Einstellungen &7(Rechtsklick)"
+      Inventory-Name: "&8Beobachter Einstellungen"
+      Speed-Name: "&aSchnelligkeit"
+      No-Speed: "&aKeine Schnelligkeit"
+      Disable-Night-Vision: "&cNachtsicht deaktivieren"
+      Disable-Night-Vision-Lore:
+        - "&7Klick um Nachtsicht zu deaktivieren!"
+      Hide-Spectators: "&cVerstecke Beobachter"
+      Hide-Spectators-Lore:
+        - "&7Klick um Beobachter zu verstecken!"
+  Messages:
+    Lobby-Messages:
+      Start-In: "&7Das Spiel startet in &b%time%&7 Sekunden!"
+      Waiting-For-Players: "&7Warte auf Spieler... Wir brauchen mindestens &b%minplayers%&7 Spieler fuer den Start."
+      Enough-Players-To-Start: "&7Jetzt haben wir genug Spieler. Das Spiel startet bald!"
+      Game-Started: "&7Spiel gestartet! Erster Spieler der 25 kills erreicht gewinnt!"
+      Kicked-For-Premium-Slot: "&c%player% wurde entfernt um einem Premium Spieler platz zu machen!"
+      You-Were-Kicked-For-Premium-Slot: "&cDu wurdest aus dem Spiel entfernt um einem Premium Spieler platz zu machen!"
+    Join: "&b%player%&7 ist beigetreten &8(&7%players%/%maxplayers%&8)&7!"
+    Leave: "&b%player% &7hat das Spiel verlassen &8(&7%players%/%maxplayers%&8)&7!"
+    Death: "&9%player% &ewurde von &9%killer% getoetet!"
+    Kill-Streak: "&9%killer% &eist auf einem &b%kill_streak% &ekill streak!"
+    Seconds-Left-Title: "&c%time% &eSekunden noch uebrig!"
+    Seconds-Left-Subtitle: "&eNach %time%s wird das Spiel beendet"
+    Score-Subtitle: "&a&l+&6&l1"
+    Death-Subtitle: ""
+    Game-End-Messages:
+      Titles:
+        Win: "&fGewonnen"
+        Lose: ""
+      Subtitles:
+        Win: "&e%winner%"
+        Lose: "&c%winner% &ahat das Spiel gewonnen!"
+      Summary-Message:
+        - "&a&m----------------------------------------------------"
+        - "&e&lOne in the Chamber"
+        - ""
+        - "&f&lGEWINNER: &f&l%winner% (%winner_score%)"
+        - ""
+        - "&8&lDEIN RANK: &7&l%rank%"
+        - "&8&lDEIN SCORE: &7&l%score%"
+        - "&8&lDEINE TODE: &7&l%deaths%"
+        - ""
+        - "&a&m----------------------------------------------------"
+    Admin-Messages:
+      Set-Starting-In-To-0: "&bEin Admin hat die Wartezeit auf 0 gesetzt. Das Spiel startet jetzt!"
+      Stopped-Game: "&bEin Admin hat das Spiel vorzeitig mit einem Befehl beendet!"
+
+Signs:
+  Please-Type-Arena-Name: "&cBitte setze einen Arenanamen in die zweite Reihe!"
+  Arena-Doesnt-Exists: "&cEine Arena mit dem Namen existiert nicht!"
+  Doesnt-Have-Permission: "&cDu hast keine Berechtigung um das Schild zu zerstoeren!"
+  Sign-Created: "&aSchild erfolgreich erstellt!"
+  Sign-Removed: "&aSchild erfolgreich entfernt!"
+  Game-States:
+    Waiting: "&lWarten..."
+    Inactive: "&lInaktiv..."
+    In-Game: "&lIm Spiel
+    Starting: "&e&lStarted"
+    Full-Game: "&c&lVOLL"
+    Ending: "&lEndet"
+    Restarting: "&c&lNeustart"
+  Lines:
+    - "&4&lOITC"
+    - "%state%"
+    - "%mapname%"
+    - "&5[%players%/%maxplayers%]"
+
+Arena-Selector:
+  Inventory-Title: "Arena auswählen"
+  Item:
+    Lore:
+      - "&7OITC &f- &e%mapname%"
+      - " "
+      - " "
+      - "  &fOnline: %playersize%/%maxplayers%"
+      - "  &fState: %state%"
+      - " "
+      - " "
+      - "&eKlick um die Arena zu betreten"
+
+Validator:
+  Invalid-Arena-Configuration: "[OITC] Arena %arena% hat fehlerhafte Konfigurationen! Es fehlt: %error%"
+  Instance-Started: "[OITC] Arena %arena% erfolgreich erstellt!"
+  No-Instances-Created: "[OITC] Es sind keinen Arenen konfiguriert!"
+
+# Don't edit it. But who's stopping you? It's your server!
+File-Version: 0
