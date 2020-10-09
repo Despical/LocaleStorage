@@ -6,4 +6,4 @@
 `* <your name> <your Spigot profile link if you have> <languages that you translate>`
 
 * [Despical](https://www.spigotmc.org/members/despical.615094/) - English & Turkish translator
-* [Dreandor](https://www.spigotmc.org/members/dreandor.643921/) - German
+* [Dreandor](https://www.spigotmc.org/members/dreandor.643921/) - German translator
