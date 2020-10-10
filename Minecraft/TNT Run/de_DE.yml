@@ -1,0 +1,194 @@
+#    You can translate TNT Run messages here.
+#             Color codes (&) supported.
+#
+#              Use \n to make new line
+#        Some messages like kit and kit items
+#        descriptions dont't support new lines
+# they are wrapped every 40 characters automatically
+#
+#     Some messages support their own placeholders
+#                  like %player%
+
+# TNT Run command messages
+Commands:
+  Did-You-Mean: "&cMeintest du &7/%command%&c?"
+  Are-You-Sure: "&cBist du dir sicher den Befehl auszufuehren? Gebe den Befehl &6innerhalb 10 Sekunden &cto ein um es zu bestaetigen!"
+  Teleported-To-The-Lobby: "&7Du wurdest in die Lobby teleportiert!"
+  Removed-Game-Instance: "&aDie Spielinstanz wurde Erfolgreich entfernt."
+  No-Arena-Like-That: "&cEs gibt keine Arena mit dieser ID!"
+  Look-Sign: "&cDu musst auf ein Schild schauen um diesen Befehl auszufuehren!"
+  Type-Arena-Name: "&cBitte tippe eine Arena ID ein!"
+  No-Free-Arenas: "&cEs ist momentan keine Arena frei!"
+  Conversation:
+    Operation-Timeout: "&7Operation cancelled!"
+    Only-By-Player: "&4Nur von Spielern!"
+  Statistics:
+    Type-Name: "&cGebe den Statistik Namen ein um ihn anzusehen!"
+    Invalid-Name: "&cName der Statistik ist nicht korrekt! Tipp: games_played, wins, loses, longest_survive and coins"
+    Header: "&8&m-------------------[&6 Top 10 &8&m]-------------------"
+    Format: "&e#%position% %name% - %value% &7%statistic%"
+  Only-By-Player: "&cDu kannst diesen Befehl nur als Spieler ausfuehren!"
+  Not-Playing: "&cDu musst in einer laufenden Runde sein um diesen Befehl ausfuehren!"
+  No-Permission: "&cDu hast nicht die Berechtigung um das zu tun!"
+  Admin-Commands:
+    Teleported-To-Player: "&aTeleportiert zu player!"
+    Player-Not-Found: "&cSpieler nicht gefunden!"
+    Success-Reload: "&aDas System hat alle Konfigurationen und Arenas neu geladen!"
+    List-Command:
+      Format: "&aErstellte Arenen: &7%list%"
+      No-Arenas-Created: "&cEs gibt keine Arenen zum anschauen!"
+  Stats-Command:
+    Header: "&l-----[DEINE STATS]-----"
+    Header-Other: "&l-----[STATS FUER %player%]-----"
+    Footer: "&l----------------------"
+    Wins: "&aGewonnen: &e"
+    Loses: "&aVerloren: &e"
+    Games-Played: "&aSpiele gespielt: &e"
+    Coins: "&aMuenzen: &e"
+    Longest-Survive: "&aLaengste Überlebung: &e"
+  
+# In-game scoreboard messages.
+# Please do not use more than 48 chars here! COLOR CODES INCLUDED.
+Scoreboard:
+  Title: "&e&lTNTRun"
+  Content:
+    # Contents of scoreboard for players
+    Playing:
+      - "&7Dauer: %formatted_time%"
+      - ""
+      - "&fDoppelsprung: &7%double_jumps%/5"
+      - ""
+      - "Spieler am Leben: &a%players%"
+      - ""
+      - "&fMuenzen erhalten: &a%coins_earned%"
+      - ""
+      - "&ewww.despical.com"
+    Waiting:
+      - ""
+      - "&fMap: &a%mapname%"
+      - "&fSpieler: &a%players%/%max_players%"
+      - ""
+      - "&fWarten auf Spieler..."
+      - ""
+      - "&ewww.despical.com"
+    Starting:
+      - ""
+      - "&fMap: &a%mapname%"
+      - "&fSpieler: &a%players%/%max_players%"
+      - ""
+      - "&fStart in &a%formatted_time% &fum"
+      - "&ferlaube Zeit fuer"
+      - "&fmehr Spieler"
+      - ""
+      - "&ewww.despical.com"
+
+# Has usage only when bossbar is enabled in config.yml
+Bossbar:
+  Main-Title: "&a&lTNT Run &f&l- &6&lDespical"
+  Starting-In: "&f&lStart in: &e&l%time%"
+  Waiting-For-Players: "&4&lWarte auf mehr Spieler.."
+  In-Game-Info: "&e&lSpielt &f&lTNT RUN &e&lby &b&lDESPICAL"
+  Game-Ended: "&c&lDie Runde ist zu Ende! Du hast &b&lTNT Run &c&1gespielt"
+
+In-Game:
+  #Used in most game messages.
+  Plugin-Prefix: "&8[&6TNTRun&8] "
+  Already-Playing: "&cYDu bist schon im Spiel! Du kannst mit /tr die Runde verlassen."
+  Join-No-Permission: "&cDu hast nicht die Berechtigung &6%permission% &cum eine Arena zu betreten!"
+  Full-Game-No-Permission: "&cDu hast nicht die Berechtigung um ein volles Spiel zu betreten!"
+  No-Slots-For-Premium: "&cDas Spiel ist schon mit Premium Spielern voll! Es tut mir leid"
+  You-Are-Spectator: "&cDu bist nun ein Beobachter! Du kannst nun fliegen!"
+  Only-Command-Ingame-Is-Leave: "&cDu musst erst das Spiel verlassen um den Befehl auszufuehren. Der einzige Befehl der funktioniert ist /tr leave!"
+  # Join cancelled via external plugin that uses TNT Run api.
+  Join-Cancelled-Via-API: "&cDu kannst das Spiel nicht beitreten!"
+  Arena-Not-Configured: "&cDie Arena ist noch nicht eingerichtet! Kontaktiere ein Teammitglied!"
+  Game-Chat-Format: "&7%player%: &f%message%"
+  Game-Death-Format: "&7[&4☠&7] &r"
+  Spectator:
+    Spectator-Item-Name: "&b&lTeleporter &7(Rechtsklick)"
+    Spectator-Menu-Name: "&8Teleporter"
+    Target-Player-Score: "&7Score: %score%"
+    Settings-Menu:
+      Item-Name: "&b&lBeobachter Einstellungen &7(Rechtsklick)"
+      Inventory-Name: "&8Beobachter Einstellungen"
+      Speed-Name: "&aSchnelligkeit"
+      No-Speed: "&aKeine Schnelligkeit"
+      Disable-Night-Vision: "&cNachtsicht deaktivieren"
+      Disable-Night-Vision-Lore:
+        - "&7Klick um Nachtsicht zu deaktivieren!"
+      Hide-Spectators: "&cVerstecke Beobachter"
+      Hide-Spectators-Lore:
+        - "&7Klick um Beobachter zu verstecken!"
+  Messages:
+    Lobby-Messages:
+      Start-In: "&7Das Spiel startet in &b%time%&7 Sekunden!"
+      Waiting-For-Players: "&7Warte auf Spieler... Wir brauchen mindestens &b%minplayers%&7 Spieler fuer den Start."
+      Enough-Players-To-Start: "&7Jetzt haben wir genug Spieler. Das Spiel startet bald!"
+      Game-Started: "&7Spiel gestartet! Erster Spieler der 25 kills erreicht gewinnt!"
+      Kicked-For-Premium-Slot: "&c%player% wurde entfernt um einem Premium Spieler platz zu machen!"
+      You-Were-Kicked-For-Premium-Slot: "&cDu wurdest aus dem Spiel entfernt um einem Premium Spieler platz zu machen!"
+    Join: "&b%player%&7 ist beigetreten &8(&7%players%/%maxplayers%&8)&7!"
+    Leave: "&b%player% &7hat das Spiel verlassen &8(&7%players%/%maxplayers%&8)&7!"
+    Death: "&9%player% &ewurde von &9%killer% getoetet!"
+    Earned-Coin: "&e+15 Extra Muenzen (Ueberlebensbonus)"
+    Game-End-Messages:
+      Titles:
+        Win: "&fGewinner"
+        Lose: ""
+      Subtitles:
+        Win: "&e%winner%"
+        Lose: "&c%winner% &ahat das Spiel gewonnen!!"
+      Summary-Message:
+        - "&a&m----------------------------------------------------"
+        - "&e&lTNT Run"
+        - ""
+        - "&f&lGEWINNER: &f&l%winner%"
+        - ""
+        - "&8&lDEIN SCORE: &7&l%earned_coins%"
+        - "&8&lDEINE UEBERLEBENSDAUER: &7&l%formatted_survive_time%"
+        - ""
+        - "&a&m----------------------------------------------------"
+    Admin-Messages:
+      Set-Starting-In-To-0: "&bEin Admin hat die Wartezeit auf 0 gesetzt. Das Spiel startet jetzt!"
+      Stopped-Game: "&bEin Admin hat das Spiel vorzeitig mit einem Befehl beendet!"
+
+Signs:
+  Please-Type-Arena-Name: "&cBitte setze einen Arenanamen in die zweite Reihe!"
+  Arena-Doesnt-Exists: "&cEine Arena mit dem Namen existiert nicht!"
+  Doesnt-Have-Permission: "&cDu hast keine Berechtigung um das Schild zu zerstoeren!"
+  Sign-Created: "&aSchild erfolgreich erstellt!"
+  Sign-Removed: "&aSchild erfolgreich entfernt!"
+  Game-States:
+    Waiting: "&lWarten..."
+    Inactive: "&lInaktiv..."
+    In-Game: "&lIm Spiel
+    Starting: "&e&lStarted"
+    Full-Game: "&c&lVOLL"
+    Ending: "&lEndet"
+    Restarting: "&c&lNeustart"
+  Lines:
+    - "&4&lTNT Run"
+    - "%state%"
+    - "%mapname%"
+    - "&5[%players%/%maxplayers%]"
+
+Arena-Selector:
+  Inventory-Title: "Arena auswählen"
+  Item:
+    Lore:
+      - "&7TNT Run &f- &e%mapname%"
+      - " "
+      - " "
+      - "  &fOnline: %playersize%/%maxplayers%"
+      - "  &fState: %state%"
+      - " "
+      - " "
+      - "&eKlick um die Arena zu betreten"
+
+Validator:
+  Invalid-Arena-Configuration: "[TNTRun] Arena %arena% hat fehlerhafte Konfigurationen! Es fehlt: %error%"
+  Instance-Started: "[TNTRun] Arena %arena% erfolgreich erstellt!"
+  No-Instances-Created: "[TNTRun] Es sind keinen Arenen konfiguriert!"
+
+# Don't edit it. But who's stopping you? It's your server!
+File-Version: 0
