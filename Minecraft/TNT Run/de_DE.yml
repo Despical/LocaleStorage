@@ -19,9 +19,6 @@ Commands:
   Look-Sign: "&cDu musst auf ein Schild schauen um diesen Befehl auszufuehren!"
   Type-Arena-Name: "&cBitte tippe eine Arena ID ein!"
   No-Free-Arenas: "&cEs ist momentan keine Arena frei!"
-  Conversation:
-    Operation-Timeout: "&7Operation cancelled!"
-    Only-By-Player: "&4Nur von Spielern!"
   Statistics:
     Type-Name: "&cGebe den Statistik Namen ein um ihn anzusehen!"
     Invalid-Name: "&cName der Statistik ist nicht korrekt! Tipp: games_played, wins, loses, longest_survive and coins"
