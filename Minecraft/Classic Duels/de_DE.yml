@@ -1,0 +1,196 @@
+#     You can translate Classic Duels messages here.
+#             Color codes (&) supported.
+#
+#              Use \n to make new line
+#        Some messages like kit and kit items
+#        descriptions don't support new lines
+# they are wrapped every 40 characters automatically
+#
+#     Some messages support their own placeholders
+#                  like %player%
+
+# Classic Duels Commands Messages
+Commands:
+  Did-You-Mean: "&3Meintest du &b/%command%&3?"
+  Are-You-Sure: "&cAre you sure you want to do this action? Type the command again &6within 10 seconds &cto confirm!"
+  Teleported-To-The-Lobby: "&7Du wurdest zur Lobby teleportiert!"
+  Removed-Game-Instance: "&aDie Spielinstanz wurde Erfolgreich entfernt."
+  No-Arena-Like-That: "&cEs gibt keine Arena mit dieser ID!"
+  Look-Sign: "&cDu musst auf ein Schild schauen um den Befehl auszufuehren!"
+  Type-Arena-Name: "&cBitte gib eine Arena ID ein!"
+  No-Free-Arenas: "&cEs gibt momentan keine freien Arenen!"
+  Statistics:
+    Type-Name: "&cGebe den Statistik Namen ein um ihn anzusehen!"
+    Invalid-Name: "Name der Statistik ist nicht korrekt! Tippe: kills, deaths, win_streak, games_played, wins and loses."
+    Header: "&8&m-------------------[&6 Top 10 &8&m]-------------------"
+    Format: "&e#%position% %name% - %value% &7%statistic%"
+  Only-By-Player: "&cDu kannst diesen Befehl nur als Spieler ausfuehren!"
+  Not-Playing: "&cDu musst spielen um den Befehl auszufuehren!"
+  No-Permission: "&cDu hast keine Berechtigung diesen Befehl zu nutzen!"
+  Admin-Commands:
+    Teleported-To-Player: "&aDu wurdest zu dem Spieler teleportiert!"
+    Player-Not-Found: "&cSpieler mit dem Namen wurde nicht gefunden!"
+    Success-Reload: "&aDas System hat alle Konfigurationen und Arenas neu geladen!"
+    List-Command:
+      Format: "&aErstellte Arenen: &7%list%"
+      No-Arenas-Created: "&cEs gibt keine Arenen zum anschauen!"
+  Stats-Command:
+    Header: "&l-----[DEINE STATS]-----"
+    Header-Other: "&l-----[STATS FUER %player%]-----"
+    Footer: "&l----------------------"
+    Kills: "&aKills: &e"
+    Deaths: "&aTode: &e"
+    Wins: "&aGewonnen: &e"
+    Loses: "&aVerloren: &e"
+    Games-Played: "&aSpiele gespielt: &e"
+    Win-Streak: "&aWin-Serie: &e"
+
+# In-game scoreboard messages.
+# Please do not use more than 48 chars here! COLOR CODES INCLUDED.
+Scoreboard:
+  Title: "&e&lClassic Duels"
+  Content:
+    # Contents of scoreboard for players
+    Playing:
+      - ""
+      - "&fZeit verbleibend: %formatted_time%"
+      - ""
+      - "&f&lGegner:"
+      - "  &7%opponent% &a%opponent_health%&c❤"
+      - ""
+      - "&fAktuelle strähne: &a%win_streak%"
+      - ""
+      - "&ewww.despical.com"
+    Waiting:
+      - ""
+      - "&fMap: &a%mapname%"
+      - "&fSpieler: &a%players%/2"
+      - ""
+      - "&fWarten..."
+      - ""
+      - "&ewww.despical.com"
+    Starting:
+      - ""
+      - "&fMap: &a%mapname%"
+      - "&fSpieler: &a%players%/2"
+      - ""
+      - "&fStart in &a%time%s"
+      - ""
+      - "&ewww.despical.com"
+
+# Has usage only when bossbar is enabled in config.yml
+Bossbar:
+  Main-Title: "&a&lClassic Duels &f&l- &6&lDespical"
+  Starting-In: "&f&lStart in: &e&l%time%"
+  Waiting-For-Players: "&4&lWarte auf mehr Spieler..."
+  In-Game-Info: "&e&lSpielt &f&lClassic Duels &e&lby &b&lDESPICAL"
+  Game-Ended: "&c&lDie Runde ist zu Ende! Du hast &b&lClassic Duels &c&l gespielt"
+
+In-Game:
+  #Used in most game messages.
+  Plugin-Prefix: "&8[&eClassic Duels&8] "
+  Already-Playing: "&cDu bist schon im Spiel! Du kannst mit /cd leave die Runde verlassen."
+  Join-No-Permission: "&cDu hast nicht die Berechtigung &6%permission% &cum eine Arena zu betreten!"
+  Full-Game-No-Permission: "&cDu hast nicht die Berechtigung um ein volles Spiel zu betreten!"
+  No-Slots-For-Premium: "&cDas Spiel ist schon mit Premium Spielern voll! Es tut mir leid"
+  You-Are-Spectator: "&cDu bist nun ein Beobachter! Du kannst nun fliegen!"
+  Only-Command-Ingame-Is-Leave: "&cDu musst erst das Spiel verlassen um den Befehl auszufuehren. Der einzige Befehl der funktioniert ist /cd leave!"
+  # Join cancelled via external plugin that uses Classic Duels API.
+  Join-Cancelled-Via-API: "&cDu kannst das Spiel nicht beitreten!"
+  Arena-Not-Configured: "&cDie Arena ist noch nicht eingerichtet! Kontaktiere ein Teammitglied!"
+  Game-Chat-Format: "&7%player%: &f%message%"
+  Game-Death-Format: "&7[&4☠&7] &r"
+  Spectator:
+    Spectator-Item-Name: "&b&lTeleporter &7(Rechtsklick)"
+    Spectator-Menu-Name: "&8Teleporter"
+    Target-Player-Score: "&7Score: %score%"
+    Settings-Menu:
+      Item-Name: "&b&lBeobachter Einstellungen &7(Rechtsklick)"
+      Inventory-Name: "&8Beobachter Einstellungen"
+      Speed-Name: "&aSchnelligkeit"
+      No-Speed: "&aKeine Schnelligkeit"
+      Disable-Night-Vision: "&cNachtsicht deaktivieren"
+      Disable-Night-Vision-Lore:
+        - "&7Klick um Nachtsicht zu deaktivieren!"
+      Hide-Spectators: "&cVerstecke Beobachter"
+      Hide-Spectators-Lore:
+        - "&7Klick um Beobachter zu verstecken!"
+  Messages:
+    Lobby-Messages:
+      Start-In: "&7Das Spiel startet in &b%time%&7 Sekunden!"
+      Waiting-For-Players: "&7Warten auf Spieler... Wir brauchen mindestens 2 Spieler zum starten."
+      Enough-Players-To-Start: "&7Jetzt haben wir genug Spieler. Das Spiel startet bald!"
+      Game-Started:
+        - "&a&l---------------------------------------------"
+        - "&f&lClassic Duels"
+        - ""
+        - "&e&lEliminiere deinen Gegner!"
+        - ""
+        - "&f&lGegner: &7%opponent%"
+        - ""
+        - "&a&l---------------------------------------------"
+      Kicked-For-Premium-Slot: "&c%player% wurde entfernt um einem Premium Spieler platz zu machen!"
+      You-Were-Kicked-For-Premium-Slot: "&cDu wurdest aus dem Spiel entfernt um einem Premium Spieler platz zu machen!"
+    Join: "&7%player%,&e ist beigetreten (&b%players%&e/&b2&e)!"
+    Leave: "&7%player%,&e hat das Spiel verlassen (&b%players%&e/&b2&r)!"
+    Game-End-Messages:
+      Titles:
+        Win: "&6&lGEWONNEN!"
+        Lose: "&c&lVERLOREN!"
+      Subtitles:
+        Win: "&f%player% hat das Duell gewonnen!"
+        Lose: "&f%player% hat das Duell gewonnen!"
+      Summary-Message:
+        - "&a&m----------------------------------------------------"
+        - "&e&lClassic Duels &7- &f&l%duration%"
+        - ""
+        - "&7%winner% &e&lGEWONNEN! &7%loser%"
+        - "&a%winner_damage_dealt%&c❤ &7- &f&lDamage Dealt &7- &a%loser_damage_dealt%&c❤"
+        - "&a%winner_melee_accuracy% &7- &f&lMelee Accuracy &7- &a%loser_melee_accuracy%"
+        - "&a%winner_bow_accuracy% &7- &f&lBow Accuracy &7- &a%loser_bow_accuracy%"
+        - "&a%winner_health_regenerated%&c❤ &7- &f&lHealth Regenerated &7- &a%loser_health_regenerated%&c❤"
+        - ""
+        - "&a&m----------------------------------------------------"
+    Admin-Messages:
+      Stopped-Game: "&bEin Admin hat das Spiel mit einem Befehl gestoppt!"
+
+Signs:
+  Please-Type-Arena-Name: "&cBitte setze einen Arenanamen in die zweite Reihe!"
+  Arena-Doesnt-Exists: "&cEine Arena mit dem Namen existiert nicht!"
+  Doesnt-Have-Permission: "&cDu hast keine Berechtigung um das Schild zu zerstoeren!"
+  Sign-Created: "&aSchild erfolgreich erstellt!"
+  Sign-Removed: "&aSchild erfolgreich entfernt!"
+  Game-States:
+    Waiting: "&lWarten..."
+    Inactive: "&lInaktiv..."
+    In-Game: "&lIm Spiel
+    Starting: "&e&lStarted"
+    Full-Game: "&c&lVOLL"
+    Ending: "&lEndet"
+    Restarting: "&c&lNeustart"
+  Lines:
+    - "&4&lClassic Duels"
+    - "%state%"
+    - "%mapname%"
+    - "&5[%players%/2]"
+
+Arena-Selector:
+  Inventory-Title: "Arena auswaehlen"
+  Item:
+    Lore:
+      - "&7Classic Duels &f- &e%mapname%"
+      - " "
+      - " "
+      - "  &fOnline: %playersize%/2"
+      - "  &fState: %state%"
+      - " "
+      - " "
+      - "&eKlick um die Arena zu betreten"
+
+Validator:
+  Invalid-Arena-Configuration: "[ClassicDuels] Arena %arena% hat fehlerhafte Konfigurationen! Es fehlt: %error%"
+  Instance-Started: "[ClassicDuels] Arena %arena% erfolgreich erstellt!"
+  No-Instances-Created: "[ClassicDuels] Es sind keinen Arenen konfiguriert!"
+
+# Don't edit it. But who's stopping you? It's your server!
+File-Version: 0
