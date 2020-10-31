@@ -12,7 +12,7 @@
 # Classic Duels Commands Messages
 Commands:
   Did-You-Mean: "&3Meintest du &b/%command%&3?"
-  Are-You-Sure: "&cAre you sure you want to do this action? Type the command again &6within 10 seconds &cto confirm!"
+  Are-You-Sure: "&cBist du dir sicher diesen Befehl auszufuehren? Tippe das Kommando &6innerhalb 10 Sekunden &cum ihn zu bestaetigen!"
   Teleported-To-The-Lobby: "&7Du wurdest zur Lobby teleportiert!"
   Removed-Game-Instance: "&aDie Spielinstanz wurde Erfolgreich entfernt."
   No-Arena-Like-That: "&cEs gibt keine Arena mit dieser ID!"
@@ -109,20 +109,20 @@ In-Game:
       Inventory-Name: "&8Beobachter Einstellungen"
       Speed-Name: "&aSchnelligkeit"
       No-Speed: "&aKeine Schnelligkeit"
-      Enable-Night-Vision: "&aEnable Night Vision"
+      Enable-Night-Vision: "&aNachtsicht aktivieren"
       Enable-Night-Vision-Lore:
-        - "&7Click to enable night vision!"
+        - "&7Klicke um Nachtsicht zu aktivieren!"
       Disable-Night-Vision: "&cNachtsicht deaktivieren"
       Disable-Night-Vision-Lore:
-        - "&7Klick um Nachtsicht zu deaktivieren!"
+        - "&7Klicke um Nachtsicht zu deaktivieren!"
       Hide-Spectators: "&cVerstecke Beobachter"
-      Hide-Spectators-Message: "&cYou can no longer see other spectators!"
+      Hide-Spectators-Message: "&CDu kannst nicht mehr andere Beobachter sehen!"
       Hide-Spectators-Lore:
-        - "&7Klick um Beobachter zu verstecken!"
-      Show-Spectators: "&aShow Spectators"
-      Show-Spectators-Message: "&aYou can now see other spectators!"
+        - "&7Klicke um Beobachter zu verstecken!"
+      Show-Spectators: "&aZeige Beobachter"
+      Show-Spectators-Message: "&aDu kannst nun wieder andere Beobachter sehen!"
       Show-Spectators-Lore:
-        - "&7Click to show other spectators!"
+        - "&7Klicke um andere Beobachter zu sehen!"
   Messages:
     Lobby-Messages:
       Start-In: "&7Das Spiel startet in &b%time%&7 Sekunden!"
