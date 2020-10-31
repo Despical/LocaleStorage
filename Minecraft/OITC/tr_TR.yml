@@ -117,12 +117,20 @@ In-Game:
       Inventory-Name: "&8İzleyici ayarları"
       Speed-Name: "&aHız"
       No-Speed: "&aHız Yok"
+      Enable-Night-Vision: "&aGece Görüşünü Etkinleştir"
+      Enable-Night-Vision-Lore:
+        - "&7Gece görüşünü etkinleştirmek için tıkla!"      
       Disable-Night-Vision: "&cGece Görüşünü Kapat"
       Disable-Night-Vision-Lore:
         - "&7Gece görüşünü kapatmak için tıklayın!"
       Hide-Spectators: "&cİzleyicileri Gizle"
+      Hide-Spectators-Message: "&cArtık diğer izleyicileri görmeyeceksin!"
       Hide-Spectators-Lore:
         - "&7Diğer izleyicileri gizlemek için tıkla!"
+      Show-Spectators: "&aİzleyicileri Göster"
+      Show-Spectators-Message: "&aArtık izleyicileri göreceksin!"
+      Show-Spectators-Lore:
+        - "&7Diğer izleyicileri göstermek için tıkla!"  
   Messages:
     Lobby-Messages:
       Start-In: "&7Oyun &b%time%&7 saniye içinde başlıyor!"

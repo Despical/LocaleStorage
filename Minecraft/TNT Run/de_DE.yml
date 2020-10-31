@@ -110,12 +110,20 @@ In-Game:
       Inventory-Name: "&8Beobachter Einstellungen"
       Speed-Name: "&aSchnelligkeit"
       No-Speed: "&aKeine Schnelligkeit"
+      Enable-Night-Vision: "&aEnable Night Vision"
+      Enable-Night-Vision-Lore:
+        - "&7Click to enable night vision!"      
       Disable-Night-Vision: "&cNachtsicht deaktivieren"
       Disable-Night-Vision-Lore:
         - "&7Klick um Nachtsicht zu deaktivieren!"
       Hide-Spectators: "&cVerstecke Beobachter"
+      Hide-Spectators-Message: "&cYou can no longer see other spectators!"
       Hide-Spectators-Lore:
         - "&7Klick um Beobachter zu verstecken!"
+      Show-Spectators: "&aShow Spectators"
+      Show-Spectators-Message: "&aYou can now see other spectators!"
+      Show-Spectators-Lore:
+        - "&7Click to show other spectators!"
   Messages:
     Lobby-Messages:
       Start-In: "&7Das Spiel startet in &b%time%&7 Sekunden!"

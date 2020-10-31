@@ -9,7 +9,7 @@
 #     Some messages support their own placeholders
 #                  like %player%
 
-# TNT Run command messages
+# TNT Run Command Messages
 Commands:
   Did-You-Mean: "&3Did you mean &b/%command%&3?"
   Are-You-Sure: "&cAre you sure you want to do this action? Type the command again &6within 10 seconds &cto confirm!"
@@ -110,12 +110,20 @@ In-Game:
       Inventory-Name: "&8Spectator settings"
       Speed-Name: "&aSpeed"
       No-Speed: "&aNo Speed"
+      Enable-Night-Vision: "&aEnable Night Vision"
+      Enable-Night-Vision-Lore:
+        - "&7Click to enable night vision!"
       Disable-Night-Vision: "&cDisable Night Vision"
       Disable-Night-Vision-Lore:
         - "&7Click to disable night vision!"
       Hide-Spectators: "&cHide Spectators"
+      Hide-Spectators-Message: "&cYou can no longer see other spectators!"
       Hide-Spectators-Lore:
         - "&7Click to hide other spectators!"
+      Show-Spectators: "&aShow Spectators"
+      Show-Spectators-Message: "&aYou can now see other spectators!"
+      Show-Spectators-Lore:
+        - "&7Click to show other spectators!"
   Messages:
     Lobby-Messages:
       Start-In: "&7The game starts in &b%time%&7 seconds!"
