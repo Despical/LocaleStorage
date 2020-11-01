@@ -9,7 +9,7 @@
 #     Some messages support their own placeholders
 #                 like %player%
 
-# One in the Chamber command messages
+# One in the Chamber Command Messages
 Commands:
   Did-You-Mean: "&3Did you mean &b/%command%&3?"
   Are-You-Sure: "&cAre you sure you want to do this action? Type the command again &6within 10 seconds &cto confirm!"
@@ -209,3 +209,7 @@ Validator:
 
 # Don't edit it. But who's stopping you? It's your server!
 File-Version: 0
+
+# If you change the value the file will be replaced with default yaml
+# So you shouldn't edit here. Be careful to make changes here!
+Language: default
