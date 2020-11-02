@@ -92,7 +92,7 @@ In-Game:
   Already-Playing: "&cYou are already queued for a game! You can leave a game with /cd leave."
   Join-No-Permission: "&cYou don't have &6%permission% &cpermission to join this arena!"
   Full-Game-No-Permission: "&cYou don't have the permission to join full games!"
-  No-Slots-For-Premium: "&cThis game is already full of premium players! Sorry"
+  No-Slots-For-Premium: "&cThis game is already full of premium players! Sorry!"
   You-Are-Spectator: "&cYou're now a spectator! You can fly now!"
   Only-Command-Ingame-Is-Leave: "&cYou have to leave the game first to perform commands. The only command that works is /cd leave!"
   # Join cancelled via external plugin that uses Classic Duels API.
@@ -103,7 +103,6 @@ In-Game:
   Spectator:
     Spectator-Item-Name: "&b&lTeleporter &7(Right Click)"
     Spectator-Menu-Name: "&8Teleporter"
-    Target-Player-Score: "&7Score: %score%"
     Settings-Menu:
       Item-Name: "&b&lSpectator settings &7(Right Click)"
       Inventory-Name: "&8Spectator settings"
@@ -202,3 +201,7 @@ Validator:
 
 # Don't edit it. But who's stopping you? It's your server!
 File-Version: 0
+
+# If you change the value the file will be replaced with default yaml
+# So you shouldn't edit here. Be careful to make changes here!
+Language: default

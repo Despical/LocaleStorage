@@ -92,7 +92,7 @@ In-Game:
   Already-Playing: "&cDu bist schon im Spiel! Du kannst mit /cd leave die Runde verlassen."
   Join-No-Permission: "&cDu hast nicht die Berechtigung &6%permission% &cum eine Arena zu betreten!"
   Full-Game-No-Permission: "&cDu hast nicht die Berechtigung um ein volles Spiel zu betreten!"
-  No-Slots-For-Premium: "&cDas Spiel ist schon mit Premium Spielern voll! Es tut mir leid"
+  No-Slots-For-Premium: "&cDas Spiel ist schon mit Premium Spielern voll! Es tut mir leid!"
   You-Are-Spectator: "&cDu bist nun ein Beobachter! Du kannst nun fliegen!"
   Only-Command-Ingame-Is-Leave: "&cDu musst erst das Spiel verlassen um den Befehl auszufuehren. Der einzige Befehl der funktioniert ist /cd leave!"
   # Join cancelled via external plugin that uses Classic Duels API.
@@ -103,7 +103,6 @@ In-Game:
   Spectator:
     Spectator-Item-Name: "&b&lTeleporter &7(Rechtsklick)"
     Spectator-Menu-Name: "&8Teleporter"
-    Target-Player-Score: "&7Score: %score%"
     Settings-Menu:
       Item-Name: "&b&lBeobachter Einstellungen &7(Rechtsklick)"
       Inventory-Name: "&8Beobachter Einstellungen"
@@ -202,3 +201,7 @@ Validator:
 
 # Don't edit it. But who's stopping you? It's your server!
 File-Version: 0
+
+# If you change the value the file will be replaced with default yaml
+# So you shouldn't edit here. Be careful to make changes here!
+Language: de

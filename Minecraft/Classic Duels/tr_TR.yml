@@ -1,4 +1,4 @@
-#    You can translate TNT Run messages here.
+#     You can translate Classic Duels messages here.
 #             Color codes (&) supported.
 #
 #              Use \n to make new line
@@ -9,7 +9,7 @@
 #     Some messages support their own placeholders
 #                  like %player%
 
-# TNT Run Command Messages
+# Classic Duels Commands Messages
 Commands:
   Did-You-Mean: "&cBunu mu demek istemiştiniz &7/%command%&c?"
   Are-You-Sure: "&cBunu gerçekten yapmak istiyor musun? Onaylamak için komutu &610 saniye içinde &ctekrar yazın!"
@@ -21,7 +21,7 @@ Commands:
   No-Free-Arenas: "&cHiç müsait arena bulunamadı!"
   Statistics:
     Type-Name: "&cLütfen görüntülemek istediğiniz istatistik ismini yazın!"
-    Invalid-Name: "&cGeçersiz istatistik ismi! Var olan istatistikler: games_played, wins, loses, longest_survive and coins"
+    Invalid-Name: "&cGeçersiz istatistik ismi! Var olan istatistikler: kills, deaths, win_streak, games_played, wins and loses."
     Header: "&8&m-------------------[&6 En iyi 10 &8&m]-------------------"
     Format: "&e#%position% %name% - %value% &7%statistic%"
   Only-By-Player: "&cBu komut sadece oyuncular tarafından kullanılabilir!"
@@ -38,64 +38,64 @@ Commands:
     Header: "&l-----[SENİN İSTATİSTİKLERİN]-----"
     Header-Other: "&l-----[%player% için İSTATİSTİKLER]-----"
     Footer: "&l----------------------"
+    Kills: "&aÖldürme sayısı: &e"
+    Deaths: "&aÖlme sayısı: &e"
     Wins: "&aKazanma sayısı: &e"
     Loses: "&aKaybetme sayısı: &e"
     Games-Played: "&aOynanılan oyunlar: &e"
-    Coins: "&aPuanlar: &e"
-    Longest-Survive: "&aEn uzun yaşayış: &e"
-  
+    Win-Streak: "&aKazanma serisi: &e"
+
 # In-game scoreboard messages.
 # Please do not use more than 48 chars here! COLOR CODES INCLUDED.
 Scoreboard:
-  Title: "&e&lTNTRun"
+  Title: "&e&lClassic Duels"
   Content:
     # Contents of scoreboard for players
     Playing:
-      - "&7Zaman: %formatted_time%"
       - ""
-      - "&fÇift Zıplama: &7%double_jumps%/5"
+      - "&fKalan Zaman: %formatted_time%"
       - ""
-      - "Kalan Oyuncular: &a%players%"
+      - "&f&lRakip:"
+      - "  &7%opponent% &a%opponent_health%&c❤"
       - ""
-      - "&fKazanılan Puanlar: &a%coins_earned%"
+      - "&fKazanma Serisi: &a%win_streak%"
       - ""
       - "&ewww.despical.com"
     Waiting:
       - ""
       - "&fHarita: &a%mapname%"
-      - "&fOyuncular: &a%players%/%max_players%"
+      - "&fOyuncular: &a%players%/2"
       - ""
-      - "&fOyuncular için bekleniyor..."
+      - "&fBekleniyor..."
       - ""
       - "&ewww.despical.com"
     Starting:
       - ""
       - "&fHarita: &a%mapname%"
-      - "&fOyuncular: &a%players%/%max_players%"
+      - "&fOyuncular: &a%players%/2"
       - ""
-      - "&a%formatted_time% içinde başlayacak ek"
-      - "&foyuncular için bekleniliyor"
+      - "&a%time% &fiçinde başlıyor"
       - ""
       - "&ewww.despical.com"
 
 # Has usage only when bossbar is enabled in config.yml
 Bossbar:
-  Main-Title: "&a&lTNT Run &f&l- &6&lDespical"
+  Main-Title: "&a&lClassic Duels &f&l- &6&lDespical"
   Starting-In: "&e&l%time% &f&liçinde başlayacak"
   Waiting-For-Players: "&4&lDaha fazla oyuncu için bekleniyor..."
-  In-Game-Info: "&b&lDESPICAL &e&ltarafından &f&lTNT RUN &e&lOYNUYORSUN"
-  Game-Ended: "&c&lOyun sona erdi! &b&lTNT Run &c&lOYNUYORDUN"
+  In-Game-Info: "&b&lDESPICAL &e&ltarafından &f&lClassic Duels &e&lOYNUYORSUN"
+  Game-Ended: "&c&lOyun sona erdi! &b&lClassic Duels &c&lOYNUYORDUN"
 
 In-Game:
   #Used in most game messages.
-  Plugin-Prefix: "&8[&6TNTRun&8] "
-  Already-Playing: "&cZaten bir oyundasın! /tntrun leave komutu kullanarak oyundan çıkabilirsin."
+  Plugin-Prefix: "&8[&eClassic Duels&8] "
+  Already-Playing: "&cZaten bir oyundasın! /cd leave komutu kullanarak oyundan çıkabilirsin."
   Join-No-Permission: "&cBu arenaya girebilmek için &6%permission% &cyetkisine sahip değilsin!"
   Full-Game-No-Permission: "&cDolu oyunlara girebilmek için yeterli yetkiye sahip değilsin!"
   No-Slots-For-Premium: "&cBu oyun tamamen öncelikli oyuncularla dolu! Üzgünüm!"
   You-Are-Spectator: "&cArtık bir seyircisin! Şu an uçabilirsin!"
-  Only-Command-Ingame-Is-Leave: "&cKomut kullanabilmek için önce oyundan çıkmalısın. Çalışan tek komut: /tntrun leave!"
-  # Join cancelled via external plugin that uses TNTRun API.
+  Only-Command-Ingame-Is-Leave: "&cKomut kullanabilmek için önce oyundan çıkmalısın. Çalışan tek komut: /cd leave!"
+  # Join cancelled via external plugin that uses Classic Duels API.
   Join-Cancelled-Via-API: "&cBu oyuna giremezsin!"
   Arena-Not-Configured: "&cArena daha hazırlanmadı! Bir yetkiliye başvurun!"
   Game-Chat-Format: "&7%player%: &f%message%"
@@ -103,7 +103,6 @@ In-Game:
   Spectator:
     Spectator-Item-Name: "&b&lIşınlayıcı &7(Sağ Tıkla)"
     Spectator-Menu-Name: "&8Işınlayıcı"
-    Target-Player-Score: "&7Skor: %score%"
     Settings-Menu:
       Item-Name: "&b&lİzleyici ayarları &7(Sağ Tıkla)"
       Inventory-Name: "&8İzleyici ayarları"
@@ -111,7 +110,7 @@ In-Game:
       No-Speed: "&aHız Yok"
       Enable-Night-Vision: "&aGece Görüşünü Etkinleştir"
       Enable-Night-Vision-Lore:
-        - "&7Gece görüşünü etkinleştirmek için tıkla!"      
+        - "&7Gece görüşünü etkinleştirmek için tıkla!"
       Disable-Night-Vision: "&cGece Görüşünü Kapat"
       Disable-Night-Vision-Lore:
         - "&7Gece görüşünü kapatmak için tıklayın!"
@@ -122,38 +121,44 @@ In-Game:
       Show-Spectators: "&aİzleyicileri Göster"
       Show-Spectators-Message: "&aArtık izleyicileri göreceksin!"
       Show-Spectators-Lore:
-        - "&7Diğer izleyicileri göstermek için tıkla!"        
+        - "&7Diğer izleyicileri göstermek için tıkla!"
   Messages:
     Lobby-Messages:
-      Start-In: "&7Oyun &b%time% &7saniye içinde başlıyor!"
-      Waiting-For-Players: "&7Oyuncular için bekleniyor... Başlamak için en az &b%minplayers% &7oyuncuya ihtiyacımız var."
-      Enough-Players-To-Start: "&7Artık yeterli oyuncuya sahibiz. Oyun birazdan başlayacak!"
-      Game-Started: "&7Oyun başladı! Koşmayı kesmeyin!"
+      Start-In: "&eThe game starts in &c%time%&e seconds!"
+      Waiting-For-Players: "&7Oyuncular için bekleniyor... Başlamak için 2 oyuncuya ihtiyacımız var."
+      Enough-Players-To-Start: "&7Artık yeterli oyuncuya sahibiz, oyun birazdan başlayacak!"
+      Game-Started:
+        - "&a&l---------------------------------------------"
+        - "&f&lClassic Duels"
+        - ""
+        - "&e&lRakiplerini ele!"
+        - ""
+        - "&f&lRakip: &7%opponent%"
+        - ""
+        - "&a&l---------------------------------------------"
       Kicked-For-Premium-Slot: "&c%player% adlı oyuncu öncelikli oyuncuya yer açabilmek için oyundan atıldı!"
       You-Were-Kicked-For-Premium-Slot: "&cÖncelikli oyuncuya yer açılabilmesi için oyundan atıldın!"
-    Join: "&b%player% &7adlı oyuncu oyuna giriş yaptı &8(&7%players%/%maxplayers%&8)&7!"
-    Leave: "&b%player% &7adlı oyuncu oyundan çıktı &8(&7%players%/%maxplayers%&8)&7!"
-    Death: "&7%player% &öldü!\n&e%players% oyuncu hayatta."
-    Earned-Coin: "&e+15 ekstra puan (Yaşama bonusu)"
+    Join: "&7%player%,&e oyuna katıldı (&b%players%&e/&b2&e)!"
+    Leave: "&7%player%,&e oyundan ayrıldı (&b%players%&e/&b2&r)!"
     Game-End-Messages:
       Titles:
-        Win: "&fKazanan"
-        Lose: ""
+        Win: "&6&lZAFER!"
+        Lose: "&c&lOyun Bitti!"
       Subtitles:
-        Win: "&e%winner%"
-        Lose: "&c%winner% &aoyunu kazandı!"
+        Win: "&f%player% mücadeleyi kazandı!"
+        Lose: "&f%player% mücadeleyi kazandı!"
       Summary-Message:
         - "&a&m----------------------------------------------------"
-        - "&e&lTNT Run"
+        - "&e&lClassic Duels &7- &f&l%duration%"
         - ""
-        - "&f&lKAZANAN: &f&l%winner%"
-        - ""
-        - "&8&lSKORUN: &7&l%earned_coins%"
-        - "&8&lHAYATTA KALMA SÜREN: &7&l%formatted_survive_time%"
+        - "&7%winner% &e&lKAZANDI! &7%loser%"
+        - "&a%winner_damage_dealt%&c❤ &7- &f&lVerilen Hasar &7- &a%loser_damage_dealt%&c❤"
+        - "&a%winner_melee_accuracy% &7- &f&lYakın Dövüş İsabeti &7- &a%loser_melee_accuracy%"
+        - "&a%winner_bow_accuracy% &7- &f&lYay İsabeti &7- &a%loser_bow_accuracy%"
+        - "&a%winner_health_regenerated%&c❤ &7- &f&lYenilenen Sağlık &7- &a%loser_health_regenerated%&c❤"
         - ""
         - "&a&m----------------------------------------------------"
     Admin-Messages:
-      Set-Starting-In-To-0: "&bBir yetkili süreyi 0 yaptı. Oyun birazdan başlayacak!"
       Stopped-Game: "&bBir yetkili oyunu komut kullanarak zorla bitirdi!"
 
 Signs:
@@ -171,28 +176,28 @@ Signs:
     Ending: "&lBitiyor"
     Restarting: "&c&lYeniden başlatılıyor"
   Lines:
-    - "&4&lTNT Run"
+    - "&4&lClassic Duels"
     - "%state%"
     - "%mapname%"
-    - "&5[%players%/%maxplayers%]"
+    - "&5[%players%/2]"
 
 Arena-Selector:
   Inventory-Title: "Arena seçici"
   Item:
     Lore:
-      - "&7TNT Run &f- &e%mapname%"
+      - "&7Classic Duels &f- &e%mapname%"
       - " "
       - " "
-      - "  &fAktif: %playersize%/%maxplayers%"
+      - "  &fAktif: %playersize%/2"
       - "  &fDurum: %state%"
       - " "
       - " "
       - "&eArenaya giriş yapmak için tıklayın"
 
 Validator:
-  Invalid-Arena-Configuration: "[TNTRun] Arena %arena% bazı eksik yapılandırmalara sahip! Hata: %error%"
-  Instance-Started: "[TNTRun] Arena %arena% başarıyla başlatıldı!"
-  No-Instances-Created: "[TNTRun] Oluşturulmuş herhangi bir arena bulunamadı!"
+  Invalid-Arena-Configuration: "[ClassicDuels] Arena %arena% bazı eksik yapılandırmalara sahip! Hata: %error%"
+  Instance-Started: "[ClassicDuels] Arena %arena% başarıyla başlatıldı!"
+  No-Instances-Created: "[ClassicDuels] Oluşturulmuş herhangi bir arena bulunamadı!"
 
 # Don't edit it. But who's stopping you? It's your server!
 File-Version: 0
