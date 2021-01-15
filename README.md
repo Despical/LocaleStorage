@@ -11,7 +11,7 @@ This repository is dedicated to Despical's plugins translations. If you are a na
 
 ### Some more information
 * Translating header part and comments is not required but can be translated.
-* After translation you can add yourself to [CONTRIBUTORS](https://github.com/Despical/LocaleStorage/blob/main/CONTRIBUTORS.md) file and if you join to our [Discord Server](https://discord.com/invite/Vhyy4HA) you can get a special role.
+* After translation you can add yourself to [CONTRIBUTORS](https://github.com/Despical/LocaleStorage/blob/main/CONTRIBUTORS.md) file and if you join to our [Discord server](https://discord.com/invite/Vhyy4HA) you can get a special role.
 * You can translate any file more than once but please include details in pull request.
 * After your pull request is merged you can delete the repository and you would still be identified as a contributor after deletion.
 * Editing `File-Version` section will provide to be closed your pull request.

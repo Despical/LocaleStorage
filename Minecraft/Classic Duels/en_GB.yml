@@ -101,8 +101,7 @@ In-Game:
   Game-Chat-Format: "&7%player%: &f%message%"
   Game-Death-Format: "&7[&4☠&7] &r"
   Spectator:
-    Spectator-Item-Name: "&b&lTeleporter &7(Right Click)"
-    Spectator-Menu-Name: "&8Teleporter"
+    Target-Player-Score: "&7Score: %score%"
     Settings-Menu:
       Item-Name: "&b&lSpectator settings &7(Right Click)"
       Inventory-Name: "&8Spectator settings"
@@ -136,8 +135,6 @@ In-Game:
         - "&f&lOpponent: &7%opponent%"
         - ""
         - "&a&l---------------------------------------------"
-      Kicked-For-Premium-Slot: "&c%player% got removed from the game to make a place for premium player!"
-      You-Were-Kicked-For-Premium-Slot: "&cYou got kicked out of the game to make a place for a premium player!"
     Join: "&7%player%,&e has joined (&b%players%&e/&b2&e)!"
     Leave: "&7%player%,&e left the game (&b%players%&e/&b2&r)!"
     Game-End-Messages:
@@ -184,6 +181,7 @@ Signs:
 Arena-Selector:
   Inventory-Title: "Arena selector"
   Item:
+    Name: "&f%mapname%"
     Lore:
       - "&7Classic Duels &f- &e%mapname%"
       - " "
@@ -195,12 +193,12 @@ Arena-Selector:
       - "&eClick to join this arena"
 
 Validator:
-  Invalid-Arena-Configuration: "[ClassicDuels] Arena %arena% has invalid configuration! Missing node: %error%"
-  Instance-Started: "[ClassicDuels] Arena %arena% instance successfully started!"
-  No-Instances-Created: "[ClassicDuels] There are no arena instances created in configuration!"
+  Invalid-Arena-Configuration: "[Classic Duels] Arena %arena% has invalid configuration! Missing node: %error%"
+  Instance-Started: "[Classic Duels] Arena %arena% instance successfully started!"
+  No-Instances-Created: "[Classic Duels] There are no arena instances created in configuration!"
 
 # Don't edit it. But who's stopping you? It's your server!
-File-Version: 0
+File-Version: 1
 
 # If you change the value the file will be replaced with default yaml
 # So you shouldn't edit here. Be careful to make changes here!
