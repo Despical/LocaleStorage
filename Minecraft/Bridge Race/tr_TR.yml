@@ -1,0 +1,195 @@
+#     You can translate Bridge Race messages here.
+#             Color codes (&) supported.
+#
+#              Use \n to make new line
+#        Some messages like kit and kit items
+#        descriptions don't support new lines
+# they are wrapped every 40 characters automatically
+#
+#     Some messages support their own placeholders
+#                  like %player%
+
+# Bridge Race Commands Messages
+Commands:
+  Did-You-Mean: "&cBunu mu demek istemiştiniz &7/%command%&c?"
+  Are-You-Sure: "&cBunu gerçekten yapmak istiyor musun? Onaylamak için komutu &610 saniye içinde &ctekrar yazın!"
+  Teleported-To-The-Lobby: "&7Lobiye ışınlanıldı!"
+  Removed-Game-Instance: "&aArena başarıyla silindi!"
+  Already-Ending: "&cBU arena zaten bitiş aşamasında!"
+  No-Arena-Like-That: "&cBu isimde bir arena bulunamadı!"
+  Look-Sign: "&cBu komutu kullanabilmek için bir tabelaya bakmalısın!"
+  Type-Arena-Name: "&cLütfen arenanın adını yazın!"
+  No-Free-Arenas: "&cHiç müsait arena bulunamadı!"
+  Statistics:
+    Type-Name: "&cLütfen görüntülemek istediğiniz istatistik ismini yazın!"
+    Invalid-Name: "&cGeçersiz istatistik ismi! Var olan istatistikler: win_streak, games_played, wins and loses."
+    Header: "&8&m-------------------[&6 En iyi 10 &8&m]-------------------"
+    Format: "&e#%position% %name% - %value% &7%statistic%"
+  Only-By-Player: "&cBu komut sadece oyuncular tarafından kullanılabilir!"
+  Not-Playing: "&cBu komutu sadece oyunun içinden kullanılabilirsin!"
+  No-Permission: "&cBu komutu kullanmak için yeterli yetkiye sahip değilsin!"
+  Admin-Commands:
+    Teleported-To-Player: "&aOyuncuya ışınlanıldı!"
+    Player-Not-Found: "&cOyuncu bulunamadı!"
+    Success-Reload: "&aSistem başarıyla bütün konfigürasyon dosyalarını ve arenaları yeniledi!"
+    List-Command:
+      Format: "&aVar olan arenalar: &7%list%"
+      No-Arenas-Created: "&cGösterilebilecek herhangi bir arena bulunamadı!"
+  Stats-Command:
+    Header: "&l-----[SENİN İSTATİSTİKLERİN]-----"
+    Header-Other: "&l-----[%player% için İSTATİSTİKLER]-----"
+    Footer: "&l----------------------"
+    Kills: "&aÖldürme sayısı: &e"
+    Deaths: "&aÖlüm sayısı: &e"
+    Wins: "&aKazanma sayısı: &e"
+    Loses: "&aKaybetme sayısı: &e"
+    Games-Played: "&aOynanılan oyun sayısı: &e"
+    Win-Streak: "&aGalibiyet serisi: &e"
+
+# In-game scoreboard messages.
+# Please do not use more than 48 chars here! COLOR CODES INCLUDED.
+# Can be used up to 144 characters in 1.14 and higher versions.
+Scoreboard:
+  Title: "&e&lBridge Race"
+  Content:
+    # Contents of scoreboard for players
+    Playing:
+      - ""
+      - "&fKalan Zaman: %formatted_time%"
+      - ""
+      - "&f&lRakip:"
+      - "  &7%opponent%"
+      - ""
+      - "&fGalibiyet Serisi: &a%win_streak%"
+      - ""
+      - "&ewww.despical.com"
+    Waiting:
+      - ""
+      - "&fHarita: &a%mapname%"
+      - "&fOyuncular: &a%players%/2"
+      - ""
+      - "&fBekleniyor..."
+      - ""
+      - "&ewww.despical.com"
+    Starting:
+      - ""
+      - "&fHarita: &a%mapname%"
+      - "&fOyuncular: &a%players%/2"
+      - ""
+      - "&a%time% &fiçinde başlıyor"
+      - ""
+      - "&ewww.despical.com"
+
+# Has usage only when bossbar is enabled in config.yml
+Bossbar:
+  Main-Title: "&a&lBridge Race &f&l- &6&lDespical"
+  Starting-In: "&e&l%time% &f&liçinde başlayacak"
+  Waiting-For-Players: "&4&lDaha fazla oyuncu için bekleniyor..."
+  In-Game-Info: "&b&lDESPICAL &e&ltarafından &f&lBridge Race &e&loynuyorsun"
+  Game-Ended: "&c&lOyun sona erdi! &b&lClassic Duels &c&loynuyordun"
+
+In-Game:
+  #Used in most game messages.
+  Plugin-Prefix: "&8[&eBridge Race&8] "
+  Already-Playing: "&cZaten bir oyundasın! /br leave komutu kullanarak oyundan çıkabilirsin."
+  Join-No-Permission: "&cBu arenaya girebilmek için &6%permission% &cyetkisine sahip değilsin!"
+  Full-Game-No-Permission: "&cDolu oyunlara girebilmek için yeterli yetkiye sahip değilsin!"
+  No-Slots-For-Premium: "&cBu oyun tamamen öncelikli oyuncularla dolu! Üzgünüm!"
+  You-Are-Spectator: "&cArtık bir seyircisin! Şu an uçabilirsin!"
+  Only-Command-Ingame-Is-Leave: "&cKomut kullanabilmek için önce oyundan çıkmalısın. Çalışan tek komut: /br leave!"
+  # Join cancelled via external plugin that uses Bridge Race API.
+  Join-Cancelled-Via-API: "&cBu oyuna giremezsin!"
+  Arena-Not-Configured: "&cArena daha hazırlanmadı! Bir yetkiliye başvurun!"
+  Game-Chat-Format: "&7%player%: &f%message%"
+  Spectator:
+    Spectator-Item-Name: "&b&lIşınlayıcı &7(Sağ Tıkla)"
+    Spectator-Menu-Name: "&8Işınlayıcı"
+    Settings-Menu:
+      Item-Name: "&b&lİzleyici ayarları &7(Sağ Tıkla)"
+      Inventory-Name: "&8İzleyici ayarları"
+      Speed-Name: "&aHız"
+      No-Speed: "&aHız Yok"
+      Enable-Night-Vision: "&aGece Görüşünü Etkinleştir"
+      Enable-Night-Vision-Lore:
+        - "&7Gece görüşünü etkinleştirmek için tıkla!"
+      Disable-Night-Vision: "&cGece Görüşünü Kapat"
+      Disable-Night-Vision-Lore:
+        - "&7Gece görüşünü kapatmak için tıklayın!"
+      Hide-Spectators: "&cİzleyicileri Gizle"
+      Hide-Spectators-Message: "&cArtık diğer izleyicileri görmeyeceksin!"
+      Hide-Spectators-Lore:
+        - "&7Diğer izleyicileri gizlemek için tıkla!"
+      Show-Spectators: "&aİzleyicileri Göster"
+      Show-Spectators-Message: "&aArtık izleyicileri göreceksin!"
+      Show-Spectators-Lore:
+        - "&7Diğer izleyicileri göstermek için tıkla!"
+  Messages:
+    Lobby-Messages:
+      Start-In: "&eOyun &c%time%&e saniye içinde başlayacak!"
+      Waiting-For-Players: "&7Oyuncular için bekleniyor... Başlamak için 2 oyuncuya ihtiyacımız var."
+      Enough-Players-To-Start: "&7Artık yeterli oyuncuya sahibiz, oyun birazdan başlayacak!"
+      Game-Started:
+        - "&a&l---------------------------------------------"
+        - "&f&lBridge Race"
+        - ""
+        - "&e&lRakiplerini ele!"
+        - ""
+        - "&f&lRakip: &7%opponent%"
+        - ""
+        - "&a&l---------------------------------------------"
+      Kicked-For-Premium-Slot: "&c%player% adlı oyuncu öncelikli oyuncuya yer açabilmek için oyundan atıldı!"
+      You-Were-Kicked-For-Premium-Slot: "&cÖncelikli oyuncuya yer açılabilmesi için oyundan atıldın!"
+    Join: "&7%player%,&e oyuna katıldı (&b%players%&e/&b2&e)!"
+    Leave: "&7%player%,&e oyundan ayrıldı (&b%players%&e/&b2&r)!"
+    Game-End-Messages:
+      Titles:
+        Win: "&6&lZAFER!"
+        Lose: "&c&lOyun Bitti!"
+      Subtitles:
+        Win: "&f%player% yarışı kazandı!"
+        Lose: "&f%player% yarışı kazandı!"
+      Summary-Message:
+        - "&a&m----------------------------------------------------"
+        - "&e&lBridge Race &7- &f&l%duration%"
+        - ""
+        - "&7%winner% &e&lKAZANDI! &7%loser%"
+        - "&a%winner_placed_blocks% &7- &f&lKoyulan Bloklar &7- &a%loser_placed_blocks%"
+        - "&a%winner_broken_blocks% &7- &f&lKırılan Bloklar &7- &a%loser_broken_blocks%"
+        - "&a%winner_fell_into_void% &7- &f&lBoşluğa Düşme &7- &a%loser_fell_into_void%"
+        - "&a%winner_average_placed_blocks% &7- &f&lSaniye Başına Koyulan Bloklar &7- &a%loser_average_placed_blocks%"
+        - ""
+        - "&a&m----------------------------------------------------"
+    Admin-Messages:
+      Stopped-Game: "&bBir yetkili oyunu komut kullanarak zorla bitirdi!"
+
+Signs:
+  Please-Type-Arena-Name: "&cLütfen 2. satıra arena ismini yazın!"
+  Arena-Doesnt-Exists: "&cBu isme sahip bir arena bulunamadı!"
+  Doesnt-Have-Permission: "&cBu tabelayı kırabilmek için yeterli yetkiye sahip değilsin!"
+  Sign-Created: "&aTabela başarıyla oluşturuldu!"
+  Sign-Removed: "&aTabela başarıyla silindi!"
+  Game-States:
+    Waiting: "&lBekleniyor..."
+    Inactive: "&lİnaktif..."
+    In-Game: "&lOyunda"
+    Starting: "&e&lBaşlıyor"
+    Full-Game: "&c&lDOLU"
+    Ending: "&lBitiyor"
+    Restarting: "&c&lYeniden başlatılıyor"
+  Lines:
+    - "&4&lBridge Race"
+    - "%state%"
+    - "%mapname%"
+    - "&5[%players%/2]"
+
+Validator:
+  Invalid-Arena-Configuration: "[Bridge Race] Arena %arena% bazı eksik yapılandırmalara sahip! Hata: %error%"
+  Instance-Started: "[Bridge Race] Arena %arena% başarıyla başlatıldı!"
+  No-Instances-Created: "[Bridge Race] Oluşturulmuş herhangi bir arena bulunamadı!"
+
+# Don't edit it. But who's stopping you? It's your server!
+File-Version: 0
+
+# If you change the value the file will be replaced with default yaml
+# So you shouldn't edit here. Be careful to make changes here!
+Language: tr
