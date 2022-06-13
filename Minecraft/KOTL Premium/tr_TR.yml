@@ -1,0 +1,102 @@
+#        You can translate KOTL messages here.
+#             Color codes (&) supported.
+#
+#              Use \n to make new line
+#
+#     Some messages support their own placeholders
+#                 like %player%
+
+# KOTL Premium Command Messages
+Commands:
+  Did-You-Mean: "&cBunu mu demek istemiştiniz &7/%command%&c?"
+  Are-You-Sure: "&cBunu gerçekten yapmak istiyor musun? Onaylamak için komutu &610 saniye içinde &ctekrar yazın!"
+  Removed-Game-Instance: "&aArena başarıyla silindi."
+  No-Arena-Like-That: "&cBu isimle herhangi bir arena bulunamadı!"
+  Arena-Not-Configured: "&cBu arena henüz hazır halde değil. Eğer bunun bir hata olduğunu düşünüyorsan bir yetkiliye başvur!"
+  Only-By-Player: "&cBu komut sadece oyuncular tarafından kullanılabilir!"
+  No-Permission: "&cBu komutu kullanmak için yeterli yetkiye sahip değilsin!"
+  Success-Reload: "&aSistem başarıyla bütün konfigürasyon dosyalarını ve arenaları yeniledi!"
+  Player-Not-Found: "&cBu isimle herhangi bir oyuncu bulunamadı!"
+  Statistics:
+    Type-Name: "&cLütfen görüntülemek istediğiniz istatistik ismini yazın!"
+    Invalid-Name: "&cGeçersiz istatistik ismi! Var olan istatistikler: score or tours_played"
+    Header: "&8&m-------------------[&6 En iyi 10 &8&m]-------------------"
+    Format: "&e#%position% %name% - %value% &7%statistic%"
+  Stats-Command:
+    Header: "&l[-----SENİN İSTATİSTİKLERİN-----]"  
+    Header-Other: "&l[-----%player% için İSTATİSTİKLER-----]"
+    Footer: "&l[--------------------]"
+    Score: "&aSkor: &e"
+    Tours-Played: "&aOynanılan tur sayısı: &e"
+  List-Command:
+    No-Arenas-Created: "&cGösterilebilecek herhangi bir arena bulunamadı!"
+    Format: "&aVar olan arenalar: &7%list%"
+
+# Used in most game messages.
+In-Game:
+  Plugin-Prefix: "&8[&6KOTL&8] "
+  Join: "&7%player% &badlı oyuncu oyuna katıldı!"
+  Leave: "&7%player% &badlı oyuncu oyundan ayrıldı!"
+  Already-Playing: "&cZaten oyundasın!"
+  Chat-Format: "&7%player%: &f%message%"
+  Only-Command-Ingame-Is-Leave: "&cKomut kullanabilmek için oyundan ayrılmalısın."
+  New-King: "&bİşte yeni kral: &7%king%!"
+  Last-King-Hologram: "&bSon kral: &e%king%"
+  There-Is-No-King: "Kimse"
+  Clicked-Death-Block: "&7%player% &bölüm bloğuna tıkladı ve öldü!"
+
+# Has usage only when boss bar is enabled in config
+# Also not compatible with the versions before Minecraft 1.9
+# Color values: PINK, BLUE, RED, GREEN, YELLOW, PURPLE and WHITE
+# Style values: SOLID, SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20
+Boss-Bar:
+  Color: BLUE
+  Style: SOLID
+  Interval: 300 # 20 ticks = 1 second
+  Messages:
+    - "&e&lPLAYING &f&lKING OF THE LADDER &e&lby &b&lDESPICAL"
+    - "&e&lTHANK YOU FOR &b&lPURCHASING &e&lAND &b&lSUPPORTING &e&lUS!"
+    - "&e&lYOU LIKE THE PLUGIN? RATE US ON SPIGOT!"
+
+Signs:
+  Please-Type-Arena-Name: "&cLütfen 2. satırda arena ismini girin!"
+  Look-Sign: "&cBu operasyonu gerçekleştirebilmek için bir tabelaya bakmalısın!"
+  Arena-Doesnt-Exists: "&cBu isme sahip bir arena bulamadık!"
+  Doesnt-Have-Permission: "&cBu tabelayı kırabilmek için yeterli yetkiye sahip değilsin!"
+  Sign-Created: "&aBaşarıyla oyun tabelası oluşturdun!"
+  Sign-Removed: "&aOyun tabelası başarıyla kaldırıldı!"
+  Lines:
+    - "&c&lKOTL Premium"
+    - "&f&l%map_name%"
+    - "%players% aktif"
+    - "&aKral: &f%king_name%"
+
+# Don't use more than 48 characters if you use old versions of Minecraft.
+# Can be used up to 144 characters in 1.14 and higher versions
+Scoreboard:
+  Title: "&e&lKOTL Premium"
+  Content:
+    # Can be find more information about placeholders on our wiki.
+    Playing:
+      - ""
+      - "Arena: &a%arena%"
+      - ""
+      - "Oyuncular: &a%players%"
+      - ""
+      - "Kral: &a%king%"
+      - ""
+      - "Skor: &a%score%"
+      - ""
+      - "&ewww.github.com/Despical"
+  
+Validator:
+  Invalid-Arena-Configuration: "[KOTL] Arena %arena% bazı eksik yapılandırmalara sahip! Hata: %error%"
+  Instance-Started: "[KOTL] Arena %arena% başarıyla başlatıldı!"
+  No-Instances-Created: "[KOTL] Oluşturulmuş herhangi bir arena bulunamadı!"
+
+# Don't edit it. But who's stopping you? It's your server!
+File-Version: 0
+
+# If you change the value the file will be replaced with default yaml
+# So you shouldn't edit here. Be careful to make changes here!
+Language: tr
