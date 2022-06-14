@@ -1,4 +1,4 @@
-#        You can translate KOTL messages here.
+#        You can translate KOTLP messages here.
 #             Color codes (&) supported.
 #
 #              Use \n to make new line
@@ -34,7 +34,7 @@ Commands:
 
 # Used in most game messages.
 In-Game:
-  Plugin-Prefix: "&8[&6KOTL&8] "
+  Plugin-Prefix: "&8[&6KOTLP&8] "
   Join: "&7%player% &bist dem Spiel beigetreten!"
   Leave: "&7%player% &bhat das Spiel verlassen!"
   Already-Playing: "&cYou are already playing King of the Ladder!"
@@ -90,9 +90,9 @@ Scoreboard:
       - "&ewww.github.com/Despical"
   
 Validator:
-  Invalid-Arena-Configuration: "[KOTL] Arena %arena% hat fehlerhafte Konfigurationen! Es fehlt: %error%"
-  Instance-Started: "[KOTL] Arena %arena% erfolgreich erstellt!"
-  No-Instances-Created: "[KOTL] Es sind keinen Arenen konfiguriert!"
+  Invalid-Arena-Configuration: "[KOTLP] Arena %arena% hat fehlerhafte Konfigurationen! Es fehlt: %error%"
+  Instance-Started: "[KOTLP] Arena %arena% erfolgreich erstellt!"
+  No-Instances-Created: "[KOTLP] Es sind keinen Arenen konfiguriert!"
 
 # If you change the value the file will be replaced with default yaml
 # So you shouldn't edit here. Be careful to make changes here!
