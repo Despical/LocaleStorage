@@ -7,12 +7,14 @@
 # they are wrapped every 40 characters automatically
 #
 #     Some messages support their own placeholders
-#  
+#                 like %player%
+#
 
 # King of the Ladder Command Messages
 Commands:
   Did-You-Mean: "&cBunu mu demek istemiştiniz &7/%command%&c?"
   Are-You-Sure: "&cBunu gerçekten yapmak istiyor musun? Onaylamak için komutu &610 saniye içinde &ctekrar yazın!"
+  Type-Arena-Name: "&cLütfen bir arena ismi girin!"
   Removed-Game-Instance: "&aArena başarıyla silindi."
   No-Arena-Like-That: "&cBu isimle herhangi bir arena bulunamadı!"
   Only-By-Player: "&cBu komut sadece oyuncular tarafından kullanılabilir!"
@@ -34,8 +36,8 @@ Commands:
     No-Arenas-Created: "&cGösterilebilecek herhangi bir arena bulunamadı!"
     Format: "&aVar olan arenalar: &7%list%"
 
+# Used in most game messages.
 In-Game:
-  # Used in most game messages.
   Plugin-Prefix: "&8[&6KOTL&8] "
   Join: "&7%player% &badlı oyuncu oyuna katıldı!"
   Leave: "&7%player% &badlı oyuncu oyundan ayrıldı!"
@@ -48,7 +50,7 @@ In-Game:
 
 # Has usage only when bossbar is enabled in config.yml
 # Also not compatible with the versions before 1.9
-Bossbar:
+Boss-Bar:
   Game-Info: "&b&lDESPICAL &e&ltarafından &f&lKING OF THE LADDER &e&lOYNUYORSUN"
   
 # In-game scoreboard messages.
@@ -67,15 +69,12 @@ Scoreboard:
       - ""
       - "Skor: &a%score%"
       - ""
-      - "&ewww.despical.com"
+      - "&epatreon/Despical"
   
 Validator:
   Invalid-Arena-Configuration: "[KOTL] Arena %arena% bazı eksik yapılandırmalara sahip! Hata: %error%"
   Instance-Started: "[KOTL] Arena %arena% başarıyla başlatıldı!"
   No-Instances-Created: "[KOTL] Oluşturulmuş herhangi bir arena bulunamadı!"
-
-# Don't edit it. But who's stopping you? It's your server!
-File-Version: 0
 
 # If you change the value the file will be replaced with default yaml
 # So you shouldn't edit here. Be careful to make changes here!
