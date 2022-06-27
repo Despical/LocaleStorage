@@ -1,5 +1,5 @@
 # Locale Storage
-This repository is dedicated to Despical's plugins translations. If you are a native speaker you can help us with translating. Please read the instructions and informations below before submitting a pull request otherwise your pull request can be closed.
+This repository is dedicated to Despical's plugins translations. If you are a native speaker you can help us with translating. Please read the instructions and some information below before submitting a pull request otherwise your pull request can be closed.
 
 ### Steps to translate
 1. Fork this repository and then clone it.
@@ -11,7 +11,7 @@ This repository is dedicated to Despical's plugins translations. If you are a na
 
 ### Some more information
 * Translating header part and comments is not required but can be translated.
-* After translation you can add yourself to [CONTRIBUTORS](https://github.com/Despical/LocaleStorage/blob/main/CONTRIBUTORS.md) file and if you join to our Discord server you can get a special role.
+* After translation you can add yourself to [CONTRIBUTORS](https://github.com/Despical/LocaleStorage/blob/main/CONTRIBUTORS.md) file and if you join to our [Discord server](https://www.discord.gg/rVkaGmyszE) you can get a special role.
 * You can translate any file more than once but please include details in pull request.
 * After your pull request is merged you can delete the repository and you would still be identified as a contributor after deletion.
 * Submitting pull request without any information or without enough details will provide to be closed.
