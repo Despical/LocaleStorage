@@ -9,7 +9,7 @@
 #     Some messages support their own placeholders
 #                 like %player%
 
-# One in the Chamber Command Messages
+# OITC Command Messages
 Commands:
   Did-You-Mean: "&cBunu mu demek istemiştiniz &7/%command%&c?"
   Are-You-Sure: "&cBunu gerçekten yapmak istiyor musun? Onaylamak için komutu &610 saniye içinde &ctekrar yazın!"
@@ -45,13 +45,13 @@ Commands:
     Highest-Score: "&aEn yüksek skor: &e"
     Games-Played: "&aOynanan oyunlar: &e"
   
-# In-game scoreboard messages.
-# Please do not use more than 48 chars here! COLOR CODES INCLUDED.
+# Don't use more than 48 characters if you use old versions of Minecraft.
+# Can be used up to 144 characters in 1.14 and higher versions.
 Scoreboard:
   Title: "&e&lOITC"
   Top-Player-Format: "&f%score% &6%player%"
   Content:
-    # Contents of scoreboard for players
+    # Can be find more information about placeholders on our wiki.
     Playing:
       - ""
       - "%top_player_1%"
@@ -86,16 +86,16 @@ Scoreboard:
       - ""
       - "&ewww.despical.com"
 
-# Has usage only when bossbar is enabled in config.yml
-Bossbar:
+# Has usage only when boss bar is enabled in config.yml
+Boss-Bar:
   Main-Title: "&a&lOne in the Chamber &f&l- &6&lDespical"
   Starting-In: "&e&l%time% &f&liçinde başlıyor"
   Waiting-For-Players: "&4&lDaha çok oyuncu için bekleniyor..."
   In-Game-Info: "&e&lPlaying &f&lONE IN THE CHAMBER &e&lby &b&lDESPICAL"
   Game-Ended: "&c&lOyun bitti! &b&lOITC &c&loynuyordun"
 
+# Used in most game messages.
 In-Game:
-  #Used in most game messages.
   Plugin-Prefix: "&8[&6OITC&8] "
   Already-Playing: "&cZaten bir oyundasın! /oitc leave komutu kullanarak oyundan çıkabilirsin."
   Join-No-Permission: "&cBu arenaya girebilmek için &6%permission% &cyetkisine sahip değilsin!"
@@ -134,13 +134,13 @@ In-Game:
   Messages:
     Lobby-Messages:
       Start-In: "&7Oyun &b%time%&7 saniye içinde başlıyor!"
-      Waiting-For-Players: "&7Oyuncular için bekleniyor... Başlamak için en az &b%minplayers% &7oyuncuya ihtiyacımız var."
+      Waiting-For-Players: "&7Oyuncular için bekleniyor... Başlamak için en az &b%minimum_players% &7oyuncuya ihtiyacımız var."
       Enough-Players-To-Start: "&7Artık yeterli oyuncu sayısına sahibiz. Oyun birazdan başlayacak!"
       Game-Started: "&7Oyun başladı! İlk 25'e ulaşan oyuncu kazanır!"
       Kicked-For-Premium-Slot: "&c%player% adlı oyuncu öncelikli oyuncuya yer açabilmek için oyundan atıldı!"
       You-Were-Kicked-For-Premium-Slot: "&cÖncelikli oyuncuya yer açılabilmesi için oyundan atıldın!"
-    Join: "&b%player% &7adlı oyuncu oyuna giriş yaptı &8(&7%players%/%maxplayers%&8)&7!"
-    Leave: "&b%player% &7adlı oyuncu oyundan çıktı &8(&7%players%/%maxplayers%&8)&7!"
+    Join: "&b%player% &7adlı oyuncu oyuna giriş yaptı &8(&7%players%/%maximum_players%&8)&7!"
+    Leave: "&b%player% &7adlı oyuncu oyundan çıktı &8(&7%players%/%maximum_players%&8)&7!"
     Death: "&9%player% &eadlı oyuncu &9%killer% &etarafından öldürüldü!"
     Kill-Streak: "&9%killer% &b%kill_streak%. &ekişiyi art arda öldürdü!"
     Seconds-Left-Title: "&c%time% &esaniye kaldı!"

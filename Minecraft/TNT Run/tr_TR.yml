@@ -44,12 +44,12 @@ Commands:
     Coins: "&aPuanlar: &e"
     Longest-Survive: "&aEn uzun yaşayış: &e"
   
-# In-game scoreboard messages.
-# Please do not use more than 48 chars here! COLOR CODES INCLUDED.
+# Don't use more than 48 characters if you use old versions of Minecraft.
+# Can be used up to 144 characters in 1.14 and higher versions.
 Scoreboard:
   Title: "&e&lTNTRun"
   Content:
-    # Contents of scoreboard for players
+    # Can be find more information about placeholders on our wiki.
     Playing:
       - "&7Zaman: %formatted_time%"
       - ""
@@ -78,16 +78,16 @@ Scoreboard:
       - ""
       - "&ewww.despical.com"
 
-# Has usage only when bossbar is enabled in config.yml
-Bossbar:
+# Has usage only when boss bar is enabled in config
+Boss-Bar:
   Main-Title: "&a&lTNT Run &f&l- &6&lDespical"
   Starting-In: "&e&l%time% &f&liçinde başlayacak"
   Waiting-For-Players: "&4&lDaha fazla oyuncu için bekleniyor..."
   In-Game-Info: "&b&lDESPICAL &e&ltarafından &f&lTNT RUN &e&lOYNUYORSUN"
   Game-Ended: "&c&lOyun sona erdi! &b&lTNT Run &c&lOYNUYORDUN"
 
+# Used in most game messages.
 In-Game:
-  #Used in most game messages.
   Plugin-Prefix: "&8[&6TNTRun&8] "
   Already-Playing: "&cZaten bir oyundasın! /tntrun leave komutu kullanarak oyundan çıkabilirsin."
   Join-No-Permission: "&cBu arenaya girebilmek için &6%permission% &cyetkisine sahip değilsin!"
@@ -126,13 +126,13 @@ In-Game:
   Messages:
     Lobby-Messages:
       Start-In: "&7Oyun &b%time% &7saniye içinde başlıyor!"
-      Waiting-For-Players: "&7Oyuncular için bekleniyor... Başlamak için en az &b%minplayers% &7oyuncuya ihtiyacımız var."
+      Waiting-For-Players: "&7Oyuncular için bekleniyor... Başlamak için en az &b%minimum_players% &7oyuncuya ihtiyacımız var."
       Enough-Players-To-Start: "&7Artık yeterli oyuncuya sahibiz. Oyun birazdan başlayacak!"
       Game-Started: "&7Oyun başladı! Koşmayı kesmeyin!"
       Kicked-For-Premium-Slot: "&c%player% adlı oyuncu öncelikli oyuncuya yer açabilmek için oyundan atıldı!"
       You-Were-Kicked-For-Premium-Slot: "&cÖncelikli oyuncuya yer açılabilmesi için oyundan atıldın!"
-    Join: "&b%player% &7adlı oyuncu oyuna giriş yaptı &8(&7%players%/%maxplayers%&8)&7!"
-    Leave: "&b%player% &7adlı oyuncu oyundan çıktı &8(&7%players%/%maxplayers%&8)&7!"
+    Join: "&b%player% &7adlı oyuncu oyuna giriş yaptı &8(&7%players%/%maximum_players%&8)&7!"
+    Leave: "&b%player% &7adlı oyuncu oyundan çıktı &8(&7%players%/%maximum_players%&8)&7!"
     Death: "&7%player% &öldü!\n&e%players% oyuncu hayatta."
     Earned-Coin: "&e+15 ekstra puan (Yaşama bonusu)"
     Game-End-Messages:
@@ -176,26 +176,10 @@ Signs:
     - "%mapname%"
     - "&5[%players%/%maxplayers%]"
 
-Arena-Selector:
-  Inventory-Title: "Arena seçici"
-  Item:
-    Lore:
-      - "&7TNT Run &f- &e%mapname%"
-      - " "
-      - " "
-      - "  &fAktif: %playersize%/%maxplayers%"
-      - "  &fDurum: %state%"
-      - " "
-      - " "
-      - "&eArenaya giriş yapmak için tıklayın"
-
 Validator:
   Invalid-Arena-Configuration: "[TNTRun] Arena %arena% bazı eksik yapılandırmalara sahip! Hata: %error%"
   Instance-Started: "[TNTRun] Arena %arena% başarıyla başlatıldı!"
   No-Instances-Created: "[TNTRun] Oluşturulmuş herhangi bir arena bulunamadı!"
-
-# Don't edit it. But who's stopping you? It's your server!
-File-Version: 0
 
 # If you change the value the file will be replaced with default yaml
 # So you shouldn't edit here. Be careful to make changes here!

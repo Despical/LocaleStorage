@@ -9,7 +9,7 @@
 #     Some messages support their own placeholders
 #                 like %player%
 
-# One in the Chamber Command Messages
+# OITC Command Messages
 Commands:
   Did-You-Mean: "&cMeintest du &7/%command%&c?"
   Are-You-Sure: "&cBist du dir sicher den Befehl auszufuehren? Gebe den Befehl &6innerhalb 10 Sekunden &cto ein um es zu bestaetigen!"
@@ -45,13 +45,13 @@ Commands:
     Highest-Score: "&aHoehster Score: &e"
     Games-Played: "&aSpiele gespielt: &e"
   
-# In-game scoreboard messages.
-# Please do not use more than 48 chars here! COLOR CODES INCLUDED.
+# Don't use more than 48 characters if you use old versions of Minecraft.
+# Can be used up to 144 characters in 1.14 and higher versions.
 Scoreboard:
   Title: "&e&lOITC"
   Top-Player-Format: "&f%score% &6%player%"
   Content:
-    # Contents of scoreboard for players
+    # Can be find more information about placeholders on our wiki.
     Playing:
       - ""
       - "%top_player_1%"
@@ -64,7 +64,7 @@ Scoreboard:
       - ""
       - "&fZeit uebrig: &6%formatted_time%"
       - ""
-      - "&ewww.despical.com"
+      - "&epatreon.com/Despical"
     Waiting:
       - ""
       - "&fSpieler: &a%players%"
@@ -73,7 +73,7 @@ Scoreboard:
       - ""
       - "&fMap: &a%mapname%"
       - ""
-      - "&ewww.despical.com"
+      - "&epatreon.com/Despical"
     Starting:
       - ""
       - "&fStart in: &a%time%"
@@ -84,18 +84,18 @@ Scoreboard:
       - ""
       - "&fMap: &a%mapname%"
       - ""
-      - "&ewww.despical.com"
+      - "&epatreon.com/Despical"
 
-# Has usage only when bossbar is enabled in config.yml
-Bossbar:
+# Has usage only when boss bar is enabled in config.yml
+Boss-Bar:
   Main-Title: "&a&lOne in the Chamber &f&l- &6&lDespical"
   Starting-In: "&f&lStart in: &e&l%time%"
   Waiting-For-Players: "&4&lWarte auf mehr Spieler..."
   In-Game-Info: "&e&lSpielt &f&lONE IN THE CHAMBER &e&lby &b&lDESPICAL"
   Game-Ended: "&c&lDie Runde ist zu Ende! Du hast &b&lOITC &c&1gespielt"
 
+# Used in most game messages.
 In-Game:
-  #Used in most game messages.
   Plugin-Prefix: "&8[&6OITC&8] "
   Already-Playing: "&cDu bist schon im Spiel! Du kannst mit /oitc leave die Runde verlassen."
   Join-No-Permission: "&cDu hast nicht die Berechtigung &6%permission% &cum eine Arena zu betreten!"
@@ -134,13 +134,13 @@ In-Game:
   Messages:
     Lobby-Messages:
       Start-In: "&7Das Spiel startet in &b%time%&7 Sekunden!"
-      Waiting-For-Players: "&7Warte auf Spieler... Wir brauchen mindestens &b%minplayers%&7 Spieler fuer den Start."
+      Waiting-For-Players: "&7Warte auf Spieler... Wir brauchen mindestens &b%minimum_players%&7 Spieler fuer den Start."
       Enough-Players-To-Start: "&7Jetzt haben wir genug Spieler. Das Spiel startet bald!"
       Game-Started: "&7Spiel gestartet! Erster Spieler der 25 kills erreicht gewinnt!"
       Kicked-For-Premium-Slot: "&c%player% wurde entfernt um einem Premium Spieler platz zu machen!"
       You-Were-Kicked-For-Premium-Slot: "&cDu wurdest aus dem Spiel entfernt um einem Premium Spieler platz zu machen!"
-    Join: "&b%player%&7 ist beigetreten &8(&7%players%/%maxplayers%&8)&7!"
-    Leave: "&b%player% &7hat das Spiel verlassen &8(&7%players%/%maxplayers%&8)&7!"
+    Join: "&b%player%&7 ist beigetreten &8(&7%players%/%maximum_players%&8)&7!"
+    Leave: "&b%player% &7hat das Spiel verlassen &8(&7%players%/%maximum_players%&8)&7!"
     Death: "&9%player% &ewurde von &9%killer% getoetet!"
     Kill-Streak: "&9%killer% &eist auf einem &b%kill_streak% &ekill streak!"
     Seconds-Left-Title: "&c%time% &eSekunden noch uebrig!"
@@ -178,7 +178,7 @@ Signs:
   Game-States:
     Waiting: "&lWarten..."
     Inactive: "&lInaktiv..."
-    In-Game: "&lIm Spiel
+    In-Game: "&lIm Spiel"
     Starting: "&e&lStarted"
     Full-Game: "&c&lVOLL"
     Ending: "&lEndet"
@@ -189,26 +189,10 @@ Signs:
     - "%mapname%"
     - "&5[%players%/%maxplayers%]"
 
-Arena-Selector:
-  Inventory-Title: "Arena auswählen"
-  Item:
-    Lore:
-      - "&7OITC &f- &e%mapname%"
-      - " "
-      - " "
-      - "  &fOnline: %playersize%/%maxplayers%"
-      - "  &fState: %state%"
-      - " "
-      - " "
-      - "&eKlick um die Arena zu betreten"
-
 Validator:
   Invalid-Arena-Configuration: "[OITC] Arena %arena% hat fehlerhafte Konfigurationen! Es fehlt: %error%"
   Instance-Started: "[OITC] Arena %arena% erfolgreich erstellt!"
   No-Instances-Created: "[OITC] Es sind keinen Arenen konfiguriert!"
-
-# Don't edit it. But who's stopping you? It's your server!
-File-Version: 0
 
 # If you change the value the file will be replaced with default yaml
 # So you shouldn't edit here. Be careful to make changes here!

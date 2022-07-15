@@ -43,14 +43,15 @@ Commands:
     Games-Played: "&aSpiele gespielt: &e"
     Coins: "&aMuenzen: &e"
     Longest-Survive: "&aLaengste Überlebung: &e"
-  
-# In-game scoreboard messages.
-# Please do not use more than 48 chars here! COLOR CODES INCLUDED.
+
+# Don't use more than 48 characters if you use old versions of Minecraft.
+# Can be used up to 144 characters in 1.14 and higher versions.
 Scoreboard:
   Title: "&e&lTNTRun"
   Content:
-    # Contents of scoreboard for players
+    # Can be find more information about placeholders on our wiki.
     Playing:
+      - ""
       - "&7Dauer: %formatted_time%"
       - ""
       - "&fDoppelsprung: &7%double_jumps%/5"
@@ -59,7 +60,7 @@ Scoreboard:
       - ""
       - "&fMuenzen erhalten: &a%coins_earned%"
       - ""
-      - "&ewww.despical.com"
+      - "&epatreon.com/Despical"
     Waiting:
       - ""
       - "&fMap: &a%mapname%"
@@ -67,7 +68,7 @@ Scoreboard:
       - ""
       - "&fWarten auf Spieler..."
       - ""
-      - "&ewww.despical.com"
+      - "&epatreon.com/Despical"
     Starting:
       - ""
       - "&fMap: &a%mapname%"
@@ -77,26 +78,27 @@ Scoreboard:
       - "&ferlaube Zeit fuer"
       - "&fmehr Spieler"
       - ""
-      - "&ewww.despical.com"
+      - "&fGame: &aTNT Run"
+      - "&epatreon.com/Despical"
 
-# Has usage only when bossbar is enabled in config.yml
-Bossbar:
+# Has usage only when boss bar is enabled in config
+Boss-Bar:
   Main-Title: "&a&lTNT Run &f&l- &6&lDespical"
   Starting-In: "&f&lStart in: &e&l%time%"
   Waiting-For-Players: "&4&lWarte auf mehr Spieler.."
   In-Game-Info: "&e&lSpielt &f&lTNT RUN &e&lby &b&lDESPICAL"
   Game-Ended: "&c&lDie Runde ist zu Ende! Du hast &b&lTNT Run &c&1gespielt"
 
+# Used in most game messages.
 In-Game:
-  #Used in most game messages.
-  Plugin-Prefix: "&8[&6TNTRun&8] "
+  Plugin-Prefix: "&8[&6TNT Run&8] "
   Already-Playing: "&cYDu bist schon im Spiel! Du kannst mit /tr die Runde verlassen."
   Join-No-Permission: "&cDu hast nicht die Berechtigung &6%permission% &cum eine Arena zu betreten!"
   Full-Game-No-Permission: "&cDu hast nicht die Berechtigung um ein volles Spiel zu betreten!"
   No-Slots-For-Premium: "&cDas Spiel ist schon mit Premium Spielern voll! Es tut mir leid"
   You-Are-Spectator: "&cDu bist nun ein Beobachter! Du kannst nun fliegen!"
   Only-Command-Ingame-Is-Leave: "&cDu musst erst das Spiel verlassen um den Befehl auszufuehren. Der einzige Befehl der funktioniert ist /tr leave!"
-  # Join cancelled via external plugin that uses TNT Run api.
+  # Join cancelled via external plugin that uses TNT Run API.
   Join-Cancelled-Via-API: "&cDu kannst das Spiel nicht beitreten!"
   Arena-Not-Configured: "&cDie Arena ist noch nicht eingerichtet! Kontaktiere ein Teammitglied!"
   Game-Chat-Format: "&7%player%: &f%message%"
@@ -127,13 +129,13 @@ In-Game:
   Messages:
     Lobby-Messages:
       Start-In: "&7Das Spiel startet in &b%time%&7 Sekunden!"
-      Waiting-For-Players: "&7Warte auf Spieler... Wir brauchen mindestens &b%minplayers%&7 Spieler fuer den Start."
+      Waiting-For-Players: "&7Warte auf Spieler... Wir brauchen mindestens &b%minimum_players%&7 Spieler fuer den Start."
       Enough-Players-To-Start: "&7Jetzt haben wir genug Spieler. Das Spiel startet bald!"
       Game-Started: "&7Spiel gestartet! Erster Spieler der 25 kills erreicht gewinnt!"
       Kicked-For-Premium-Slot: "&c%player% wurde entfernt um einem Premium Spieler platz zu machen!"
       You-Were-Kicked-For-Premium-Slot: "&cDu wurdest aus dem Spiel entfernt um einem Premium Spieler platz zu machen!"
-    Join: "&b%player%&7 ist beigetreten &8(&7%players%/%maxplayers%&8)&7!"
-    Leave: "&b%player% &7hat das Spiel verlassen &8(&7%players%/%maxplayers%&8)&7!"
+    Join: "&b%player%&7 ist beigetreten &8(&7%players%/%maximum_players%&8)&7!"
+    Leave: "&b%player% &7hat das Spiel verlassen &8(&7%players%/%maximum_players%&8)&7!"
     Death: "&9%player% &ewurde von &9%killer% getoetet!"
     Earned-Coin: "&e+15 Extra Muenzen (Ueberlebensbonus)"
     Game-End-Messages:
@@ -177,26 +179,10 @@ Signs:
     - "%mapname%"
     - "&5[%players%/%maxplayers%]"
 
-Arena-Selector:
-  Inventory-Title: "Arena auswählen"
-  Item:
-    Lore:
-      - "&7TNT Run &f- &e%mapname%"
-      - " "
-      - " "
-      - "  &fOnline: %playersize%/%maxplayers%"
-      - "  &fState: %state%"
-      - " "
-      - " "
-      - "&eKlick um die Arena zu betreten"
-
 Validator:
   Invalid-Arena-Configuration: "[TNTRun] Arena %arena% hat fehlerhafte Konfigurationen! Es fehlt: %error%"
   Instance-Started: "[TNTRun] Arena %arena% erfolgreich erstellt!"
   No-Instances-Created: "[TNTRun] Es sind keinen Arenen konfiguriert!"
-
-# Don't edit it. But who's stopping you? It's your server!
-File-Version: 0
 
 # If you change the value the file will be replaced with default yaml
 # So you shouldn't edit here. Be careful to make changes here!

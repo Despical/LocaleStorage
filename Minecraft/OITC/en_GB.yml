@@ -7,9 +7,9 @@
 # they are wrapped every 40 characters automatically
 #
 #     Some messages support their own placeholders
-#                 like %player%
+#                  like %player%
 
-# One in the Chamber Command Messages
+# OITC Command Messages
 Commands:
   Did-You-Mean: "&3Did you mean &b/%command%&3?"
   Are-You-Sure: "&cAre you sure you want to do this action? Type the command again &6within 10 seconds &cto confirm!"
@@ -29,7 +29,7 @@ Commands:
   No-Permission: "&cYou don't have permission to use this command!"
   Admin-Commands:
     Teleported-To-Player: "&aTeleported to player!"
-    Player-Not-Found: "&cPlayer not found!"
+    Player-Not-Found: "&cPlayer not found with that name!"
     Success-Reload: "&aSystem successfully reloaded all configurations and arenas!"
     List-Command:
       Format: "&aExisting arenas: &7%list%"
@@ -45,13 +45,13 @@ Commands:
     Highest-Score: "&aHighest score: &e"
     Games-Played: "&aGames played: &e"
   
-# In-game scoreboard messages.
-# Please do not use more than 48 chars here! COLOR CODES INCLUDED.
+# Don't use more than 48 characters if you use old versions of Minecraft.
+# Can be used up to 144 characters in 1.14 and higher versions.
 Scoreboard:
   Title: "&e&lOITC"
   Top-Player-Format: "&f%score% &6%player%"
+  # Can be find more information about placeholders on our wiki.
   Content:
-    # Contents of scoreboard for players
     Playing:
       - ""
       - "%top_player_1%"
@@ -64,7 +64,7 @@ Scoreboard:
       - ""
       - "&fTime Left: &6%formatted_time%"
       - ""
-      - "&ewww.despical.com"
+      - "&epatreon.com/despical"
     Waiting:
       - ""
       - "&fPlayers: &a%players%"
@@ -73,7 +73,7 @@ Scoreboard:
       - ""
       - "&fMap: &a%mapname%"
       - ""
-      - "&ewww.despical.com"
+      - "&epatreon.com/despical"
     Starting:
       - ""
       - "&fStarting In: &a%time%"
@@ -84,18 +84,18 @@ Scoreboard:
       - ""
       - "&fMap: &a%mapname%"
       - ""
-      - "&ewww.despical.com"
+      - "&epatreon.com/despical"
 
-# Has usage only when bossbar is enabled in config.yml
-Bossbar:
+# Has usage only when boss bar is enabled in config.yml
+Boss-Bar:
   Main-Title: "&a&lOne in the Chamber &f&l- &6&lDespical"
   Starting-In: "&f&lStarting in: &e&l%time%"
   Waiting-For-Players: "&4&lWaiting for more players..."
   In-Game-Info: "&e&lPlaying &f&lONE IN THE CHAMBER &e&lby &b&lDESPICAL"
   Game-Ended: "&c&lGame has ended! You were playing &b&lOITC"
 
+# Used in most game messages.
 In-Game:
-  #Used in most game messages.
   Plugin-Prefix: "&8[&6OITC&8] "
   Already-Playing: "&cYou are already queued for a game! You can leave a game with /oitc leave."
   Join-No-Permission: "&cYou don't have &6%permission% &cpermission to join this arena!"
@@ -134,13 +134,13 @@ In-Game:
   Messages:
     Lobby-Messages:
       Start-In: "&7The game starts in &b%time%&7 seconds!"
-      Waiting-For-Players: "&7Waiting for players... We need at least &b%minplayers%&7 players to start."
+      Waiting-For-Players: "&7Waiting for players... We need at least &b%minimum_players%&7 players to start."
       Enough-Players-To-Start: "&7Now we have enough players. The game is starting soon!"
       Game-Started: "&7Game started! First player to get 25 kills wins!"
       Kicked-For-Premium-Slot: "&c%player% got removed from the game to make a place for premium players!"
       You-Were-Kicked-For-Premium-Slot: "&cYou got kicked out of the game to make a place for a premium player!"
-    Join: "&b%player%&7 joined the game &8(&7%players%/%maxplayers%&8)&7!"
-    Leave: "&b%player% &7left the game &8(&7%players%/%maxplayers%&8)&7!"
+    Join: "&b%player%&7 joined the game &8(&7%players%/%maximum_players%&8)&7!"
+    Leave: "&b%player% &7left the game &8(&7%players%/%maximum_players%&8)&7!"
     Death: "&9%player% &eis slained by &9%killer%!"
     Kill-Streak: "&9%killer% &eis on &b%kill_streak% &ekill streak!"
     Seconds-Left-Title: "&c%time% &eseconds left!"
@@ -189,26 +189,10 @@ Signs:
     - "%mapname%"
     - "&5[%players%/%maxplayers%]"
 
-Arena-Selector:
-  Inventory-Title: "Arena selector"
-  Item:
-    Lore:
-      - "&7OITC &f- &e%mapname%"
-      - " "
-      - " "
-      - "  &fOnline: %playersize%/%maxplayers%"
-      - "  &fState: %state%"
-      - " "
-      - " "
-      - "&eClick to join this arena"
-
 Validator:
   Invalid-Arena-Configuration: "[OITC] Arena %arena% has invalid configuration! Missing node: %error%"
   Instance-Started: "[OITC] Arena %arena% instance successfully started!"
   No-Instances-Created: "[OITC] There are no arena instances created in configuration!"
-
-# Don't edit it. But who's stopping you? It's your server!
-File-Version: 0
 
 # If you change the value the file will be replaced with default yaml
 # So you shouldn't edit here. Be careful to make changes here!
