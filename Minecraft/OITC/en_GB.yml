@@ -189,6 +189,14 @@ Signs:
     - "%mapname%"
     - "&5[%players%/%maxplayers%]"
 
+Formatted-Arena-States:
+  Waiting: "Waiting"
+  Starting: "Starting"
+  Playing: "Playing"
+  Ending: "Ending"
+  Restarting: "Restarting"
+  Inactive: "Inactive"
+
 Validator:
   Invalid-Arena-Configuration: "[OITC] Arena %arena% has invalid configuration! Missing node: %error%"
   Instance-Started: "[OITC] Arena %arena% instance successfully started!"
