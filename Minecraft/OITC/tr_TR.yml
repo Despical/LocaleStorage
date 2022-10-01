@@ -189,6 +189,14 @@ Signs:
     - "%mapname%"
     - "&5[%players%/%maxplayers%]"
 
+Formatted-Arena-States:
+  Waiting: "Bekliyor"
+  Starting: "Başlıyor"
+  Playing: "Oyunda"
+  Ending: "Sona eriyor"
+  Restarting: "Yeniden başlıyor"
+  Inactive: "İnaktif"
+
 Arena-Selector:
   Inventory-Title: "Arena seçici"
   Item:
