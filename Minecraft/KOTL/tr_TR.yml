@@ -21,6 +21,8 @@ Commands:
   No-Permission: "&cBu komutu kullanmak için yeterli yetkiye sahip değilsin!"
   Success-Reload: "&aSistem başarıyla bütün konfigürasyon dosyalarını ve arenaları yeniledi!"
   Player-Not-Found: "&cBu isimle herhangi bir oyuncu bulunamadı!"
+  Not-Playing: "&cBelirtilen oyuncu şu anda oynamıyor!"
+  Kicked-Player: "&aBelirtili oyuncu başarıyla oyundan atıldı."
   Statistics:
     Type-Name: "&cLütfen görüntülemek istediğiniz istatistik ismini yazın!"
     Invalid-Name: "&cGeçersiz istatistik ismi! Var olan istatistikler: score or tours_played"
