@@ -21,8 +21,8 @@ Commands:
   No-Permission: "&cDu hast nicht die Berechtigung um das zu tun!"
   Success-Reload: "&aDas System hat alle Konfigurationen und Arenas neu geladen!"
   Player-Not-Found: "&cDer Spieler wurde nicht gefunden!"
-  Not-Playing: "&cTarget player is not playing at the moment!"
-  Kicked-Player: "&aPlayer has kicked successfully from the game."
+  Not-Playing: "&cAusgewählter Spieler spielt nicht aktuell!"
+  Kicked-Player: "&aDer Spieler wurde erfolgreich aus dem Spiel entfernt."
   Statistics:
     Type-Name: "&cGebe den Statistik Namen ein um ihn anzusehen!"
     Invalid-Name: "&cName der Statistik ist nicht korrekt! Tippe: score oder tours_played"
