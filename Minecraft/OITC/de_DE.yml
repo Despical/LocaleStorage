@@ -190,12 +190,12 @@ Signs:
     - "&5[%players%/%maxplayers%]"
 
 Formatted-Arena-States:
-  Waiting: "Waiting"
-  Starting: "Starting"
-  Playing: "Playing"
-  Ending: "Ending"
-  Restarting: "Restarting"
-  Inactive: "Inactive"
+  Waiting: "Warten"
+  Starting: "Started"
+  Playing: "Spielen"
+  Ending: "Endet"
+  Restarting: "Startet neu"
+  Inactive: "Inaktiv"
 
 Validator:
   Invalid-Arena-Configuration: "[OITC] Arena %arena% hat fehlerhafte Konfigurationen! Es fehlt: %error%"
