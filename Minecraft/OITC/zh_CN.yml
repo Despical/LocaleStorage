@@ -1,0 +1,209 @@
+# 您可以在这里翻译 One in the Chamber 的消息。
+#          支持颜色代码(&)。
+#
+#         使用 \n 换行
+# 一些消息，如套件和套件物品
+#        描述不支持换行
+#   它们会自动在每 40 個字符换行
+#
+#      一些消息支持自己的占位符
+#             如 %player%
+
+# One in the Chamber 命令消息
+Commands:
+  Did-You-Mean: "&3您是否指的是 &b/%command%&3?"
+  Are-You-Sure: "&c您确定要执行此操作吗？再次输入命令，在 10 秒内确认！"
+  Removed-Game-Instance: "&a已成功移除游戏实例！"
+  No-Arena-Like-That: "&c找不到与该名称匹配的竞技场！"
+  Look-Sign: "&c您必须看着一个牌子才能执行此命令！"
+  Type-Arena-Name: "&c请输入竞技场名称！"
+  No-Free-Arenas: "&c没有可用的竞技场！"
+  Statistics:
+    Type-Name: "&c请输入要查看的统计名称！"
+    Invalid-Name: "&c统计名称无效！可用的类型：kills、deaths、games_played、wins、loses、highest_score"
+    Header: "&8&m-------------------[&6 前10名 &8&m]-------------------"
+    Format: "&e#%position% %name% - %value% &7%statistic%"
+  Only-By-Player: "&c您只能作为玩家执行此命令！"
+  Not-Playing: "&c您必须参与游戏才能执行此命令！"
+  No-Permission: "&c您没有使用此命令的权限！"
+  Admin-Commands:
+    Teleported-To-Player: "&a传送至玩家！"
+    Player-Not-Found: "&c找不到玩家！"
+    Success-Reload: "&a成功重新加载所有配置文件和竞技场！"
+    List-Command:
+      Format: "&a现有的竞技场：&7%list%"
+      No-Arenas-Created: "&c没有可显示的游戏实例！试试创建一个？"
+  Stats-Command:
+    Header: "&l-----[ 您的统计数据 ]-----"
+    Header-Other: "&l-----[ %player% 的统计数据 ]-----"
+    Footer: "&l----------------------"
+    Kills: "&a击杀数：&e"
+    Deaths: "&a死亡数：&e"
+    Wins: "&a胜利次数：&e"
+    Loses: "&a失败次数：&e"
+    Highest-Score: "&a最高分数：&e"
+    Games-Played: "&a游戏次数：&e"
+  
+  
+# One in the Chamber 游戏计分板消息。
+# 如果使用旧版本的Minecraft，请不要使用超过48个字符！
+# 在1.14及更高版本中可以使用多达144个字符。
+Scoreboard:
+  Title: "&e&lOITC"
+  Top-Player-Format: "&f%score% &6%player%"
+  Content:
+    # 玩家计分板的内容
+    Waiting:
+      - ""
+      - "&f地图：&a%map_name%"
+      - "&f玩家：&a%players%/%max_players%"
+      - ""
+      - "&f等待玩家加入..."
+      - ""
+      - "&epatreon.com/despical"
+    Starting:
+      - ""
+      - "&f地图：&a%map_name%"
+      - "&f玩家：&a%players%/%max_players%"
+      - ""
+      - "&f游戏将在 &a%formatted_time% &f后开始"
+      - "&f等待其他玩家"
+      - ""
+      - "&epatreon.com/despical"
+    Playing:
+      - ""
+      - "%top_player_1%"
+      - "%top_player_2%"
+      - "%top_player_3%"
+      - ""
+      - "&f地图：&e%map_name%"
+      - "&f玩家：&6%players%"
+      - "&f得分：&6%kills%"
+      - ""
+      - "&f剩余时间：&6%formatted_time%"
+      - ""
+      - "&epatreon.com/despical"
+
+
+# 仅在配置文件的boss bar启用时使用
+Boss-Bar:
+  Main-Title: "&a&lOne in the Chamber &f&l- &6&lDespical"
+  Starting-In: "&f&l即将开始：&e&l%time%"
+  Waiting-For-Players: "&4&l等待更多玩家加入..."
+  In-Game-Info: "&e&l正在进行 ONE IN THE CHAMBER 游戏 &e&lby &b&lDESPICAL"
+  Game-Ended: "&c&l游戏已结束！您正在玩的是 &b&lOITC"
+
+# 用于大多数游戏消息。
+In-Game:
+  Plugin-Prefix: "&8[&6OITC&8] "
+  Already-Playing: "&c您已经在等待加入游戏！您可以使用 /oitc leave 离开游戏。"
+  Join-No-Permission: "&c您没有加入该竞技场的 &6%permission% &c权限。"
+  Full-Game-No-Permission: "&c您没有加入已满的游戏的权限！"
+  No-Slots-For-Premium: "&c该游戏已满员，只接受高级玩家！抱歉。"
+  You-Are-Spectator: "&c您现在是旁观者！您可以飞行！"
+  Spectating-Disabled-On-Bungee: "&c旁观模式在此服务器上已禁用！"
+  Only-Command-Ingame-Is-Leave: "&c您必须先离开游戏才能执行命令。唯一可用的命令是 /oitc leave！"
+  # 通过使用 OITC API 的外部插件取消加入。
+  Join-Cancelled-Via-API: "&c您无法加入此游戏！"
+  Arena-Not-Configured: "&c竞技场尚未配置！请联系工作人员！"
+  Game-Chat-Format: "&7%player%: &f%message%"
+  Game-Death-Format: "&7[&4旁观者聊天&7] &r"
+  Game-Items:
+    Leave-Item:
+      Returning-Lobby: "&a&l将您传送到大厅，3秒后...\n&a&l再次右键取消传送！"
+      Teleport-Cancelled: "&c&l传送已取消！"
+  Spectator:
+    Spectator-Menu-Name: "&8传送器"
+    Target-Player-Score: "&7分数：%score%"
+    Settings-Menu:
+      Item-Name: "&b&l旁观者设置 &7(右键点击)"
+      Inventory-Name: "&8旁观者设置"
+      Speed-Name: "&a速度"
+      No-Speed: "&a无速度"
+      Enable-Night-Vision: "&a启用夜视"
+      Enable-Night-Vision-Lore:
+        - "&7点击启用夜视！"
+      Disable-Night-Vision: "&c关闭夜视"
+      Disable-Night-Vision-Lore:
+        - "&7点击关闭夜视！"
+      Hide-Spectators: "&c隐藏旁观者"
+      Hide-Spectators-Message: "&c您将无法看到其他旁观者！"
+      Hide-Spectators-Lore:
+        - "&7点击隐藏其他旁观者！"
+      Show-Spectators: "&a显示旁观者"
+      Show-Spectators-Message: "&a您现在可以看到其他旁观者！"
+      Show-Spectators-Lore:
+        - "&7点击显示其他旁观者！"
+  Messages:
+    Lobby-Messages:
+      Start-In: "&7游戏将在 &b%number%&7 秒后开始！"
+      Waiting-For-Players: "&c等待玩家加入... 我们需要至少 %minplayers% 名玩家才能开始游戏。"
+      Enough-Players-To-Start: "&7现在我们有足够的玩家了。游戏即将开始！"
+      Game-Started: "&7游戏开始！第一个获得 25 杀的玩家获胜！"
+      Kicked-For-Premium-Slot: "&c%player% 被移出游戏以腾出位置给高级玩家！"
+      You-Were-Kicked-For-Premium-Slot: "&c您被踢出游戏以腾出位置给高级玩家！"
+    Join: "&b%player% &e加入了游戏 &e(&b%players%&e/&b%maxplayers%&e)！"
+    Leave: "&b%player% &e离开了游戏 &e(&b%players%&e/&b%maxplayers%&e)&7！"
+    Death: "&9%player% &e被 &9%killer% &e击杀！"
+    Already-Force-Start: "&c游戏已经在开始中！"
+    Kill-Streak: "&9%killer% &e已连杀 &b%kill_streak% &e次！"
+    Seconds-Left-Title: "&c%time% &e秒剩余！"
+    Seconds-Left-Subtitle: "&e%time% 秒后游戏结束"
+    Score-Subtitle: "&a&l+&6&l1"
+    Death-Subtitle: "&c&l您已阵亡！"
+    Game-End-Messages:
+      Titles:
+        Win: "&f获胜者"
+        Lose: ""
+      Subtitles:
+        Win: "&e%winner%"
+        Lose: "&c%winner% &a赢得了游戏！"
+      Summary-Message:
+        - "&a&m-------------------------------------------------"
+        - "&f&lOne in the Chamber"
+        - ""
+        - "&f&l%winner% &e&l获胜！ (%winner_score%)"
+        - ""
+        - "&n&l您的统计数据："
+        - ""
+        - "&7排名： %rank%"
+        - "&7得分： %score%"
+        - "&7死亡次数： %deaths%"
+        - ""
+        - "&a&m-------------------------------------------------"
+    Admin-Messages:
+      Set-Starting-In-To-0: "&b管理员将等待时间设置为 0。游戏现在开始！"
+      Stopped-Game: "&b管理员通过命令强制停止了游戏！"
+
+Signs:
+  Please-Type-Arena-Name: "&c请在第二行输入竞技场名称！"
+  Arena-Doesnt-Exists: "&c该名称的竞技场不存在！"
+  Doesnt-Have-Permission: "&c您没有足够的权限来破坏此牌子！"
+  Sign-Created: "&a牌子创建成功！"
+  Sign-Removed: "&a牌子成功移除！"
+  Game-States:
+    Waiting: "&l等待中..."
+    Starting: "&e&l开始中"
+    Playing: "&l游戏中"
+    Full-Game: "&c&l已满"
+    Ending: "&l结束中"
+    Restarting: "&c&l重启中"
+    Inactive: "&l未激活..."
+  Lines:
+    - "&4&lOITC"
+    - "%state%"
+    - "%map_name%"
+    - "&5[%players%/%max_players%]"
+
+Formatted-Arena-States:
+  Waiting: "等待中"
+  Starting: "开始中"
+  Playing: "游戏中"
+  Ending: "结束中"
+  Restarting: "重启中"
+  Inactive: "未激活"
+
+Validator:
+  Invalid-Arena-Configuration: "[OITC] 竞技场 %arena% 的配置无效！缺少节点：%error%"
+  Instance-Started: "[OITC] 竞技场 %arena% 实例成功启动！"
+  No-Instances-Created: "[OITC] 配置中没有创建竞技场实例！"
