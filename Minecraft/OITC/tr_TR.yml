@@ -13,7 +13,6 @@
 Commands:
   Did-You-Mean: "&cBunu mu demek istemiştiniz &7/%command%&c?"
   Are-You-Sure: "&cBunu gerçekten yapmak istiyor musun? Onaylamak için komutu &610 saniye içinde &ctekrar yazın!"
-  Teleported-To-The-Lobby: "&7Lobiye ışınlanıldı!"
   Removed-Game-Instance: "&aArena başarıyla silindi!"
   No-Arena-Like-That: "&cBu isimde bir arena bulunamadı!"
   Look-Sign: "&cBu komutu kullanabilmek için bir tabelaya bakmalısın!"
@@ -45,26 +44,14 @@ Commands:
     Highest-Score: "&aEn yüksek skor: &e"
     Games-Played: "&aOynanan oyunlar: &e"
   
-# Don't use more than 48 characters if you use old versions of Minecraft.
+# In game scoreboard messages.
+# Don't use more than 48 characters if you use old versions of Minecraft!
 # Can be used up to 144 characters in 1.14 and higher versions.
 Scoreboard:
   Title: "&e&lOITC"
   Top-Player-Format: "&f%score% &6%player%"
   Content:
-    # Can be find more information about placeholders on our wiki.
-    Playing:
-      - ""
-      - "%top_player_1%"
-      - "%top_player_2%"
-      - "%top_player_3%"
-      - ""
-      - "&fHarita: &e%mapname%"
-      - "&fOyuncular: &6%players%"
-      - "&fSkor: &6%kills%"
-      - ""
-      - "&fKalan süre: &6%formatted_time%"
-      - ""
-      - "&ewww.despical.com"
+    # Contents of scoreboard for players
     Waiting:
       - ""
       - "&fOyuncular: &a%players%"
@@ -85,6 +72,19 @@ Scoreboard:
       - "&fHarita: &a%mapname%"
       - ""
       - "&ewww.despical.com"
+    Playing:
+      - ""
+      - "%top_player_1%"
+      - "%top_player_2%"
+      - "%top_player_3%"
+      - ""
+      - "&fHarita: &e%mapname%"
+      - "&fOyuncular: &6%players%"
+      - "&fSkor: &6%kills%"
+      - ""
+      - "&fKalan süre: &6%formatted_time%"
+      - ""
+      - "&ewww.despical.com"
 
 # Has usage only when boss bar is enabled in config.yml
 Boss-Bar:
@@ -102,6 +102,7 @@ In-Game:
   Full-Game-No-Permission: "&cDolu oyunlara girebilmek için yeterli yetkiye sahip değilsin!"
   No-Slots-For-Premium: "&cBu oyun tamamen öncelikli oyuncularla dolu! Üzgünüm!"
   You-Are-Spectator: "&cArtık bir seyircisin! Şu an uçabilirsin!"
+  Spectating-Disabled-On-Bungee: "&cİzleyici modu bu sunucuda aktif değil!"
   Only-Command-Ingame-Is-Leave: "&cKomut kullanabilmek için önce oyundan çıkmalısın. Çalışan tek komut: /oitc leave!"
   # Join cancelled via external plugin that uses OITC API.
   Join-Cancelled-Via-API: "&cBu oyuna giremezsin!"
@@ -211,12 +212,9 @@ Arena-Selector:
       - "&eArenaya girmek için tıkla"
 
 Validator:
-  Invalid-Arena-Configuration: "[OITC] Arena %arena% bazı eksik yapılandırmalara sahip! Hata: %error%"
-  Instance-Started: "[OITC] Arena %arena% başarıyla başlatıldı!"
-  No-Instances-Created: "[OITC] Oluşturulmuş herhangi bir arena bulunamadı!"
-
-# Don't edit it. But who's stopping you? It's your server!
-File-Version: 0
+  Invalid-Arena-Configuration: "Arena %arena% bazı eksik yapılandırmalara sahip! Hata: %error%"
+  Instance-Started: "Arena %arena% başarıyla başlatıldı!"
+  No-Instances-Created: "Oluşturulmuş herhangi bir arena bulunamadı!"
 
 # If you change the value the file will be replaced with default yaml
 # So you shouldn't edit here. Be careful to make changes here!

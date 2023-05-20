@@ -13,7 +13,6 @@
 Commands:
   Did-You-Mean: "&cMeintest du &7/%command%&c?"
   Are-You-Sure: "&cBist du dir sicher den Befehl auszufuehren? Gebe den Befehl &6innerhalb 10 Sekunden &cto ein um es zu bestaetigen!"
-  Teleported-To-The-Lobby: "&7Du wurdest in die Lobby teleportiert!"
   Removed-Game-Instance: "&aDie Spielinstanz wurde Erfolgreich entfernt."
   No-Arena-Like-That: "&cEs gibt keine Arena mit dieser ID!"
   Look-Sign: "&cDu musst auf ein Schild schauen um diesen Befehl auszufuehren!"
@@ -45,26 +44,14 @@ Commands:
     Highest-Score: "&aHoehster Score: &e"
     Games-Played: "&aSpiele gespielt: &e"
   
-# Don't use more than 48 characters if you use old versions of Minecraft.
+# In game scoreboard messages.
+# Don't use more than 48 characters if you use old versions of Minecraft!
 # Can be used up to 144 characters in 1.14 and higher versions.
 Scoreboard:
   Title: "&e&lOITC"
   Top-Player-Format: "&f%score% &6%player%"
   Content:
-    # Can be find more information about placeholders on our wiki.
-    Playing:
-      - ""
-      - "%top_player_1%"
-      - "%top_player_2%"
-      - "%top_player_3%"
-      - ""
-      - "&fMap: &e%mapname%"
-      - "&fSpieler: &6%players%"
-      - "&fScore: &6%kills%"
-      - ""
-      - "&fZeit uebrig: &6%formatted_time%"
-      - ""
-      - "&epatreon.com/Despical"
+    # Contents of scoreboard for players
     Waiting:
       - ""
       - "&fSpieler: &a%players%"
@@ -85,6 +72,19 @@ Scoreboard:
       - "&fMap: &a%mapname%"
       - ""
       - "&epatreon.com/Despical"
+    Playing:
+      - ""
+      - "%top_player_1%"
+      - "%top_player_2%"
+      - "%top_player_3%"
+      - ""
+      - "&fMap: &e%mapname%"
+      - "&fSpieler: &6%players%"
+      - "&fScore: &6%kills%"
+      - ""
+      - "&fZeit uebrig: &6%formatted_time%"
+      - ""
+      - "&epatreon.com/Despical"
 
 # Has usage only when boss bar is enabled in config.yml
 Boss-Bar:
@@ -102,6 +102,7 @@ In-Game:
   Full-Game-No-Permission: "&cDu hast nicht die Berechtigung um ein volles Spiel zu betreten!"
   No-Slots-For-Premium: "&cDas Spiel ist schon mit Premium Spielern voll! Es tut mir leid"
   You-Are-Spectator: "&cDu bist nun ein Beobachter! Du kannst nun fliegen!"
+  Spectating-Disabled-On-Bungee: "&cSpectating is now allowing on this server!"
   Only-Command-Ingame-Is-Leave: "&cDu musst erst das Spiel verlassen um den Befehl auszufuehren. Der einzige Befehl der funktioniert ist /oitc leave!"
   # Join cancelled via external plugin that uses OITC API.
   Join-Cancelled-Via-API: "&cDu kannst das Spiel nicht beitreten!"
@@ -198,9 +199,9 @@ Formatted-Arena-States:
   Inactive: "Inaktiv"
 
 Validator:
-  Invalid-Arena-Configuration: "[OITC] Arena %arena% hat fehlerhafte Konfigurationen! Es fehlt: %error%"
-  Instance-Started: "[OITC] Arena %arena% erfolgreich erstellt!"
-  No-Instances-Created: "[OITC] Es sind keinen Arenen konfiguriert!"
+  Invalid-Arena-Configuration: "Arena %arena% hat fehlerhafte Konfigurationen! Es fehlt: %error%"
+  Instance-Started: "Arena %arena% erfolgreich erstellt!"
+  No-Instances-Created: "Es sind keinen Arenen konfiguriert!"
 
 # If you change the value the file will be replaced with default yaml
 # So you shouldn't edit here. Be careful to make changes here!

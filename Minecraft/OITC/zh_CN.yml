@@ -204,9 +204,9 @@ Formatted-Arena-States:
   Inactive: "未激活"
 
 Validator:
-  Invalid-Arena-Configuration: "[OITC] 竞技场 %arena% 的配置无效！缺少节点：%error%"
-  Instance-Started: "[OITC] 竞技场 %arena% 实例成功启动！"
-  No-Instances-Created: "[OITC] 配置中没有创建竞技场实例！"
+  Invalid-Arena-Configuration: "竞技场 %arena% 的配置无效！缺少节点：%error%"
+  Instance-Started: "竞技场 %arena% 实例成功启动！"
+  No-Instances-Created: "配置中没有创建竞技场实例！"
 
 # If you change the value the file will be replaced with default yaml
 # So you shouldn't edit here. Be careful to make changes here!
