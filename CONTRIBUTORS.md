@@ -7,3 +7,4 @@
 
 * [Despical](https://www.spigotmc.org/members/despical.615094/) - English & Turkish translator
 * [Dreandor](https://www.spigotmc.org/members/dreandor.643921/) - German translator
+* [HappyAreaBean](https://www.spigotmc.org/members/happyareabean.150996/) - Chinese (Taiwan), Chinese (Hong Kong) and Chinese (China) translator
