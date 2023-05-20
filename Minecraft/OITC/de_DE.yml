@@ -1,15 +1,15 @@
-#    You can translate One in the Chamber messages here.
-#             Color codes (&) supported.
+#    Du kannst hier OITC Nachrichten übersetzen
+#             Color codes (&) werden unterstützt.
 #
-#              Use \n to make new line
-#        Some messages like kit and kit items
-#        descriptions don't support new lines
-# they are wrapped every 40 characters automatically
+#              Nutze \n um eine neue Linie anzufangen
+#        Einige Nachrichten wie Kit und Kit Items
+#        beschreibungen unterstützen nicht neue Linien.
+# alle 40 Zeichen wird automatisch umgebrochen
 #
-#     Some messages support their own placeholders
-#                 like %player%
+#     Einige Nachrichten unterstützen ihre eigenen Platzhalter
+#                 wie %player%
 
-# OITC Command Messages
+# OITC Befehlsnachrichten
 Commands:
   Did-You-Mean: "&cMeintest du &7/%command%&c?"
   Are-You-Sure: "&cBist du dir sicher den Befehl auszufuehren? Gebe den Befehl &6innerhalb 10 Sekunden &cto ein um es zu bestaetigen!"
@@ -44,14 +44,14 @@ Commands:
     Highest-Score: "&aHoehster Score: &e"
     Games-Played: "&aSpiele gespielt: &e"
   
-# In game scoreboard messages.
-# Don't use more than 48 characters if you use old versions of Minecraft!
-# Can be used up to 144 characters in 1.14 and higher versions.
+# Anzeigetafelnachrichten im Spiel.
+# Verwende nicht mehr als 48 Zeichen, wenn Du eine alte Versionen von Minecraft verwendest!!
+# Kann in Version 1.14 und höher mit bis zu 144 Zeichen verwendet werden.
 Scoreboard:
   Title: "&e&lOITC"
   Top-Player-Format: "&f%score% &6%player%"
   Content:
-    # Contents of scoreboard for players
+    # Inhalt der Anzeigetafel für Spieler
     Waiting:
       - ""
       - "&fSpieler: &a%players%"
@@ -86,7 +86,7 @@ Scoreboard:
       - ""
       - "&epatreon.com/Despical"
 
-# Has usage only when boss bar is enabled in config.yml
+# Wird nur verwendet, wenn die Boss-Leiste in config.yml aktiviert ist
 Boss-Bar:
   Main-Title: "&a&lOne in the Chamber &f&l- &6&lDespical"
   Starting-In: "&f&lStart in: &e&l%time%"
@@ -94,7 +94,7 @@ Boss-Bar:
   In-Game-Info: "&e&lSpielt &f&lONE IN THE CHAMBER &e&lby &b&lDESPICAL"
   Game-Ended: "&c&lDie Runde ist zu Ende! Du hast &b&lOITC &c&1gespielt"
 
-# Used in most game messages.
+# Wird in den meisten Spielnachrichten verwendet.
 In-Game:
   Plugin-Prefix: "&8[&6OITC&8] "
   Already-Playing: "&cDu bist schon im Spiel! Du kannst mit /oitc leave die Runde verlassen."
@@ -102,9 +102,9 @@ In-Game:
   Full-Game-No-Permission: "&cDu hast nicht die Berechtigung um ein volles Spiel zu betreten!"
   No-Slots-For-Premium: "&cDas Spiel ist schon mit Premium Spielern voll! Es tut mir leid"
   You-Are-Spectator: "&cDu bist nun ein Beobachter! Du kannst nun fliegen!"
-  Spectating-Disabled-On-Bungee: "&cSpectating is now allowing on this server!"
+  Spectating-Disabled-On-Bungee: "&cBeobachten ist nicht erlaubt auf diesem Server!"
   Only-Command-Ingame-Is-Leave: "&cDu musst erst das Spiel verlassen um den Befehl auszufuehren. Der einzige Befehl der funktioniert ist /oitc leave!"
-  # Join cancelled via external plugin that uses OITC API.
+  # Der Beitritt wurde über ein externes Plugin abgebrochen, das die OITC-API verwendet.
   Join-Cancelled-Via-API: "&cDu kannst das Spiel nicht beitreten!"
   Arena-Not-Configured: "&cDie Arena ist noch nicht eingerichtet! Kontaktiere ein Teammitglied!"
   Game-Chat-Format: "&7%player%: &f%message%"
@@ -203,6 +203,6 @@ Validator:
   Instance-Started: "Arena %arena% erfolgreich erstellt!"
   No-Instances-Created: "Es sind keinen Arenen konfiguriert!"
 
-# If you change the value the file will be replaced with default yaml
-# So you shouldn't edit here. Be careful to make changes here!
+# Wenn Du den Wert änderst, wird die Datei durch das Standard-YAML ersetzt
+# Du solltest hier also nicht bearbeiten. Sei vorsichtig, hier Änderungen vorzunehmen!
 Language: de
