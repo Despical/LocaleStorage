@@ -1,6 +1,8 @@
 # Locale Storage
 This repository is dedicated to Despical's plugins translations. If you are a native speaker you can help us with translating. Please read the instructions and some information below before submitting a pull request otherwise your pull request can be closed.
 
+* Mainly developing projects are KOTL and OITC for now so do not translate archived projects.
+
 ### Steps to translate
 1. Fork this repository and then clone it.
 2. Go to folder that which plugin you want to translate.
