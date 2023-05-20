@@ -207,3 +207,7 @@ Validator:
   Invalid-Arena-Configuration: "[OITC] 場地 %arena% 的配置無效！缺少配置：%error%"
   Instance-Started: "[OITC] 場地 %arena% 例項成功啟動！"
   No-Instances-Created: "[OITC] 配置中沒有建立場地例項！"
+
+# If you change the value the file will be replaced with default yaml
+# So you shouldn't edit here. Be careful to make changes here!
+Language: zh_TW
