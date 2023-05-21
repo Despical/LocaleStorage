@@ -1,15 +1,15 @@
-#    You can translate TNT Run messages here.
-#             Color codes (&) supported.
+#    Du kannst hier TNT Run Nachrichten übersetzen
+#        Color codes (&) werden unterstützt.
 #
-#              Use \n to make new line
-#        Some messages like kit and kit items
-#        descriptions don't support new lines
-# they are wrapped every 40 characters automatically
+#       Nutze \n um eine neue Linie anzufangen
+#       Einige Nachrichten wie Kit und Kit Items
+#       beschreibungen unterstützen nicht neue Linien.
+#       alle 40 Zeichen wird automatisch umgebrochen
 #
-#     Some messages support their own placeholders
-#                  like %player%
+#  Einige Nachrichten unterstützen ihre eigenen Platzhalter
+#                   wie %player%
 
-# TNT Run Command Messages
+# TNT Run Befehlsnachrichten
 Commands:
   Did-You-Mean: "&cMeintest du &7/%command%&c?"
   Are-You-Sure: "&cBist du dir sicher den Befehl auszufuehren? Gebe den Befehl &6innerhalb 10 Sekunden &cto ein um es zu bestaetigen!"
@@ -44,12 +44,12 @@ Commands:
     Coins: "&aMuenzen: &e"
     Longest-Survive: "&aLaengste Überlebung: &e"
 
-# Don't use more than 48 characters if you use old versions of Minecraft.
-# Can be used up to 144 characters in 1.14 and higher versions.
+# Verwende nicht mehr als 48 Zeichen, wenn Du eine alte Versionen von Minecraft verwendest!!
+# Kann in Version 1.14 und höher mit bis zu 144 Zeichen verwendet werden.
 Scoreboard:
   Title: "&e&lTNTRun"
   Content:
-    # Can be find more information about placeholders on our wiki.
+    # Du kannst mehr Informationen über Platzhalter in unserem Wiki finden.
     Playing:
       - ""
       - "&7Dauer: %formatted_time%"
@@ -81,7 +81,7 @@ Scoreboard:
       - "&fGame: &aTNT Run"
       - "&epatreon.com/Despical"
 
-# Has usage only when boss bar is enabled in config
+# Wird nur verwendet, wenn die Boss-Leiste in config.yml aktiviert ist
 Boss-Bar:
   Main-Title: "&a&lTNT Run &f&l- &6&lDespical"
   Starting-In: "&f&lStart in: &e&l%time%"
@@ -89,7 +89,7 @@ Boss-Bar:
   In-Game-Info: "&e&lSpielt &f&lTNT RUN &e&lby &b&lDESPICAL"
   Game-Ended: "&c&lDie Runde ist zu Ende! Du hast &b&lTNT Run &c&1gespielt"
 
-# Used in most game messages.
+# Wird in den meisten Spielnachrichten verwendet.
 In-Game:
   Plugin-Prefix: "&8[&6TNT Run&8] "
   Already-Playing: "&cYDu bist schon im Spiel! Du kannst mit /tr die Runde verlassen."
@@ -98,7 +98,7 @@ In-Game:
   No-Slots-For-Premium: "&cDas Spiel ist schon mit Premium Spielern voll! Es tut mir leid"
   You-Are-Spectator: "&cDu bist nun ein Beobachter! Du kannst nun fliegen!"
   Only-Command-Ingame-Is-Leave: "&cDu musst erst das Spiel verlassen um den Befehl auszufuehren. Der einzige Befehl der funktioniert ist /tr leave!"
-  # Join cancelled via external plugin that uses TNT Run API.
+  # Der Beitritt wurde über ein externes Plugin abgebrochen, das die TNT RUN-API verwendet.
   Join-Cancelled-Via-API: "&cDu kannst das Spiel nicht beitreten!"
   Arena-Not-Configured: "&cDie Arena ist noch nicht eingerichtet! Kontaktiere ein Teammitglied!"
   Game-Chat-Format: "&7%player%: &f%message%"
@@ -119,13 +119,13 @@ In-Game:
       Disable-Night-Vision-Lore:
         - "&7Klick um Nachtsicht zu deaktivieren!"
       Hide-Spectators: "&cVerstecke Beobachter"
-      Hide-Spectators-Message: "&cYou can no longer see other spectators!"
+      Hide-Spectators-Message: "&cDu kannst nicht mehr andere Beobachter sehen!"
       Hide-Spectators-Lore:
         - "&7Klick um Beobachter zu verstecken!"
-      Show-Spectators: "&aShow Spectators"
-      Show-Spectators-Message: "&aYou can now see other spectators!"
+      Show-Spectators: "&aZeige Beobachter"
+      Show-Spectators-Message: "&aDu kannst jetzt andere Beobachter sehen!"
       Show-Spectators-Lore:
-        - "&7Click to show other spectators!"
+        - "&7Klick um Beobachter anzuzeigen!"
   Messages:
     Lobby-Messages:
       Start-In: "&7Das Spiel startet in &b%time%&7 Sekunden!"
@@ -184,6 +184,6 @@ Validator:
   Instance-Started: "[TNTRun] Arena %arena% erfolgreich erstellt!"
   No-Instances-Created: "[TNTRun] Es sind keinen Arenen konfiguriert!"
 
-# If you change the value the file will be replaced with default yaml
-# So you shouldn't edit here. Be careful to make changes here!
+# Wenn Du den Wert änderst, wird die Datei durch das Standard-YAML ersetzt
+# Du solltest hier also nicht bearbeiten. Sei vorsichtig, hier Änderungen vorzunehmen!
 Language: de
