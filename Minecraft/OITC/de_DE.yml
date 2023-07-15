@@ -104,7 +104,6 @@ In-Game:
   You-Are-Spectator: "&cDu bist nun ein Beobachter! Du kannst nun fliegen!"
   Spectating-Disabled-On-Bungee: "&cBeobachten ist nicht erlaubt auf diesem Server!"
   Only-Command-Ingame-Is-Leave: "&cDu musst erst das Spiel verlassen um den Befehl auszufuehren. Der einzige Befehl der funktioniert ist /oitc leave!"
-  # Der Beitritt wurde über ein externes Plugin abgebrochen, das die OITC-API verwendet.
   Join-Cancelled-Via-API: "&cDu kannst das Spiel nicht beitreten!"
   Arena-Not-Configured: "&cDie Arena ist noch nicht eingerichtet! Kontaktiere ein Teammitglied!"
   Game-Chat-Format: "&7%player%: &f%message%"
@@ -143,7 +142,9 @@ In-Game:
     Join: "&b%player%&7 ist beigetreten &8(&7%players%/%maximum_players%&8)&7!"
     Leave: "&b%player% &7hat das Spiel verlassen &8(&7%players%/%maximum_players%&8)&7!"
     Death: "&9%player% &ewurde von &9%killer% getoetet!"
-    Kill-Streak: "&9%killer% &eist auf einem &b%kill_streak% &ekill streak!"
+    Kill-Streak:
+      - "&9%killer% &eis on &b%kill_streak% &ekill streak!"
+      - "&9%killer% &eis unbeatable!"
     Seconds-Left-Title: "&c%time% &eSekunden noch uebrig!"
     Seconds-Left-Subtitle: "&eNach %time%s wird das Spiel beendet"
     Score-Subtitle: "&a&l+&6&l1"
@@ -197,11 +198,6 @@ Formatted-Arena-States:
   Ending: "Endet"
   Restarting: "Startet neu"
   Inactive: "Inaktiv"
-
-Validator:
-  Invalid-Arena-Configuration: "Arena %arena% hat fehlerhafte Konfigurationen! Es fehlt: %error%"
-  Instance-Started: "Arena %arena% erfolgreich erstellt!"
-  No-Instances-Created: "Es sind keinen Arenen konfiguriert!"
 
 # Wenn Du den Wert änderst, wird die Datei durch das Standard-YAML ersetzt
 # Du solltest hier also nicht bearbeiten. Sei vorsichtig, hier Änderungen vorzunehmen!
