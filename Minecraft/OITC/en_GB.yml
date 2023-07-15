@@ -102,7 +102,6 @@ In-Game:
   You-Are-Spectator: "&cYou're now a spectator! You can fly now!"
   Spectating-Disabled-On-Bungee: "&cSpectating is now allowing on this server!"
   Only-Command-Ingame-Is-Leave: "&cYou have to leave the game first to perform commands. The only command that works is /oitc leave!"
-  # Join cancelled via external plugin that uses OITC API.
   Join-Cancelled-Via-API: "&cYou can't join this game!"
   Arena-Not-Configured: "&cArena is not configured yet! Contact staff!"
   Game-Chat-Format: "&7%player%: &f%message%"
@@ -145,7 +144,9 @@ In-Game:
     Leave: "&b%player% &eleft the game &e(&b%players%&e/&b%maxplayers%&e)&7!"
     Death: "&9%player% &eis slained by &9%killer%!"
     Already-Force-Start: "&cThe game is already starting!"
-    Kill-Streak: "&9%killer% &eis on &b%kill_streak% &ekill streak!"
+    Kill-Streak:
+      - "&9%killer% &eis on &b%kill_streak% &ekill streak!"
+      - "&9%killer% &eis unbeatable!"
     Seconds-Left-Title: "&c%time% &eseconds left!"
     Seconds-Left-Subtitle: "&eAfter %time%s the game will be finished"
     Score-Subtitle: "&a&l+&6&l1"
@@ -201,11 +202,6 @@ Formatted-Arena-States:
   Ending: "Ending"
   Restarting: "Restarting"
   Inactive: "Inactive"
-
-Validator:
-  Invalid-Arena-Configuration: "Arena %arena% has invalid configuration! Missing node: %error%"
-  Instance-Started: "Arena %arena% instance successfully started!"
-  No-Instances-Created: "There are no arena instances created in configuration!"
 
 # If you change the value the file will be replaced with default yaml
 # So you shouldn't edit here. Be careful to make changes here!
