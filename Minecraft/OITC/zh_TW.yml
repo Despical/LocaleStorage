@@ -103,7 +103,6 @@ In-Game:
   You-Are-Spectator: "&c您現在是旁觀者！您可以飛行！"
   Spectating-Disabled-On-Bungee: "&c旁觀模式在此伺服器上已禁用！"
   Only-Command-Ingame-Is-Leave: "&c您必須先離開遊戲才能執行指令。唯一可用的指令是 /oitc leave！"
-  # 透過使用 OITC API 的外部外掛取消加入。
   Join-Cancelled-Via-API: "&c您無法加入此遊戲！"
   Arena-Not-Configured: "&c場地尚未配置！請聯絡工作人員！"
   Game-Chat-Format: "&7%player%: &f%message%"
@@ -146,7 +145,9 @@ In-Game:
     Leave: "&b%player% &e離開了遊戲 &e(&b%players%&e/&b%maxplayers%&e)&7！"
     Death: "&9%player% &e被 &9%killer% &e擊殺！"
     Already-Force-Start: "&c遊戲已經在開始中！"
-    Kill-Streak: "&9%killer% &e已連殺 &b%kill_streak% &e次！"
+    Kill-Streak:
+      - "&9%killer% &e已連殺 &b%kill_streak% &e次！"
+      - "&9%killer% &eis unbeatable!"
     Seconds-Left-Title: "&c%time% &e秒剩餘！"
     Seconds-Left-Subtitle: "&e%time% 秒後遊戲結束"
     Score-Subtitle: "&a&l+&6&l1"
@@ -202,11 +203,6 @@ Formatted-Arena-States:
   Ending: "結束中"
   Restarting: "重啟中"
   Inactive: "未啟用"
-
-Validator:
-  Invalid-Arena-Configuration: "場地 %arena% 的配置無效！缺少配置：%error%"
-  Instance-Started: "場地 %arena% 例項成功啟動！"
-  No-Instances-Created: "配置中沒有建立場地例項！"
 
 # If you change the value the file will be replaced with default yaml
 # So you shouldn't edit here. Be careful to make changes here!
