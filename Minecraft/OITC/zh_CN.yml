@@ -103,7 +103,6 @@ In-Game:
   You-Are-Spectator: "&c您现在是旁观者！您可以飞行！"
   Spectating-Disabled-On-Bungee: "&c旁观模式在此服务器上已禁用！"
   Only-Command-Ingame-Is-Leave: "&c您必须先离开游戏才能执行命令。唯一可用的命令是 /oitc leave！"
-  # 通过使用 OITC API 的外部插件取消加入。
   Join-Cancelled-Via-API: "&c您无法加入此游戏！"
   Arena-Not-Configured: "&c竞技场尚未配置！请联系工作人员！"
   Game-Chat-Format: "&7%player%: &f%message%"
@@ -146,7 +145,9 @@ In-Game:
     Leave: "&b%player% &e离开了游戏 &e(&b%players%&e/&b%maxplayers%&e)&7！"
     Death: "&9%player% &e被 &9%killer% &e击杀！"
     Already-Force-Start: "&c游戏已经在开始中！"
-    Kill-Streak: "&9%killer% &e已连杀 &b%kill_streak% &e次！"
+    Kill-Streak:
+      - "&9%killer% &e已连杀 &b%kill_streak% &e次！"
+      - "&9%killer% &eis unbeatable!"    
     Seconds-Left-Title: "&c%time% &e秒剩余！"
     Seconds-Left-Subtitle: "&e%time% 秒后游戏结束"
     Score-Subtitle: "&a&l+&6&l1"
@@ -202,11 +203,6 @@ Formatted-Arena-States:
   Ending: "结束中"
   Restarting: "重启中"
   Inactive: "未激活"
-
-Validator:
-  Invalid-Arena-Configuration: "竞技场 %arena% 的配置无效！缺少节点：%error%"
-  Instance-Started: "竞技场 %arena% 实例成功启动！"
-  No-Instances-Created: "配置中没有创建竞技场实例！"
 
 # If you change the value the file will be replaced with default yaml
 # So you shouldn't edit here. Be careful to make changes here!
