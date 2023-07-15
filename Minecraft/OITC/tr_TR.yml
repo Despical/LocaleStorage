@@ -104,7 +104,6 @@ In-Game:
   You-Are-Spectator: "&cArtık bir seyircisin! Şu an uçabilirsin!"
   Spectating-Disabled-On-Bungee: "&cİzleyici modu bu sunucuda aktif değil!"
   Only-Command-Ingame-Is-Leave: "&cKomut kullanabilmek için önce oyundan çıkmalısın. Çalışan tek komut: /oitc leave!"
-  # Join cancelled via external plugin that uses OITC API.
   Join-Cancelled-Via-API: "&cBu oyuna giremezsin!"
   Arena-Not-Configured: "&cArena daha hazırlanmadı! Bir yetkiliye başvurun!"
   Game-Chat-Format: "&7%player%: &f%message%"
@@ -143,7 +142,9 @@ In-Game:
     Join: "&b%player% &7adlı oyuncu oyuna giriş yaptı &8(&7%players%/%maximum_players%&8)&7!"
     Leave: "&b%player% &7adlı oyuncu oyundan çıktı &8(&7%players%/%maximum_players%&8)&7!"
     Death: "&9%player% &eadlı oyuncu &9%killer% &etarafından öldürüldü!"
-    Kill-Streak: "&9%killer% &b%kill_streak%. &ekişiyi art arda öldürdü!"
+        Kill-Streak:
+      - "&9%killer% &b%kill_streak%. &ekişiyi art arda öldürdü!"
+      - "&9%killer% &edurdurulamıyor!"
     Seconds-Left-Title: "&c%time% &esaniye kaldı!"
     Seconds-Left-Subtitle: "&e%time% saniye sonra oyun bitecek"
     Score-Subtitle: "&a&l+&6&l1"
@@ -210,11 +211,6 @@ Arena-Selector:
       - " "
       - " "
       - "&eArenaya girmek için tıkla"
-
-Validator:
-  Invalid-Arena-Configuration: "Arena %arena% bazı eksik yapılandırmalara sahip! Hata: %error%"
-  Instance-Started: "Arena %arena% başarıyla başlatıldı!"
-  No-Instances-Created: "Oluşturulmuş herhangi bir arena bulunamadı!"
 
 # If you change the value the file will be replaced with default yaml
 # So you shouldn't edit here. Be careful to make changes here!
