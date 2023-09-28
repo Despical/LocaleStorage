@@ -58,7 +58,7 @@ Scoreboard:
       - ""
       - "&fMinimale Anzahl an Spielern: &a%min_players%"
       - ""
-      - "&fMap: &a%mapname%"
+      - "&fMap: &a%map_name%"
       - ""
       - "&epatreon.com/Despical"
     Starting:
@@ -69,7 +69,7 @@ Scoreboard:
       - ""
       - "&fMinimale Anzahl an Spielern: &a%min_players%"
       - ""
-      - "&fMap: &a%mapname%"
+      - "&fMap: &a%map_name%"
       - ""
       - "&epatreon.com/Despical"
     Playing:
@@ -78,7 +78,7 @@ Scoreboard:
       - "%top_player_2%"
       - "%top_player_3%"
       - ""
-      - "&fMap: &e%mapname%"
+      - "&fMap: &e%map_name%"
       - "&fSpieler: &6%players%"
       - "&fScore: &6%kills%"
       - ""
@@ -139,8 +139,8 @@ In-Game:
       Game-Started: "&7Spiel gestartet! Erster Spieler der 25 kills erreicht gewinnt!"
       Kicked-For-Premium-Slot: "&c%player% wurde entfernt um einem Premium Spieler platz zu machen!"
       You-Were-Kicked-For-Premium-Slot: "&cDu wurdest aus dem Spiel entfernt um einem Premium Spieler platz zu machen!"
-    Join: "&b%player%&7 ist beigetreten &8(&7%players%/%maximum_players%&8)&7!"
-    Leave: "&b%player% &7hat das Spiel verlassen &8(&7%players%/%maximum_players%&8)&7!"
+    Join: "&b%player%&7 ist beigetreten &8(&7%players%/%maxplayers%&8)&7!"
+    Leave: "&b%player% &7hat das Spiel verlassen &8(&7%players%/%maxplayers%&8)&7!"
     Death: "&9%player% &ewurde von &9%killer% getoetet!"
     Kill-Streak:
       - "&9%killer% &eis on &b%kill_streak% &ekill streak!"
@@ -188,7 +188,7 @@ Signs:
   Lines:
     - "&4&lOITC"
     - "%state%"
-    - "%mapname%"
+    - "%map_name%"
     - "&5[%players%/%maxplayers%]"
 
 Formatted-Arena-States:
