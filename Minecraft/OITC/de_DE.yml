@@ -13,7 +13,7 @@
 Commands:
   Did-You-Mean: "&cMeintest du &7/%command%&c?"
   Are-You-Sure: "&cBist du dir sicher den Befehl auszufuehren? Gebe den Befehl &6innerhalb 10 Sekunden &cto ein um es zu bestaetigen!"
-  Removed-Game-Instance: "&aDie Spielinstanz wurde Erfolgreich entfernt."
+  Removed-Game-Instance: "&aDie Spielinstanz wurde erfolgreich entfernt."
   No-Arena-Like-That: "&cEs gibt keine Arena mit dieser ID!"
   Look-Sign: "&cDu musst auf ein Schild schauen um diesen Befehl auszufuehren!"
   Type-Arena-Name: "&cBitte tippe eine Arena ID ein!"
@@ -29,13 +29,13 @@ Commands:
   Admin-Commands:
     Teleported-To-Player: "&aTeleportiert zu player!"
     Player-Not-Found: "&cSpieler nicht gefunden!"
-    Success-Reload: "&aDas System hat alle Konfigurationen und Arenas neu geladen!"
+    Success-Reload: "&aDas System hat alle Konfigurationen und Arenen neu geladen!"
     List-Command:
       Format: "&aErstellte Arenen: &7%list%"
       No-Arenas-Created: "&cEs gibt keine Arenen zum anschauen!"
   Stats-Command:
     Header: "&l-----[DEINE STATS]-----"
-    Header-Other: "&l-----[STATS FUER %player%]-----"
+    Header-Other: "&l-----[STATS VON %player%]-----"
     Footer: "&l----------------------"
     Kills: "&aKills: &e"
     Deaths: "&aTode: &e"
@@ -45,8 +45,8 @@ Commands:
     Games-Played: "&aSpiele gespielt: &e"
   
 # Anzeigetafelnachrichten im Spiel.
-# Verwende nicht mehr als 48 Zeichen, wenn Du eine alte Versionen von Minecraft verwendest!!
-# Kann in Version 1.14 und höher mit bis zu 144 Zeichen verwendet werden.
+# Verwende nicht mehr als 48 Zeichen, wenn du eine alte Version von Minecraft verwendest!
+# In den Versionen 1.14 und höher können bis zu 144 Zeichen verwendet werden.
 Scoreboard:
   Title: "&e&lOITC"
   Top-Player-Format: "&f%score% &6%player%"
@@ -58,7 +58,7 @@ Scoreboard:
       - ""
       - "&fMinimale Anzahl an Spielern: &a%min_players%"
       - ""
-      - "&fMap: &a%mapname%"
+      - "&fMap: &a%map_name%"
       - ""
       - "&epatreon.com/Despical"
     Starting:
@@ -69,7 +69,7 @@ Scoreboard:
       - ""
       - "&fMinimale Anzahl an Spielern: &a%min_players%"
       - ""
-      - "&fMap: &a%mapname%"
+      - "&fMap: &a%map_name%"
       - ""
       - "&epatreon.com/Despical"
     Playing:
@@ -78,7 +78,7 @@ Scoreboard:
       - "%top_player_2%"
       - "%top_player_3%"
       - ""
-      - "&fMap: &e%mapname%"
+      - "&fMap: &e%map_name%"
       - "&fSpieler: &6%players%"
       - "&fScore: &6%kills%"
       - ""
@@ -92,7 +92,7 @@ Boss-Bar:
   Starting-In: "&f&lStart in: &e&l%time%"
   Waiting-For-Players: "&4&lWarte auf mehr Spieler..."
   In-Game-Info: "&e&lSpielt &f&lONE IN THE CHAMBER &e&lby &b&lDESPICAL"
-  Game-Ended: "&c&lDie Runde ist zu Ende! Du hast &b&lOITC &c&1gespielt"
+  Game-Ended: "&c&lDie Runde ist zu Ende! Du hast &b&lOITC &c&lgespielt"
 
 # Wird in den meisten Spielnachrichten verwendet.
 In-Game:
@@ -139,13 +139,13 @@ In-Game:
       Game-Started: "&7Spiel gestartet! Erster Spieler der 25 kills erreicht gewinnt!"
       Kicked-For-Premium-Slot: "&c%player% wurde entfernt um einem Premium Spieler platz zu machen!"
       You-Were-Kicked-For-Premium-Slot: "&cDu wurdest aus dem Spiel entfernt um einem Premium Spieler platz zu machen!"
-    Join: "&b%player%&7 ist beigetreten &8(&7%players%/%maximum_players%&8)&7!"
-    Leave: "&b%player% &7hat das Spiel verlassen &8(&7%players%/%maximum_players%&8)&7!"
+    Join: "&b%player%&7 ist beigetreten &8(&7%players%/%maxplayers%&8)&7!"
+    Leave: "&b%player% &7hat das Spiel verlassen &8(&7%players%/%maxplayers%&8)&7!"
     Death: "&9%player% &ewurde von &9%killer% getoetet!"
     Kill-Streak:
-      - "&9%killer% &eis on &b%kill_streak% &ekill streak!"
-      - "&9%killer% &eis unbeatable!"
-    Seconds-Left-Title: "&c%time% &eSekunden noch uebrig!"
+      - "&9%killer% &ehat eine &b%kill_streak%er&e-Killstraehne!"
+      - "&9%killer% &eist unbesiegbar!"
+    Seconds-Left-Title: "&eNoch &c%time% &eSekunden!"
     Seconds-Left-Subtitle: "&eNach %time%s wird das Spiel beendet"
     Score-Subtitle: "&a&l+&6&l1"
     Death-Subtitle: ""
@@ -181,24 +181,24 @@ Signs:
     Waiting: "&lWarten..."
     Inactive: "&lInaktiv..."
     In-Game: "&lIm Spiel"
-    Starting: "&e&lStarted"
+    Starting: "&e&lStartet"
     Full-Game: "&c&lVOLL"
     Ending: "&lEndet"
     Restarting: "&c&lNeustart"
   Lines:
     - "&4&lOITC"
     - "%state%"
-    - "%mapname%"
+    - "%map_name%"
     - "&5[%players%/%maxplayers%]"
 
 Formatted-Arena-States:
   Waiting: "Warten"
-  Starting: "Started"
+  Starting: "Startet"
   Playing: "Spielen"
   Ending: "Endet"
-  Restarting: "Startet neu"
+  Restarting: "Neustart"
   Inactive: "Inaktiv"
 
-# Wenn Du den Wert änderst, wird die Datei durch das Standard-YAML ersetzt
+# Wenn du den Wert änderst, wird die Datei durch das Standard-YAML ersetzt
 # Du solltest hier also nicht bearbeiten. Sei vorsichtig, hier Änderungen vorzunehmen!
 Language: de
