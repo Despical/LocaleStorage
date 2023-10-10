@@ -1,5 +1,5 @@
 # 您可以在這裡翻譯 One in the Chamber 的訊息。
-#          支援顏色程式碼(&)。
+#          支援顏色代碼（&）。
 #
 #         使用 \n 換行
 # 一些訊息，如套件和套件物品
@@ -13,7 +13,7 @@
 Commands:
   Did-You-Mean: "&3您是否指的是 &b/%command%&3?"
   Are-You-Sure: "&c您確定要執行此操作嗎？再次輸入指令，在 10 秒內確認！"
-  Removed-Game-Instance: "&a已成功移除遊戲！"
+  Removed-Game-Instance: "&a已成功移除遊戲實例！"
   No-Arena-Like-That: "&c找不到與該名稱匹配的場地！"
   Look-Sign: "&c您必須看著一個牌子才能執行此指令！"
   Type-Arena-Name: "&c請輸入場地名稱！"
@@ -46,8 +46,8 @@ Commands:
   
   
 # One in the Chamber 遊戲計分板訊息。
-# 如果使用舊版本的Minecraft，請不要使用超過48個字元！
-# 在1.14及更高版本中可以使用多達144個字元。
+# 如果使用舊版本的 Minecraft，請不要使用超過 48 個字元！
+# 在 1.14 及更高版本中可以使用多達 144 個字元。
 Scoreboard:
   Title: "&e&lOITC"
   Top-Player-Format: "&f%score% &6%player%"
@@ -85,7 +85,7 @@ Scoreboard:
       - "&epatreon.com/despical"
 
 
-# 僅在配置檔案的boss bar啟用時使用
+# 僅在配置檔案的 boss bar 啟用時使用
 Boss-Bar:
   Main-Title: "&a&lOne in the Chamber &f&l- &6&lDespical"
   Starting-In: "&f&l即將開始：&e&l%time%"
@@ -97,7 +97,7 @@ Boss-Bar:
 In-Game:
   Plugin-Prefix: "&8[&6OITC&8] "
   Already-Playing: "&c您已經在等待加入遊戲！您可以使用 /oitc leave 離開遊戲。"
-  Join-No-Permission: "&c您沒有加入該場地的 &6%permission% &c權限。"
+  Join-No-Permission: "&c您沒有加入該場地的權限。&c（&6%permission%&c）"
   Full-Game-No-Permission: "&c您沒有加入已滿的遊戲的權限！"
   No-Slots-For-Premium: "&c該遊戲已滿員，只接受高階玩家！抱歉。"
   You-Are-Spectator: "&c您現在是旁觀者！您可以飛行！"
@@ -109,7 +109,7 @@ In-Game:
   Game-Death-Format: "&7[&4旁觀者聊天&7] &r"
   Game-Items:
     Leave-Item:
-      Returning-Lobby: "&a&l將您傳送到大廳，3秒後...\n&a&l再次右鍵取消傳送！"
+      Returning-Lobby: "&a&l3 秒後將您傳送到大廳...\n&a&l再次點擊右鍵取消傳送！"
       Teleport-Cancelled: "&c&l傳送已取消！"
   Spectator:
     Spectator-Menu-Name: "&8傳送器"
@@ -147,7 +147,7 @@ In-Game:
     Already-Force-Start: "&c遊戲已經在開始中！"
     Kill-Streak:
       - "&9%killer% &e已連殺 &b%kill_streak% &e次！"
-      - "&9%killer% &eis unbeatable!"
+      - "&9%killer% &e已經無人能擋了！"
     Seconds-Left-Title: "&c%time% &e秒剩餘！"
     Seconds-Left-Subtitle: "&e%time% 秒後遊戲結束"
     Score-Subtitle: "&a&l+&6&l1"
@@ -179,9 +179,9 @@ In-Game:
 Signs:
   Please-Type-Arena-Name: "&c請在第二行輸入場地名稱！"
   Arena-Doesnt-Exists: "&c該名稱的場地不存在！"
-  Doesnt-Have-Permission: "&c您沒有足夠的權限來破壞此牌子！"
-  Sign-Created: "&a牌子建立成功！"
-  Sign-Removed: "&a牌子成功移除！"
+  Doesnt-Have-Permission: "&c您沒有足夠的權限來破壞此告示牌！"
+  Sign-Created: "&a建立成功告示牌！"
+  Sign-Removed: "&a成功移除告示牌！"
   Game-States:
     Waiting: "&l等待中..."
     Starting: "&e&l開始中"
@@ -204,6 +204,6 @@ Formatted-Arena-States:
   Restarting: "重啟中"
   Inactive: "未啟用"
 
-# If you change the value the file will be replaced with default yaml
-# So you shouldn't edit here. Be careful to make changes here!
+# 如果更改該值，檔案將被預設 YAML 所取代。
+# 所以你不應該在這裡編輯。在修改時要小心！
 Language: zh_TW

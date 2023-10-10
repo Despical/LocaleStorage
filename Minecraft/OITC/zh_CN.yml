@@ -1,5 +1,5 @@
 # 您可以在这里翻译 One in the Chamber 的消息。
-#          支持颜色代码(&)。
+#          支持颜色代码（&）。
 #
 #         使用 \n 换行
 # 一些消息，如套件和套件物品
@@ -46,8 +46,8 @@ Commands:
   
   
 # One in the Chamber 游戏计分板消息。
-# 如果使用旧版本的Minecraft，请不要使用超过48个字符！
-# 在1.14及更高版本中可以使用多达144个字符。
+# 如果使用旧版本的 Minecraft，请不要使用超过 48 个字符！
+# 在 1.14 及更高版本中可以使用多达 144 个字符。
 Scoreboard:
   Title: "&e&lOITC"
   Top-Player-Format: "&f%score% &6%player%"
@@ -85,7 +85,7 @@ Scoreboard:
       - "&epatreon.com/despical"
 
 
-# 仅在配置文件的boss bar启用时使用
+# 仅在配置文件的 boss bar 启用时使用
 Boss-Bar:
   Main-Title: "&a&lOne in the Chamber &f&l- &6&lDespical"
   Starting-In: "&f&l即将开始：&e&l%time%"
@@ -97,7 +97,7 @@ Boss-Bar:
 In-Game:
   Plugin-Prefix: "&8[&6OITC&8] "
   Already-Playing: "&c您已经在等待加入游戏！您可以使用 /oitc leave 离开游戏。"
-  Join-No-Permission: "&c您没有加入该竞技场的 &6%permission% &c权限。"
+  Join-No-Permission: "&c您没有加入该竞技场的权限。&c（&6%permission%&c）"
   Full-Game-No-Permission: "&c您没有加入已满的游戏的权限！"
   No-Slots-For-Premium: "&c该游戏已满员，只接受高级玩家！抱歉。"
   You-Are-Spectator: "&c您现在是旁观者！您可以飞行！"
@@ -109,7 +109,7 @@ In-Game:
   Game-Death-Format: "&7[&4旁观者聊天&7] &r"
   Game-Items:
     Leave-Item:
-      Returning-Lobby: "&a&l将您传送到大厅，3秒后...\n&a&l再次右键取消传送！"
+      Returning-Lobby: "&a&l3 秒后将您传送到大厅...\n&a&l再次右键点击取消传送！"
       Teleport-Cancelled: "&c&l传送已取消！"
   Spectator:
     Spectator-Menu-Name: "&8传送器"
@@ -147,7 +147,7 @@ In-Game:
     Already-Force-Start: "&c游戏已经在开始中！"
     Kill-Streak:
       - "&9%killer% &e已连杀 &b%kill_streak% &e次！"
-      - "&9%killer% &eis unbeatable!"    
+      - "&9%killer% &e已经无人能挡了！"    
     Seconds-Left-Title: "&c%time% &e秒剩余！"
     Seconds-Left-Subtitle: "&e%time% 秒后游戏结束"
     Score-Subtitle: "&a&l+&6&l1"
@@ -204,6 +204,6 @@ Formatted-Arena-States:
   Restarting: "重启中"
   Inactive: "未激活"
 
-# If you change the value the file will be replaced with default yaml
-# So you shouldn't edit here. Be careful to make changes here!
+# 如果更改该值，文件将被默认 YAML 所取代。
+# 所以你不应该在这里编辑。在这里修改时要小心！
 Language: zh_CN

@@ -1,5 +1,5 @@
 # 您可以在這裡翻譯 One in the Chamber 嘅訊息。
-#          支援顏色程式碼(&)。
+#          支援顏色碼（&）。
 #
 #         使用 \n 換行
 # 一些訊息，如套件和套件物品
@@ -13,9 +13,9 @@
 Commands:
   Did-You-Mean: "&3您指嘅係咪 &b/%command%&3?"
   Are-You-Sure: "&c您確定要咁樣做？請喺十秒內再打一次指令！"
-  Removed-Game-Instance: "&a已成功移除遊戲例項！"
+  Removed-Game-Instance: "&a已成功移除遊戲實例！"
   No-Arena-Like-That: "&c找不到與該名稱匹配嘅場地！"
-  Look-Sign: "&c您必須看著一個牌子先可以執行呢個指令！"
+  Look-Sign: "&c您必須睇住一個指示牌先可以執行呢個指令！"
   Type-Arena-Name: "&c請輸入場地名稱！"
   No-Free-Arenas: "&c冇可用嘅場地！"
   Statistics:
@@ -46,8 +46,8 @@ Commands:
   
   
 # One in the Chamber 遊戲計分板訊息。
-# 如果使用舊版本嘅Minecraft，請不要使用超過48個字元！
-# 在1.14及更高版本中可以使用多達144個字元。
+# 如果使用舊版本嘅 Minecraft，請不要使用超過 48 個字元！
+# 在 1.14 及更高版本中可以使用多達 144 個字元。
 Scoreboard:
   Title: "&e&lOITC"
   Top-Player-Format: "&f%score% &6%player%"
@@ -91,18 +91,18 @@ Boss-Bar:
   Starting-In: "&f&l即將開始：&e&l%time%"
   Waiting-For-Players: "&4&l等待更多玩家加入..."
   In-Game-Info: "&e&l您目前玩嘅 ONE IN THE CHAMBER &e&lby &b&lDESPICAL"
-  Game-Ended: "&c&l遊戲已結束！您目前玩嘅是 &b&lOITC"
+  Game-Ended: "&c&l遊戲已結束！您目前玩嘅係 &b&lOITC"
 
 # 用於大多數遊戲訊息。
 In-Game:
   Plugin-Prefix: "&8[&6OITC&8] "
   Already-Playing: "&c您已經等待緊加入遊戲！您可以用 /oitc leave 離開遊戲。"
-  Join-No-Permission: "&c您冇加入該場地嘅 &6%permission% &c權限。"
-  Full-Game-No-Permission: "&c您冇加入已滿嘅遊戲嘅權限！"
-  No-Slots-For-Premium: "&c呢個遊戲已經滿人，只接受高階玩家！唔好意思。"
-  You-Are-Spectator: "&c您而家係旁觀者！您可以飛行！"
+  Join-No-Permission: "&c您冇加入該場地嘅權限。&c（&6%permission%&c）"
+  Full-Game-No-Permission: "&c您冇權限加入已滿嘅遊戲！"
+  No-Slots-For-Premium: "&c唔好意思！呢個遊戲已經滿人，只接受高階玩家。"
+  You-Are-Spectator: "&c您而家係旁觀者！已為你開啟飛行模式！"
   Spectating-Disabled-On-Bungee: "&c旁觀模式在呢個伺服器上已禁用！"
-  Only-Command-Ingame-Is-Leave: "&c您必須先離開遊戲先可以執行指令。唯一可用嘅指令是 /oitc leave！"
+  Only-Command-Ingame-Is-Leave: "&c您必須離開遊戲先可以執行指令。唯一可用嘅指令是 /oitc leave！"
   Join-Cancelled-Via-API: "&c您加入唔到呢個遊戲！"
   Arena-Not-Configured: "&c場地未完成設置！請聯絡工作人員！"
   Game-Chat-Format: "&7%player%: &f%message%"
@@ -147,7 +147,7 @@ In-Game:
     Already-Force-Start: "&c遊戲已經開始緊！"
     Kill-Streak:
       - "&9%killer% &e已連殺 &b%kill_streak% &e次！"
-      - "&9%killer% &eis unbeatable!"
+      - "&9%killer% &e已經無敵啦！"
     Seconds-Left-Title: "&e剩餘 &c%time% &e秒！"
     Seconds-Left-Subtitle: "&e遊戲將會於 %time% 秒後結束"
     Score-Subtitle: "&a&l+&6&l1"
@@ -179,9 +179,9 @@ In-Game:
 Signs:
   Please-Type-Arena-Name: "&c請在第二行輸入場地名稱！"
   Arena-Doesnt-Exists: "&c該名稱嘅場地不存在！"
-  Doesnt-Have-Permission: "&c您冇足夠嘅權限破壞呢個牌！"
-  Sign-Created: "&a牌建立成功！"
-  Sign-Removed: "&a牌成功移除！"
+  Doesnt-Have-Permission: "&c您冇足夠嘅權限破壞呢個指示牌！"
+  Sign-Created: "&a指示牌建立成功！"
+  Sign-Removed: "&a指示牌成功移除！"
   Game-States:
     Waiting: "&l等待中..."
     Starting: "&e&l開始中"
@@ -204,6 +204,6 @@ Formatted-Arena-States:
   Restarting: "重啟中"
   Inactive: "未啟用"
   
-# If you change the value the file will be replaced with default yaml
-# So you shouldn't edit here. Be careful to make changes here!
+# 如果更改該值，檔案將被預設 YAML 所取代。
+# 所以你不應該在這裡編輯。在修改時要小心！
 Language: zh_HK
