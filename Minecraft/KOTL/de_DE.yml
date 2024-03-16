@@ -12,7 +12,8 @@
 
 # King of the Ladder Command Messages
 Commands:
-  Did-You-Mean: "&cMeintest du &7/%command%&c?"
+  Did-You-Mean: "&cMeintest du &7%command%&c?"
+  Correct-Usage: "&cCorrect usage: %usage%"
   Are-You-Sure: "&cBist du dir sicher den Befehl auszufuehren? Gebe den Befehl &6innerhalb 10 Sekunden &cto ein um es zu bestaetigen!"
   Type-Arena-Name: "&cPlease type arena name!"
   Removed-Game-Instance: "&aDie Spielinstanz wurde Erfolgreich entfernt."
