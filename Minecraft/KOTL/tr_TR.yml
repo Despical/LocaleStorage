@@ -12,7 +12,8 @@
 
 # King of the Ladder Command Messages
 Commands:
-  Did-You-Mean: "&cBunu mu demek istemiştiniz &7/%command%&c?"
+  Did-You-Mean: "&cBunu mu demek istemiştiniz &7%command%&c?"
+  Correct-Usage: "&cDoğru kullanım: %usage%"
   Are-You-Sure: "&cBunu gerçekten yapmak istiyor musun? Onaylamak için komutu &610 saniye içinde &ctekrar yazın!"
   Type-Arena-Name: "&cLütfen bir arena ismi girin!"
   Removed-Game-Instance: "&aArena başarıyla silindi."
