@@ -13,7 +13,7 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 Commands:
-  Did-You-Mean: "&cBunu mu demek istemiştiniz &7/%command%&c?"
+  Did-You-Mean: "&3Bunu mu demek istemiştiniz &b%command%&3?"
   Correct-Usage: "&cDoğru kullanım: %usage%"
   Are-You-Sure: "&cBunu gerçekten yapmak istiyor musun? Onaylamak için komutu &610 saniye içinde &ctekrar yazın!"
   Removed-Game-Instance: "&aArena başarıyla silindi!"

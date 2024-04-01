@@ -13,7 +13,7 @@
 # # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
 Commands:
-  Did-You-Mean: "&3您是否指的是 &b/%command%&3?"
+  Did-You-Mean: "&3您是否指的是 &b%command%&3?"
   Correct-Usage: "&cCorrect usage: %usage%"
   Are-You-Sure: "&c您确定要执行此操作吗？再次输入命令，在 10 秒内确认！"
   Removed-Game-Instance: "&a已成功移除游戏实例！"
