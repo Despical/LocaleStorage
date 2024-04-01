@@ -1,17 +1,20 @@
-#    Du kannst hier OITC Nachrichten übersetzen
-#             Color codes (&) werden unterstützt.
-#
-#              Nutze \n um eine neue Linie anzufangen
-#        Einige Nachrichten wie Kit und Kit Items
-#        beschreibungen unterstützen nicht neue Linien.
-# alle 40 Zeichen wird automatisch umgebrochen
-#
-#     Einige Nachrichten unterstützen ihre eigenen Platzhalter
-#                 wie %player%
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#                                                         #
+#    You can translate One in the Chamber messages here   #
+#                Color codes (&) supported.               #
+#                                                         #
+#                 Use \n to make new line                 #
+#            Some messages are wrapped every 40           #
+#                characters automatically                 #
+#                                                         #
+#       Some messages support their own placeholders      #
+#                      like %player%                      #
+#                                                         #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-# OITC Befehlsnachrichten
 Commands:
-  Did-You-Mean: "&cMeintest du &7/%command%&c?"
+  Did-You-Mean: "&3Meintest du &b%command%&3?"
+  Correct-Usage: "&cCorrect usage: %usage%"
   Are-You-Sure: "&cBist du dir sicher den Befehl auszufuehren? Gebe den Befehl &6innerhalb 10 Sekunden &cto ein um es zu bestaetigen!"
   Removed-Game-Instance: "&aDie Spielinstanz wurde erfolgreich entfernt."
   No-Arena-Like-That: "&cEs gibt keine Arena mit dieser ID!"
@@ -51,7 +54,6 @@ Scoreboard:
   Title: "&e&lOITC"
   Top-Player-Format: "&f%score% &6%player%"
   Content:
-    # Inhalt der Anzeigetafel für Spieler
     Waiting:
       - ""
       - "&fSpieler: &a%players%"

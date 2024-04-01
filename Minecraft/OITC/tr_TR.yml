@@ -1,17 +1,20 @@
-#    You can translate One in the Chamber messages here.
-#             Color codes (&) supported.
-#
-#              Use \n to make new line
-#        Some messages like kit and kit items
-#        descriptions don't support new lines
-# they are wrapped every 40 characters automatically
-#
-#     Some messages support their own placeholders
-#                 like %player%
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#                                                         #
+#    You can translate One in the Chamber messages here   #
+#                Color codes (&) supported.               #
+#                                                         #
+#                 Use \n to make new line                 #
+#            Some messages are wrapped every 40           #
+#                characters automatically                 #
+#                                                         #
+#       Some messages support their own placeholders      #
+#                      like %player%                      #
+#                                                         #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-# OITC Command Messages
 Commands:
   Did-You-Mean: "&cBunu mu demek istemiştiniz &7/%command%&c?"
+  Correct-Usage: "&cDoğru kullanım: %usage%"
   Are-You-Sure: "&cBunu gerçekten yapmak istiyor musun? Onaylamak için komutu &610 saniye içinde &ctekrar yazın!"
   Removed-Game-Instance: "&aArena başarıyla silindi!"
   No-Arena-Like-That: "&cBu isimde bir arena bulunamadı!"
@@ -51,7 +54,6 @@ Scoreboard:
   Title: "&e&lOITC"
   Top-Player-Format: "&f%score% &6%player%"
   Content:
-    # Contents of scoreboard for players
     Waiting:
       - ""
       - "&fOyuncular: &a%players%"
@@ -142,7 +144,7 @@ In-Game:
     Join: "&b%player% &7adlı oyuncu oyuna giriş yaptı &8(&7%players%/%maximum_players%&8)&7!"
     Leave: "&b%player% &7adlı oyuncu oyundan çıktı &8(&7%players%/%maximum_players%&8)&7!"
     Death: "&9%player% &eadlı oyuncu &9%killer% &etarafından öldürüldü!"
-        Kill-Streak:
+    Kill-Streak:
       - "&9%killer% &b%kill_streak%. &ekişiyi art arda öldürdü!"
       - "&9%killer% &edurdurulamıyor!"
     Seconds-Left-Title: "&c%time% &esaniye kaldı!"

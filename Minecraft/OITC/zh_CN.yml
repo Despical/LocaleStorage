@@ -1,17 +1,20 @@
-# 您可以在这里翻译 One in the Chamber 的消息。
-#          支持颜色代码（&）。
-#
-#         使用 \n 换行
-# 一些消息，如套件和套件物品
-#        描述不支持换行
-#   它们会自动在每 40 個字符换行
-#
-#      一些消息支持自己的占位符
-#             如 %player%
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#                                                         #
+#    You can translate One in the Chamber messages here   #
+#                Color codes (&) supported.               #
+#                                                         #
+#                 Use \n to make new line                 #
+#            Some messages are wrapped every 40           #
+#                characters automatically                 #
+#                                                         #
+#       Some messages support their own placeholders      #
+#                      like %player%                      #
+#                                                         #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-# One in the Chamber 命令消息
 Commands:
   Did-You-Mean: "&3您是否指的是 &b/%command%&3?"
+  Correct-Usage: "&cCorrect usage: %usage%"
   Are-You-Sure: "&c您确定要执行此操作吗？再次输入命令，在 10 秒内确认！"
   Removed-Game-Instance: "&a已成功移除游戏实例！"
   No-Arena-Like-That: "&c找不到与该名称匹配的竞技场！"
@@ -44,7 +47,6 @@ Commands:
     Highest-Score: "&a最高分数：&e"
     Games-Played: "&a游戏次数：&e"
   
-  
 # One in the Chamber 游戏计分板消息。
 # 如果使用旧版本的 Minecraft，请不要使用超过 48 个字符！
 # 在 1.14 及更高版本中可以使用多达 144 个字符。
@@ -52,7 +54,6 @@ Scoreboard:
   Title: "&e&lOITC"
   Top-Player-Format: "&f%score% &6%player%"
   Content:
-    # 玩家计分板的内容
     Waiting:
       - ""
       - "&f地图：&a%map_name%"

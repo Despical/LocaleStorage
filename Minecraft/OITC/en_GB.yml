@@ -1,17 +1,20 @@
-#    You can translate One in the Chamber messages here.
-#             Color codes (&) supported.
-#
-#              Use \n to make new line
-#        Some messages like kit and kit items
-#        descriptions don't support new lines
-# they are wrapped every 40 characters automatically
-#
-#     Some messages support their own placeholders
-#                 like %player%
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#                                                         #
+#    You can translate One in the Chamber messages here   #
+#                Color codes (&) supported.               #
+#                                                         #
+#                 Use \n to make new line                 #
+#            Some messages are wrapped every 40           #
+#                characters automatically                 #
+#                                                         #
+#       Some messages support their own placeholders      #
+#                      like %player%                      #
+#                                                         #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-# One in the Chamber Command Messages
 Commands:
   Did-You-Mean: "&3Did you mean &b/%command%&3?"
+  Correct-Usage: "&cCorrect usage: %usage%"
   Are-You-Sure: "&cAre you sure you want to do this action? Type the command again &6within 10 seconds &cto confirm!"
   Removed-Game-Instance: "&aSuccessfully removed game instance!"
   No-Arena-Like-That: "&cWe couldn't find any arena with that name matching!"
@@ -51,7 +54,6 @@ Scoreboard:
   Title: "&e&lOITC"
   Top-Player-Format: "&f%score% &6%player%"
   Content:
-    # Contents of scoreboard for players
     Waiting:
       - ""
       - "&fMap: &a%map_name%"

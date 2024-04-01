@@ -1,17 +1,20 @@
-# 您可以在這裡翻譯 One in the Chamber 嘅訊息。
-#          支援顏色碼（&）。
-#
-#         使用 \n 換行
-# 一些訊息，如套件和套件物品
-#        描述不支援換行
-#   它們會自動在每 40 個字元換行
-#
-#      一些訊息支援自己嘅佔位符
-#             如 %player%
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#                                                         #
+#    You can translate One in the Chamber messages here   #
+#                Color codes (&) supported.               #
+#                                                         #
+#                 Use \n to make new line                 #
+#            Some messages are wrapped every 40           #
+#                characters automatically                 #
+#                                                         #
+#       Some messages support their own placeholders      #
+#                      like %player%                      #
+#                                                         #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
 
-# One in the Chamber 指令訊息
 Commands:
   Did-You-Mean: "&3您指嘅係咪 &b/%command%&3?"
+  Correct-Usage: "&cCorrect usage: %usage%"
   Are-You-Sure: "&c您確定要咁樣做？請喺十秒內再打一次指令！"
   Removed-Game-Instance: "&a已成功移除遊戲實例！"
   No-Arena-Like-That: "&c找不到與該名稱匹配嘅場地！"
@@ -44,7 +47,6 @@ Commands:
     Highest-Score: "&a最高分數：&e"
     Games-Played: "&a遊戲次數：&e"
   
-  
 # One in the Chamber 遊戲計分板訊息。
 # 如果使用舊版本嘅 Minecraft，請不要使用超過 48 個字元！
 # 在 1.14 及更高版本中可以使用多達 144 個字元。
@@ -52,7 +54,6 @@ Scoreboard:
   Title: "&e&lOITC"
   Top-Player-Format: "&f%score% &6%player%"
   Content:
-    # 玩家計分板嘅內容
     Waiting:
       - ""
       - "&f地圖：&a%map_name%"
