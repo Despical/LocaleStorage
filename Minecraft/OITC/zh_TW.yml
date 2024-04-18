@@ -29,6 +29,9 @@ Commands:
   Only-By-Player: "&c您只能作為玩家執行此指令！"
   Not-Playing: "&c您必須參與遊戲才能執行此指令！"
   No-Permission: "&c您沒有使用此指令的權限！"
+  Leaderboard-Command:
+    Empty-Entry: "Empty"
+    Unknown-Entry: "Unknown Player"
   Admin-Commands:
     Teleported-To-Player: "&a傳送至玩家！"
     Player-Not-Found: "&c找不到玩家！"

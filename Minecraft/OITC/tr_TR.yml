@@ -29,6 +29,9 @@ Commands:
   Only-By-Player: "&cBu komut sadece oyuncular tarafından kullanılabilir!"
   Not-Playing: "&cBu komutu sadece oyunun içinden kullanılabilirsin!"
   No-Permission: "&cBu komutu kullanmak için yeterli yetkiye sahip değilsin!"
+  Leaderboard-Command:
+    Empty-Entry: "Boş"
+    Unknown-Entry: "Bilinmeyen Oyuncu"
   Admin-Commands:
     Teleported-To-Player: "&aOyuncuya ışınlanıldı!"
     Player-Not-Found: "&cOyuncu bulunamadı!"
