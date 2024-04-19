@@ -14,7 +14,7 @@
 
 Commands:
   Did-You-Mean: "&3您是否指的是 &b%command%&3?"
-  Correct-Usage: "&cCorrect usage: %usage%"
+  Correct-Usage: "&c正確使用方法：%usage%"
   Are-You-Sure: "&c您確定要執行此操作嗎？再次輸入指令，在 10 秒內確認！"
   Removed-Game-Instance: "&a已成功移除遊戲實例！"
   No-Arena-Like-That: "&c找不到與該名稱匹配的場地！"
@@ -30,8 +30,8 @@ Commands:
   Not-Playing: "&c您必須參與遊戲才能執行此指令！"
   No-Permission: "&c您沒有使用此指令的權限！"
   Leaderboard-Command:
-    Empty-Entry: "Empty"
-    Unknown-Entry: "Unknown Player"
+    Empty-Entry: "空"
+    Unknown-Entry: "未知玩家"
   Admin-Commands:
     Teleported-To-Player: "&a傳送至玩家！"
     Player-Not-Found: "&c找不到玩家！"
