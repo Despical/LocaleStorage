@@ -15,10 +15,10 @@
 Commands:
   Did-You-Mean: "&3您是否指的是 &b%command%&3?"
   Correct-Usage: "&c正確使用方法：%usage%"
-  Are-You-Sure: "&c您確定要執行此操作嗎？再次輸入指令，在 10 秒內確認！"
+  Are-You-Sure: "&c您確定要執行此操作嗎？請在 10 秒內再次輸入指令進行確認！"
   Removed-Game-Instance: "&a已成功移除遊戲實例！"
   No-Arena-Like-That: "&c找不到與該名稱匹配的場地！"
-  Look-Sign: "&c您必須看著一個牌子才能執行此指令！"
+  Look-Sign: "&c您必須看著一個告示牌才能執行此指令！"
   Type-Arena-Name: "&c請輸入場地名稱！"
   No-Free-Arenas: "&c沒有可用的場地！"
   Statistics:

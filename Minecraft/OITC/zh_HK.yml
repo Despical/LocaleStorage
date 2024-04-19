@@ -15,7 +15,7 @@
 Commands:
   Did-You-Mean: "&3您指嘅係咪 &b%command%&3?"
   Correct-Usage: "&c正確用法：%usage%"
-  Are-You-Sure: "&c您確定要咁樣做？請喺十秒內再打一次指令！"
+  Are-You-Sure: "&c您確定要咁樣做？請喺十秒內再打一次指令進行確認！"
   Removed-Game-Instance: "&a已成功移除遊戲實例！"
   No-Arena-Like-That: "&c找不到與該名稱匹配嘅場地！"
   Look-Sign: "&c您必須睇住一個指示牌先可以執行呢個指令！"
