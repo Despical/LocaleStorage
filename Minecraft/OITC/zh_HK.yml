@@ -30,7 +30,7 @@ Commands:
   Not-Playing: "&c您必須喺遊戲裏面先可以執行呢個指令！"
   No-Permission: "&c您冇使用呢個指令嘅權限！"
   Leaderboard-Command:
-    Empty-Entry: "空"
+    Empty-Entry: "無"
     Unknown-Entry: "未知玩家"
   Admin-Commands:
     Teleported-To-Player: "&a傳送至玩家！"
