@@ -15,7 +15,6 @@
 Commands:
   Did-You-Mean: "&3Meintest du &b%command%&3?"
   Correct-Usage: "&cCorrect usage: %usage%"
-  Are-You-Sure: "&cBist du dir sicher den Befehl auszufuehren? Gebe den Befehl &6innerhalb 10 Sekunden &cto ein um es zu bestaetigen!"
   Removed-Game-Instance: "&aDie Spielinstanz wurde erfolgreich entfernt."
   No-Arena-Like-That: "&cEs gibt keine Arena mit dieser ID!"
   Look-Sign: "&cDu musst auf ein Schild schauen um diesen Befehl auszufuehren!"
@@ -29,6 +28,9 @@ Commands:
   Only-By-Player: "&cDu kannst diesen Befehl nur als Spieler ausfuehren!"
   Not-Playing: "&cDu musst in einer laufenden Runde sein um diesen Befehl ausfuehren!"
   No-Permission: "&cDu hast nicht die Berechtigung um das zu tun!"
+  Leaderboard-Command:
+    Empty-Entry: "Empty"
+    Unknown-Entry: "Unknown Player"
   Admin-Commands:
     Teleported-To-Player: "&aTeleportiert zu player!"
     Player-Not-Found: "&cSpieler nicht gefunden!"
@@ -39,13 +41,15 @@ Commands:
   Stats-Command:
     Header: "&l-----[DEINE STATS]-----"
     Header-Other: "&l-----[STATS VON %player%]-----"
-    Footer: "&l----------------------"
-    Kills: "&aKills: &e"
-    Deaths: "&aTode: &e"
-    Wins: "&aWins: &e"
-    Loses: "&aLoses: &e"
-    Highest-Score: "&aHoehster Score: &e"
-    Games-Played: "&aSpiele gespielt: &e"
+    Messages:
+      - "%header%"
+      - "&8 * &aKills: &e%kills%"
+      - "&8 * &aDeaths: &e%deaths%"
+      - "&8 * &aWins: &e%wins%"
+      - "&8 * &aLoses: &e%loses%"
+      - "&8 * &aHighest score: &e%highest_score%"
+      - "&8 * &aGames played: &e%games_played%"
+      - "&l----------------------"
   
 # Anzeigetafelnachrichten im Spiel.
 # Verwende nicht mehr als 48 Zeichen, wenn du eine alte Version von Minecraft verwendest!
@@ -56,24 +60,22 @@ Scoreboard:
   Content:
     Waiting:
       - ""
-      - "&fSpieler: &a%players%"
-      - ""
-      - "&fMinimale Anzahl an Spielern: &a%min_players%"
-      - ""
       - "&fMap: &a%map_name%"
+      - "&fPlayers: &a%players%/%max_players%"
       - ""
-      - "&epatreon.com/Despical"
+      - "&fWaiting for players..."
+      - ""
+      - "&epatreon.com/despical"
     Starting:
       - ""
-      - "&fStart in: &a%time%"
-      - ""
-      - "&fSpieler: &a%players%"
-      - ""
-      - "&fMinimale Anzahl an Spielern: &a%min_players%"
-      - ""
       - "&fMap: &a%map_name%"
+      - "&fPlayers: &a%players%/%max_players%"
       - ""
-      - "&epatreon.com/Despical"
+      - "&fStarting in &a%formatted_time% &fto"
+      - "&fallow time for"
+      - "&fadditional players"
+      - ""
+      - "&epatreon.com/despical"
     Playing:
       - ""
       - "%top_player_1%"
@@ -90,9 +92,9 @@ Scoreboard:
 
 # Wird nur verwendet, wenn die Boss-Leiste in config.yml aktiviert ist
 Boss-Bar:
-  Main-Title: "&a&lOne in the Chamber &f&l- &6&lDespical"
+  Main-Title: "&e&lPLAYING &f&lONE IN THE CHAMBER &e&lby &b&lDespical"
   Starting-In: "&f&lStart in: &e&l%time%"
-  Waiting-For-Players: "&4&lWarte auf mehr Spieler..."
+  Waiting-For-Players: "&e&lPLAYING &f&lONE IN THE CHAMBER &e&lby &b&lDespical"
   In-Game-Info: "&e&lSpielt &f&lONE IN THE CHAMBER &e&lby &b&lDESPICAL"
   Game-Ended: "&c&lDie Runde ist zu Ende! Du hast &b&lOITC &c&lgespielt"
 
@@ -110,8 +112,11 @@ In-Game:
   Arena-Not-Configured: "&cDie Arena ist noch nicht eingerichtet! Kontaktiere ein Teammitglied!"
   Game-Chat-Format: "&7%player%: &f%message%"
   Game-Death-Format: "&7[&4☠&7] &r"
+  Game-Items:
+    Leave-Item:
+      Returning-Lobby: "&a&lTeleporting you to the lobby in 3 seconds...\n&a&lRight-click again to cancel the teleport!"
+      Teleport-Cancelled: "&c&lTeleport cancelled!"
   Spectator:
-    Spectator-Item-Name: "&b&lTeleporter &7(Rechtsklick)"
     Spectator-Menu-Name: "&8Teleporter"
     Target-Player-Score: "&7Score: %score%"
     Settings-Menu:
@@ -144,13 +149,18 @@ In-Game:
     Join: "&b%player%&7 ist beigetreten &8(&7%players%/%maxplayers%&8)&7!"
     Leave: "&b%player% &7hat das Spiel verlassen &8(&7%players%/%maxplayers%&8)&7!"
     Death: "&9%player% &ewurde von &9%killer% getoetet!"
+    Unknown-Death: "&9%player% &eis killed by &ksomeoneunknown&7!"
+    Already-Force-Start: "&cThe game is already starting!"
     Kill-Streak:
       - "&9%killer% &ehat eine &b%kill_streak%er&e-Killstraehne!"
       - "&9%killer% &eist unbesiegbar!"
+      - "2:&9%killer% &egot 2 players in a row!"
+      - "5:&9%killer% &egot 5 kills in a row!"
+      - "10:&9%killer% &eis now reached to 10 kills in a row!"
     Seconds-Left-Title: "&eNoch &c%time% &eSekunden!"
     Seconds-Left-Subtitle: "&eNach %time%s wird das Spiel beendet"
     Score-Subtitle: "&a&l+&6&l1"
-    Death-Subtitle: ""
+    Death-Subtitle: "&c&lYou have died!"
     Game-End-Messages:
       Titles:
         Win: "&fGewonnen"
@@ -159,16 +169,18 @@ In-Game:
         Win: "&e%winner%"
         Lose: "&c%winner% &ahat das Spiel gewonnen!"
       Summary-Message:
-        - "&a&m----------------------------------------------------"
-        - "&e&lOne in the Chamber"
+        - "&a&m-------------------------------------------------"
+        - "&f&lOne in the Chamber"
         - ""
-        - "&f&lGEWINNER: &f&l%winner% (%winner_score%)"
+        - "&f&l%winner% &e&lWINNER! (%winner_score%)"
         - ""
-        - "&8&lDEIN RANK: &7&l%rank%"
-        - "&8&lDEIN SCORE: &7&l%score%"
-        - "&8&lDEINE TODE: &7&l%deaths%"
+        - "&n&lYour Statistics:"
         - ""
-        - "&a&m----------------------------------------------------"
+        - "&7Rank: %rank%"
+        - "&7Score: %score%"
+        - "&7Deaths: %deaths%"
+        - ""
+        - "&a&m-------------------------------------------------"
     Admin-Messages:
       Set-Starting-In-To-0: "&bEin Admin hat die Wartezeit auf 0 gesetzt. Das Spiel startet jetzt!"
       Stopped-Game: "&bEin Admin hat das Spiel vorzeitig mit einem Befehl beendet!"

@@ -15,7 +15,6 @@
 Commands:
   Did-You-Mean: "&3Did you mean &b%command%&3?"
   Correct-Usage: "&cCorrect usage: %usage%"
-  Are-You-Sure: "&cAre you sure you want to do this action? Type the command again &6within 10 seconds &cto confirm!"
   Removed-Game-Instance: "&aSuccessfully removed game instance!"
   No-Arena-Like-That: "&cWe couldn't find any arena with that name matching!"
   Look-Sign: "&cYou have to look at a sign to perform this command!"
@@ -42,13 +41,15 @@ Commands:
   Stats-Command:
     Header: "&l-----[YOUR STATS]-----"
     Header-Other: "&l-----[STATS FOR %player%]-----"
-    Footer: "&l----------------------"
-    Kills: "&aKills: &e"
-    Deaths: "&aDeaths: &e"
-    Wins: "&aWins: &e"
-    Loses: "&aLoses: &e"
-    Highest-Score: "&aHighest score: &e"
-    Games-Played: "&aGames played: &e"
+    Messages:
+      - "%header%"
+      - "&8 * &aKills: &e%kills%"
+      - "&8 * &aDeaths: &e%deaths%"
+      - "&8 * &aWins: &e%wins%"
+      - "&8 * &aLoses: &e%loses%"
+      - "&8 * &aHighest score: &e%highest_score%"
+      - "&8 * &aGames played: &e%games_played%"
+      - "&l----------------------"
 
 # In game scoreboard messages.
 # Don't use more than 48 characters if you use old versions of Minecraft!
@@ -91,9 +92,9 @@ Scoreboard:
 
 # Has usage only when boss bar is enabled in config.yml
 Boss-Bar:
-  Main-Title: "&a&lOne in the Chamber &f&l- &6&lDespical"
+  Main-Title: "&e&lPLAYING &f&lONE IN THE CHAMBER &e&lby &b&lDespical"
   Starting-In: "&f&lStarting in: &e&l%time%"
-  Waiting-For-Players: "&4&lWaiting for more players..."
+  Waiting-For-Players: "&e&lPLAYING &f&lONE IN THE CHAMBER &e&lby &b&lDespical"
   In-Game-Info: "&e&lPlaying &f&lONE IN THE CHAMBER &e&lby &b&lDESPICAL"
   Game-Ended: "&c&lGame has ended! You were playing &b&lOITC"
 
@@ -148,10 +149,14 @@ In-Game:
     Join: "&b%player% &ejoined the game &e(&b%players%&e/&b%maxplayers%&e)!"
     Leave: "&b%player% &eleft the game &e(&b%players%&e/&b%maxplayers%&e)&7!"
     Death: "&9%player% &eis slained by &9%killer%!"
+    Unknown-Death: "&9%player% &eis killed by &ksomeoneunknown&7!"
     Already-Force-Start: "&cThe game is already starting!"
     Kill-Streak:
       - "&9%killer% &eis on &b%kill_streak% &ekill streak!"
       - "&9%killer% &eis unbeatable!"
+      - "2:&9%killer% &egot 2 players in a row!"
+      - "5:&9%killer% &egot 5 kills in a row!"
+      - "10:&9%killer% &eis now reached to 10 kills in a row!"
     Seconds-Left-Title: "&c%time% &eseconds left!"
     Seconds-Left-Subtitle: "&eAfter %time%s the game will be finished"
     Score-Subtitle: "&a&l+&6&l1"

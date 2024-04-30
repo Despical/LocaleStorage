@@ -15,7 +15,6 @@
 Commands:
   Did-You-Mean: "&3您指嘅係咪 &b%command%&3?"
   Correct-Usage: "&cCorrect usage: %usage%"
-  Are-You-Sure: "&c您確定要咁樣做？請喺十秒內再打一次指令！"
   Removed-Game-Instance: "&a已成功移除遊戲實例！"
   No-Arena-Like-That: "&c找不到與該名稱匹配嘅場地！"
   Look-Sign: "&c您必須睇住一個指示牌先可以執行呢個指令！"
@@ -42,13 +41,15 @@ Commands:
   Stats-Command:
     Header: "&l-----[ 您嘅統計資料 ]-----"
     Header-Other: "&l-----[ %player% 嘅統計資料 ]-----"
-    Footer: "&l----------------------"
-    Kills: "&a擊殺數：&e"
-    Deaths: "&a死亡數：&e"
-    Wins: "&a勝利次數：&e"
-    Loses: "&a失敗次數：&e"
-    Highest-Score: "&a最高分數：&e"
-    Games-Played: "&a遊戲次數：&e"
+    Messages:
+      - "%header%"
+      - "&8 * &aKills: &e%kills%"
+      - "&8 * &aDeaths: &e%deaths%"
+      - "&8 * &aWins: &e%wins%"
+      - "&8 * &aLoses: &e%loses%"
+      - "&8 * &aHighest score: &e%highest_score%"
+      - "&8 * &aGames played: &e%games_played%"
+      - "&l----------------------"
   
 # One in the Chamber 遊戲計分板訊息。
 # 如果使用舊版本嘅 Minecraft，請不要使用超過 48 個字元！
@@ -148,10 +149,14 @@ In-Game:
     Join: "&b%player% &e加入咗遊戲 &e(&b%players%&e/&b%maxplayers%&e)！"
     Leave: "&b%player% &e離開咗遊戲 &e(&b%players%&e/&b%maxplayers%&e)&7！"
     Death: "&9%player% &e被 &9%killer% &e擊殺！"
+    Unknown-Death: "&9%player% &eis killed by &ksomeoneunknown&7!"
     Already-Force-Start: "&c遊戲已經開始緊！"
     Kill-Streak:
       - "&9%killer% &e已連殺 &b%kill_streak% &e次！"
       - "&9%killer% &e已經無敵啦！"
+      - "2:&9%killer% &egot 2 players in a row!"
+      - "5:&9%killer% &egot 5 kills in a row!"
+      - "10:&9%killer% &eis now reached to 10 kills in a row!"
     Seconds-Left-Title: "&e剩餘 &c%time% &e秒！"
     Seconds-Left-Subtitle: "&e遊戲將會於 %time% 秒後結束"
     Score-Subtitle: "&a&l+&6&l1"

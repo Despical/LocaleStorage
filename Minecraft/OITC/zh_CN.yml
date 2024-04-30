@@ -15,7 +15,6 @@
 Commands:
   Did-You-Mean: "&3您是否指的是 &b%command%&3?"
   Correct-Usage: "&cCorrect usage: %usage%"
-  Are-You-Sure: "&c您确定要执行此操作吗？再次输入命令，在 10 秒内确认！"
   Removed-Game-Instance: "&a已成功移除游戏实例！"
   No-Arena-Like-That: "&c找不到与该名称匹配的竞技场！"
   Look-Sign: "&c您必须看着一个牌子才能执行此命令！"
@@ -42,13 +41,15 @@ Commands:
   Stats-Command:
     Header: "&l-----[ 您的统计数据 ]-----"
     Header-Other: "&l-----[ %player% 的统计数据 ]-----"
-    Footer: "&l----------------------"
-    Kills: "&a击杀数：&e"
-    Deaths: "&a死亡数：&e"
-    Wins: "&a胜利次数：&e"
-    Loses: "&a失败次数：&e"
-    Highest-Score: "&a最高分数：&e"
-    Games-Played: "&a游戏次数：&e"
+    Messages:
+      - "%header%"
+      - "&8 * &aKills: &e%kills%"
+      - "&8 * &aDeaths: &e%deaths%"
+      - "&8 * &aWins: &e%wins%"
+      - "&8 * &aLoses: &e%loses%"
+      - "&8 * &aHighest score: &e%highest_score%"
+      - "&8 * &aGames played: &e%games_played%"
+      - "&l----------------------"
   
 # One in the Chamber 游戏计分板消息。
 # 如果使用旧版本的 Minecraft，请不要使用超过 48 个字符！
@@ -148,10 +149,14 @@ In-Game:
     Join: "&b%player% &e加入了游戏 &e(&b%players%&e/&b%maxplayers%&e)！"
     Leave: "&b%player% &e离开了游戏 &e(&b%players%&e/&b%maxplayers%&e)&7！"
     Death: "&9%player% &e被 &9%killer% &e击杀！"
+    Unknown-Death: "&9%player% &eis killed by &ksomeoneunknown&7!"
     Already-Force-Start: "&c游戏已经在开始中！"
     Kill-Streak:
       - "&9%killer% &e已连杀 &b%kill_streak% &e次！"
-      - "&9%killer% &e已经无人能挡了！"    
+      - "&9%killer% &e已经无人能挡了！"
+      - "2:&9%killer% &egot 2 players in a row!"
+      - "5:&9%killer% &egot 5 kills in a row!"
+      - "10:&9%killer% &eis now reached to 10 kills in a row!"
     Seconds-Left-Title: "&c%time% &e秒剩余！"
     Seconds-Left-Subtitle: "&e%time% 秒后游戏结束"
     Score-Subtitle: "&a&l+&6&l1"

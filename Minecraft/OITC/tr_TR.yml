@@ -15,7 +15,6 @@
 Commands:
   Did-You-Mean: "&3Bunu mu demek istemiştiniz &b%command%&3?"
   Correct-Usage: "&cDoğru kullanım: %usage%"
-  Are-You-Sure: "&cBunu gerçekten yapmak istiyor musun? Onaylamak için komutu &610 saniye içinde &ctekrar yazın!"
   Removed-Game-Instance: "&aArena başarıyla silindi!"
   No-Arena-Like-That: "&cBu isimde bir arena bulunamadı!"
   Look-Sign: "&cBu komutu kullanabilmek için bir tabelaya bakmalısın!"
@@ -42,13 +41,15 @@ Commands:
   Stats-Command:
     Header: "&l-----[SENİN İSTATİSTİKLERİN]-----"
     Header-Other: "&l-----[%player% için İSTATİSTİKLER]-----"
-    Footer: "&l----------------------"
-    Kills: "&aÖldürme sayısı: &e"
-    Deaths: "&aÖlüm sayısı: &e"
-    Wins: "&aKazanma sayısı: &e"
-    Loses: "&aKaybetme sayısı: &e"
-    Highest-Score: "&aEn yüksek skor: &e"
-    Games-Played: "&aOynanan oyunlar: &e"
+    Messages:
+      - "%header%"
+      - "&8 * &aÖldürme Sayısı: &e%kills%"
+      - "&8 * &aÖlme Sayısı: &e%deaths%"
+      - "&8 * &aKazanma Sayısı: &e%wins%"
+      - "&8 * &aKaybetme Sayısı: &e%loses%"
+      - "&8 * &aEn Yüksek Skor: &e%highest_score%"
+      - "&8 * &aOynanan Oyunlar: &e%games_played%"
+      - "&l----------------------"
   
 # In game scoreboard messages.
 # Don't use more than 48 characters if you use old versions of Minecraft!
@@ -59,41 +60,39 @@ Scoreboard:
   Content:
     Waiting:
       - ""
-      - "&fOyuncular: &a%players%"
+      - "&fHarita: &a%map_name%"
+      - "&fOyuncular: &a%players%/%max_players%"
       - ""
-      - "&fMinimum Oyuncular: &a%min_players%"
+      - "&fOyuncular için bekleniyor..."
       - ""
-      - "&fHarita: &a%mapname%"
-      - ""
-      - "&ewww.despical.com"
+      - "&epatreon.com/despical"
     Starting:
       - ""
-      - "&a%time% &f içinde başlıyor"
+      - "&fHarita: &a%map_name%"
+      - "&fOyuncular: &a%players%/%max_players%"
       - ""
-      - "&fOyuncular: &a%players%"
+      - "&fStarting in &a%formatted_time% &fto"
+      - "&fallow time for"
+      - "&fadditional players"
       - ""
-      - "&fMinimum Oyuncular: &a%min_players%"
-      - ""
-      - "&fHarita: &a%mapname%"
-      - ""
-      - "&ewww.despical.com"
+      - "&epatreon.com/despical"
     Playing:
       - ""
       - "%top_player_1%"
       - "%top_player_2%"
       - "%top_player_3%"
       - ""
-      - "&fHarita: &e%mapname%"
-      - "&fOyuncular: &6%players%"
-      - "&fSkor: &6%kills%"
+      - "&fMap: &e%map_name%"
+      - "&fPlayers: &6%players%"
+      - "&fScore: &6%kills%"
       - ""
-      - "&fKalan süre: &6%formatted_time%"
+      - "&fTime Left: &6%formatted_time%"
       - ""
-      - "&ewww.despical.com"
+      - "&epatreon.com/despical"
 
 # Has usage only when boss bar is enabled in config.yml
 Boss-Bar:
-  Main-Title: "&a&lOne in the Chamber &f&l- &6&lDespical"
+  Main-Title: "&e&lPLAYING &f&lONE IN THE CHAMBER &e&lby &b&lDespical"
   Starting-In: "&e&l%time% &f&liçinde başlıyor"
   Waiting-For-Players: "&4&lDaha çok oyuncu için bekleniyor..."
   In-Game-Info: "&e&lPlaying &f&lONE IN THE CHAMBER &e&lby &b&lDESPICAL"
@@ -113,8 +112,11 @@ In-Game:
   Arena-Not-Configured: "&cArena daha hazırlanmadı! Bir yetkiliye başvurun!"
   Game-Chat-Format: "&7%player%: &f%message%"
   Game-Death-Format: "&7[&4☠&7] &r"
+  Game-Items:
+    Leave-Item:
+      Returning-Lobby: "&a&l3 saniye içinde lobiye ışınlanacaksın...\n&a&lIşınlanmayı iptal etmek için tekrar sağ tıkla!"
+      Teleport-Cancelled: "&c&lIşınlanma iptal edildi!"
   Spectator:
-    Spectator-Item-Name: "&b&lIşınlayıcı &7(Sağ Tıkla)"
     Spectator-Menu-Name: "&8Işınlayıcı"
     Target-Player-Score: "&7Skor: %score%"
     Settings-Menu:
@@ -147,13 +149,18 @@ In-Game:
     Join: "&b%player% &7adlı oyuncu oyuna giriş yaptı &8(&7%players%/%maximum_players%&8)&7!"
     Leave: "&b%player% &7adlı oyuncu oyundan çıktı &8(&7%players%/%maximum_players%&8)&7!"
     Death: "&9%player% &eadlı oyuncu &9%killer% &etarafından öldürüldü!"
+    Unknown-Death: "&9%player% &eis killed by &ksomeoneunknown&7!"
+    Already-Force-Start: "&cThe game is already starting!"
     Kill-Streak:
       - "&9%killer% &b%kill_streak%. &ekişiyi art arda öldürdü!"
       - "&9%killer% &edurdurulamıyor!"
-    Seconds-Left-Title: "&c%time% &esaniye kaldı!"
-    Seconds-Left-Subtitle: "&e%time% saniye sonra oyun bitecek"
+      - "2:&9%killer% &egot 2 players in a row!"
+      - "5:&9%killer% &egot 5 kills in a row!"
+      - "10:&9%killer% &eis now reached to 10 kills in a row!"
+    Seconds-Left-Title: "&c%time% &eseconds left!"
+    Seconds-Left-Subtitle: "&eAfter %time%s the game will be finished"
     Score-Subtitle: "&a&l+&6&l1"
-    Death-Subtitle: ""
+    Death-Subtitle: "&c&lÖldün!"
     Game-End-Messages:
       Titles:
         Win: "&fKazanan"
@@ -166,6 +173,8 @@ In-Game:
         - "&e&lOne in the Chamber"
         - ""
         - "&f&lKAZANAN: &f&l%winner% (%winner_score%)"
+        - ""
+        - "&n&lİstatistiklerin:"
         - ""
         - "&8&lSIRALAMAN: &7&l%rank%"
         - "&8&lSKORUN: &7&l%score%"
@@ -203,19 +212,6 @@ Formatted-Arena-States:
   Ending: "Sona eriyor"
   Restarting: "Yeniden başlıyor"
   Inactive: "İnaktif"
-
-Arena-Selector:
-  Inventory-Title: "Arena seçici"
-  Item:
-    Lore:
-      - "&7OITC &f- &e%mapname%"
-      - " "
-      - " "
-      - "  &fAktif: %playersize%/%maxplayers%"
-      - "  &fDurum: %state%"
-      - " "
-      - " "
-      - "&eArenaya girmek için tıkla"
 
 # If you change the value the file will be replaced with default yaml
 # So you shouldn't edit here. Be careful to make changes here!
