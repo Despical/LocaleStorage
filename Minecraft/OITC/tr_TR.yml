@@ -17,7 +17,6 @@ Commands:
   Correct-Usage: "&cDoğru kullanım: %usage%"
   Removed-Game-Instance: "&aArena başarıyla silindi!"
   No-Arena-Like-That: "&cBu isimde bir arena bulunamadı!"
-  Look-Sign: "&cBu komutu kullanabilmek için bir tabelaya bakmalısın!"
   Type-Arena-Name: "&cLütfen arenanın adını yazın!"
   No-Free-Arenas: "&cHiç müsait arena bulunamadı!"
   Statistics:
@@ -90,13 +89,12 @@ Scoreboard:
       - ""
       - "&epatreon.com/despical"
 
-# Has usage only when boss bar is enabled in config.yml
-Boss-Bar:
-  Main-Title: "&e&lPLAYING &f&lONE IN THE CHAMBER &e&lby &b&lDespical"
-  Starting-In: "&e&l%time% &f&liçinde başlıyor"
-  Waiting-For-Players: "&4&lDaha çok oyuncu için bekleniyor..."
-  In-Game-Info: "&e&lPlaying &f&lONE IN THE CHAMBER &e&lby &b&lDESPICAL"
-  Game-Ended: "&c&lOyun bitti! &b&lOITC &c&loynuyordun"
+# Leave any message empty to hide bar in a specific arena state.
+Game-Bar:
+  Waiting-For-Players: "&e&lPLAYING &f&lONE IN THE CHAMBER &e&lby &b&lDespical"
+  Starting: "&e&lPLAYING &f&lONE IN THE CHAMBER &e&lby &b&lDespical"
+  In-Game: ""
+  Ending: "&e&lPLAYING &f&lONE IN THE CHAMBER &e&lby &b&lDespical"
 
 # Used in most game messages.
 In-Game:
@@ -189,8 +187,10 @@ Signs:
   Please-Type-Arena-Name: "&cLütfen 2. satıra arena ismini yazın!"
   Arena-Doesnt-Exists: "&cBu isme sahip bir arena bulunamadı!"
   Doesnt-Have-Permission: "&cBu tabelayı kırabilmek için yeterli yetkiye sahip değilsin!"
-  Sign-Created: "&aTabela başarıyla oluşturuldu!"
-  Sign-Removed: "&aTabela başarıyla silindi!"
+  Sign-Created: "&aOyuna giriş tabelası başarıyla oluşturuldu!"
+  Sign-Removed: "&aOyuna giriş tabelası başarıyla silindi!"
+  Look-Sign: "&cBir tabela bloğuna bakmıyorsun!"
+  Already-A-Sign: "&cBu tabela zaten bir oyuna giriş tabelası!"
   Game-States:
     Waiting: "&lBekleniyor..."
     Inactive: "&lİnaktif..."

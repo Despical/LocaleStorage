@@ -17,7 +17,6 @@ Commands:
   Correct-Usage: "&cCorrect usage: %usage%"
   Removed-Game-Instance: "&a已成功移除游戏实例！"
   No-Arena-Like-That: "&c找不到与该名称匹配的竞技场！"
-  Look-Sign: "&c您必须看着一个牌子才能执行此命令！"
   Type-Arena-Name: "&c请输入竞技场名称！"
   No-Free-Arenas: "&c没有可用的竞技场！"
   Statistics:
@@ -89,14 +88,12 @@ Scoreboard:
       - ""
       - "&epatreon.com/despical"
 
-
-# 仅在配置文件的 boss bar 启用时使用
-Boss-Bar:
-  Main-Title: "&a&lOne in the Chamber &f&l- &6&lDespical"
-  Starting-In: "&f&l即将开始：&e&l%time%"
-  Waiting-For-Players: "&4&l等待更多玩家加入..."
-  In-Game-Info: "&e&l正在进行 ONE IN THE CHAMBER 游戏 &e&lby &b&lDESPICAL"
-  Game-Ended: "&c&l游戏已结束！您正在玩的是 &b&lOITC"
+# Leave any message empty to hide bar in a specific arena state.
+Game-Bar:
+  Waiting-For-Players: "&e&lPLAYING &f&lONE IN THE CHAMBER &e&lby &b&lDespical"
+  Starting: "&e&lPLAYING &f&lONE IN THE CHAMBER &e&lby &b&lDespical"
+  In-Game: ""
+  Ending: "&e&lPLAYING &f&lONE IN THE CHAMBER &e&lby &b&lDespical"
 
 # 用于大多数游戏消息。
 In-Game:
@@ -191,6 +188,8 @@ Signs:
   Doesnt-Have-Permission: "&c您没有足够的权限来破坏此牌子！"
   Sign-Created: "&a牌子创建成功！"
   Sign-Removed: "&a牌子成功移除！"
+  Look-Sign: "&cYou are not looking at any sign block!"
+  Already-A-Sign: "&cThis sign is already a game sign!"
   Game-States:
     Waiting: "&l等待中..."
     Starting: "&e&l开始中"

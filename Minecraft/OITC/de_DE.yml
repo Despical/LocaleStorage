@@ -17,7 +17,6 @@ Commands:
   Correct-Usage: "&cCorrect usage: %usage%"
   Removed-Game-Instance: "&aDie Spielinstanz wurde erfolgreich entfernt."
   No-Arena-Like-That: "&cEs gibt keine Arena mit dieser ID!"
-  Look-Sign: "&cDu musst auf ein Schild schauen um diesen Befehl auszufuehren!"
   Type-Arena-Name: "&cBitte tippe eine Arena ID ein!"
   No-Free-Arenas: "&cEs ist momentan keine Arena frei!"
   Statistics:
@@ -90,13 +89,12 @@ Scoreboard:
       - ""
       - "&epatreon.com/Despical"
 
-# Wird nur verwendet, wenn die Boss-Leiste in config.yml aktiviert ist
-Boss-Bar:
-  Main-Title: "&e&lPLAYING &f&lONE IN THE CHAMBER &e&lby &b&lDespical"
-  Starting-In: "&f&lStart in: &e&l%time%"
+# Leave any message empty to hide bar in a specific arena state.
+Game-Bar:
   Waiting-For-Players: "&e&lPLAYING &f&lONE IN THE CHAMBER &e&lby &b&lDespical"
-  In-Game-Info: "&e&lSpielt &f&lONE IN THE CHAMBER &e&lby &b&lDESPICAL"
-  Game-Ended: "&c&lDie Runde ist zu Ende! Du hast &b&lOITC &c&lgespielt"
+  Starting: "&e&lPLAYING &f&lONE IN THE CHAMBER &e&lby &b&lDespical"
+  In-Game: ""
+  Ending: "&e&lPLAYING &f&lONE IN THE CHAMBER &e&lby &b&lDespical"
 
 # Wird in den meisten Spielnachrichten verwendet.
 In-Game:
@@ -191,6 +189,8 @@ Signs:
   Doesnt-Have-Permission: "&cDu hast keine Berechtigung um das Schild zu zerstoeren!"
   Sign-Created: "&aSchild erfolgreich erstellt!"
   Sign-Removed: "&aSchild erfolgreich entfernt!"
+  Look-Sign: "&cYou are not looking at any sign block!"
+  Already-A-Sign: "&cThis sign is already a game sign!"
   Game-States:
     Waiting: "&lWarten..."
     Inactive: "&lInaktiv..."
