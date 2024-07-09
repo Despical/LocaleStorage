@@ -1,0 +1,87 @@
+Commands:
+  Did-You-Mean: "&cMasz na myśli &7%command%&c?"
+  Correct-Usage: "&cPoprawne użycie: %usage%"
+  Removed-Game-Instance: "&aArena z grą została pomyślnie usunięta."
+  No-Arena-Like-That: "&cNie możemy znaleźć areny z tą nazwą!"
+  No-Free-Arenas: "&cNie ma dostępnych aren do gry!"
+  Not-Playing: "&cMusisz być w arenie, aby z niej wyjść!"
+  Type-Arena-Name: "&cWpisz nazwę areny!"
+  Arena-Not-Configured: "&cTa arena nie została jeszcze skonfigurowana. Jeśli myślisz, że to błąd skontaktuj się z administracją!"
+  Only-By-Player: "&cTą komende możesz użyć jedynie jako gracz!"
+  No-Permission: "&cNie masz wystarczających permisji, aby użyć tej komendy!"
+  No-One-Playing: "&cW tej chwili nikt nie gra na tej arenie Whack Me!"
+  Kicked-Player: "&aGracz został pomyślnie wyrzucony z gry."
+  Wait-For-Cooldown: "&cPoczekaj zanim zagrasz ponownie!"
+  Reload-Command:
+    Initialized: "&aPrzeładowanie konfiguracji pluginu rozpoczęte przez {0}."
+    Finished: "&aKonfiguracja pluginu została przeładowana."
+    Error-Occurred: "&cWystąpił błąd podczas przeładowywania pluginu!"
+
+  Player-Not-Found: "&cNie mogliśmy znaleść gracza z tym nickiem!"
+  # %wm_{arena}_player_name% -> placeholder will return text below if arena player is null.
+  Unknown-Player: "Nieznany"
+  Statistics:
+    Type-Name: "&cWpisz nick, aby zobaczyć statystyki!"
+    Invalid-Name: "&cNazwa statystyki jest nieprawidłowa! Wpisz: record_score lub tours_played"
+    Header: "&8&m-------------------[&6 Top 10 &8&m]-------------------"
+    Format: "&e#%position% %name% - %value% &7%statistic%"
+    Unknown-Player: "Nieznany gracz"
+  Stats-Command:
+    Header: "&l[-----TWOJE STATYSTYKI-----]"
+    Header-Other: "&l[-----STATYSTYKI %player%-----]"
+    Messages:
+      - "%header%"
+      - "&8 * &aNajwyższy wynik: &e%record_score%"
+      - "&8 * &aGier rozegranych: &e%tours_played%"
+      - "&8 * &aZebranych dodatnich puntków: &e%whacked_point_blocks%"
+      - "&8 * &aZebranych ujemnych punktów: &e%whacked_minus_point_blocks%"
+      - "&8 * &aWspółczynnik +/-: &e%whacked_block_rate%%"
+      - "&8 * &aNajdłuższy streak punktowy: &e%longest_point_streak%"
+      - "&l[--------------------]"
+  List-Command:
+    No-Arenas-Created: "&cBrak żadnych aren do pokazania! Co myślisz o stworzeniu jednej?"
+    Format: "&aIstniejące areny: &7%list%"
+  Time-Command:
+    Usage: "&cPoprawne użycie: /wm time <arena> <add | remove | set> <value>"
+    Arena-Is-Empty: "&cNikt nie gra na tej arenie w tym momencie!"
+
+In-Game:
+  Plugin-Prefix: "&8[&6Whack Me&8] "
+  Start-Message: "&a&lRozpocząłeś grę w WhackMe!\n&a&lMasz 30 sekund na uderzenie jak największej ilości zielonych bloków!"
+  Finish-Message: "&a&lGra zakończona! Zakończyłeś ją z wynikiem &6&l%points% &a&lpunktów!"
+  Finish-Record-Message: "&a&lGra zakończona! Pobiłeś swój rekord z wynikiem &6&l%points% &a&lpunktów!"
+  Already-Playing: "&cJuż grasz w Whack Me!"
+  Someone-Is-Already-Playing: "&cKtoś już gra na tej arenie!"
+  Chat-Format: "&7%player%: &f%message%"
+  Only-Command-Is-Leave: "&cAby wykonać tą komendę, musisz opuścić grę."
+  Action-Bar: "&a&l%timer% &6- &a&l%score%"
+
+Point-Blocks:
+  Punch-Me: "&aZłap mnie!"
+  Dont-Punch-Me: "&cZostaw mnie!"
+  Ouch: "&cAuć!"
+
+# Has usage only when boss bar is enabled in config.
+# Only compatible with the versions Minecraft 1.9+
+Boss-Bar:
+  Color: BLUE
+  Style: SOLID
+  Interval: 120 # 20 ticks = 1 second
+  Messages:
+    - "&e&lGRASZ W &f&lWhack Me &e&lstworzonego przez &b&lDESPICAL"
+    - "&e&lLUBISZ TEN PLUGIN? OCEŃ NAS NA SPIGOTMC.ORG!"
+
+Signs:
+  States:
+    Waiting: "&eOczekiwanie"
+    Playing: "&cW grze"
+    Inactive: "&0Nieaktywna"
+  Lines:
+    - "&4&lWhack Me"
+    - "%state%"
+    - "%arena%"
+    - "&5[%player%]"
+
+# If you change the value the file will be replaced with default yaml
+# So you shouldn't edit here. Be careful to make changes here!
+Language: pl_PL
