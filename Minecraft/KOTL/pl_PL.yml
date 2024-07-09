@@ -1,0 +1,90 @@
+#
+#        You can translate KOTL messages here.
+#             Color codes (&) supported.
+#
+#              Use \n to make new line
+#
+#     Some messages support their own placeholders
+#                 like %player%
+
+# King of the Ladder commands messages
+Commands:
+  Did-You-Mean: "&cMiałeś na myśli &7%command%&c?"
+  Correct-Usage: "&cPoprawne użycie: %usage%"
+  Are-You-Sure: "&cCzy jesteś pewien, że chcesz to zrobić? Wpisz komendę ponownie w ciągu &6within 10 sekund&c, aby potwierdzić!"
+  Type-Arena-Name: "&cWpisz nazwę areny!"
+  Removed-Game-Instance: "&aPomyślnie usunięto arenę."
+  No-Arena-Like-That: "&cNie ma areny z taką nazwą!"
+  Only-By-Player: "&cMożesz użyć tej komendy tylko jako gracz!"
+  No-Permission: "&cNie masz wystarczających permisji do użycia tej komendy!"
+  Success-Reload: "&aSystem pomyślnie przeładował wszystkie konfiguracje i areny!"
+  Player-Not-Found: "&cNie znaleziono gracza z takim nickiem!"
+  Not-Playing: "&cSzukany gracz, nie gra w tym momencie w tą grę!"
+  Kicked-Player: "&aPomyślnie wyrzucono gracza z gry."
+  Statistics:
+    Type-Name: "&cWpisz nazwę statystyki, aby ją zobaczyć!"
+    Invalid-Name: "&cNazwa statystyki jest nieprawidłowa! Wpisz: score lub tours_played"
+    Header: "&8&m-------------------[&6 Top 10 &8&m]-------------------"
+    Format: "&e#%position% %name% - %value% &7%statistic%"
+  Stats-Command:
+    Header: "&l[-----TWOJE STATYSTYKI-----]"  
+    Header-Other: "&l[-----STATYSTYKI %player%-----]"
+    Footer: "&l[--------------------]"
+    Score: "&aWynik: &e"
+    Tours-Played: "&aRund rozegranych: &e"
+  List-Command:
+    No-Arenas-Created: "&cNie ma żadnej stworzonej areny!"
+    Format: "&aIstniejące areny: &7%list%"
+
+# Used in most game messages.
+In-Game:
+  Plugin-Prefix: "&8[&6KOTL&8] "
+  Join: "&7%player%&b dołączył do gry!"
+  Leave: "&7%player%&b wyszedł z gry!"
+  Chat-Format: "&7%player%: &f%message%"
+  Only-Command-Is-Leave: "&cAby wykonać tą komendę, musisz wyjść z gry."
+  New-King: "&7%king% &bjest nowym królem!"
+  Clicked-Death-Block: "&7%player%&b kliknął na blok śmierci i umarł!"
+  Killed-Player: "&7%victim% &bzostał zabity przez &e%player%&b!"
+  # Sends when player gets killed by an external method like kill command.
+  Kill-Command: "&7%victim% &bzostał zabity magią!"
+  Cooldown-Format: "&6ODLICZANIE &8&l[%progress%&8&l] &6%time%s"
+
+Placeholders:
+  There-Is-No-King: "Nikt"
+  Player-Not-Playing: "Brak w arenie"
+
+# Has usage only when boss bar is enabled in config
+# Not compatible with the versions before Minecraft 1.9
+# Leave any section empty to hide bar until next message.
+Boss-Bar:
+  Color: "BLUE"
+  Style: "SOLID"
+  Interval: "300" # 20 ticks = 1 second
+  Messages:
+    - "&e&lGRASZ W &f&lKING OF THE LADDER &e&lstworzonego przez &b&lDESPICAL"
+    - "&e&lDZIĘKUJEMY ZA WASZE &b&lWSPACIE&e&l!"
+    - "&e&lLUBISZ TEN PLUGIN? OCEŃ NAS NA SPIGOTMC.ORG!"
+
+# In game scoreboard messages.
+# Don't use more than 48 characters if you use old versions of Minecraft!
+# Can be used up to 144 characters in 1.14 and higher versions.
+Scoreboard:
+  Title: "&e&lKOTL"
+  Content:
+    # Can be found more information about placeholders on our wiki.
+    Playing:
+      - ""
+      - "Arena: &a%arena%"
+      - ""
+      - "Gracze: &a%players%"
+      - ""
+      - "Król: &a%king%"
+      - ""
+      - "Wynik: &a%score%"
+      - ""
+      - "&epatreon.com/Despical"
+
+# If you change the value the file will be replaced with default yaml
+# So you shouldn't edit here. Be careful to make changes here!
+Language: pl
