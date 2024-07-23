@@ -1,0 +1,220 @@
+Конечно, вот перевод строк на русский язык:
+
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#                                                         #
+#    You can translate One in the Chamber messages here   #
+#                Color codes (&) supported.               #
+#                                                         #
+#                 Use \n to make new line                 #
+#            Some messages are wrapped every 40           #
+#                characters automatically                 #
+#                                                         #
+#       Some messages support their own placeholders      #
+#                      like %player%                      #
+#                                                         #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+Commands:
+  Did-You-Mean: "&3Вы имели в виду &b%command%&3?"
+  Correct-Usage: "&cПравильное использование: %usage%"
+  Removed-Game-Instance: "&aИгровой экземпляр успешно удален!"
+  No-Arena-Like-That: "&cАрена с таким именем не найдена!"
+  Type-Arena-Name: "&cПожалуйста, введите название арены!"
+  No-Free-Arenas: "&cНет доступных арен!"
+  Statistics:
+    Type-Name: "&cПожалуйста, введите название статистики для просмотра!"
+    Invalid-Name: "&cНазвание статистики недействительно! Варианты: kills, deaths, games_played, wins, loses, highest_score"
+    Header: "&8&m-------------------[&6 Топ 10 &8&m]-------------------"
+    Format: "&e#%position% %name% - %value% &7%statistic%"
+  Only-By-Player: "&cВы можете выполнить эту команду только как игрок!"
+  Not-Playing: "&cВы должны играть, чтобы выполнить эту команду!"
+  No-Permission: "&cУ вас нет разрешения на использование этой команды!"
+  Leaderboard-Command:
+    Empty-Entry: "Пусто"
+    Unknown-Entry: "Неизвестный игрок"
+  Admin-Commands:
+    Teleported-To-Player: "&aТелепортирован к игроку!"
+    Player-Not-Found: "&cИгрок не найден!"
+    Success-Reload: "&aСистема успешно перезагрузила все конфигурации и арены!"
+    List-Command:
+      Format: "&aСуществующие арены: &7%list%"
+      No-Arenas-Created: "&cНет созданных игровых экземпляров! Что насчет создания одного?"
+  Stats-Command:
+    Header: "&l-----[ВАША СТАТИСТИКА]-----"
+    Header-Other: "&l-----[СТАТИСТИКА ДЛЯ %player%]-----"
+    Messages:
+      - "%header%"
+      - "&8 * &aУбийств: &e%kills%"
+      - "&8 * &aСмертей: &e%deaths%"
+      - "&8 * &aПобед: &e%wins%"
+      - "&8 * &aПоражений: &e%loses%"
+      - "&8 * &aНаивысший счет: &e%highest_score%"
+      - "&8 * &aСыграно игр: &e%games_played%"
+      - "&l----------------------"
+
+# Сообщения на табло в игре.
+# Не используйте более 48 символов, если используете старые версии Minecraft!
+# Можно использовать до 144 символов в версиях 1.14 и выше.
+Scoreboard:
+  Title: "&e&lOITC"
+  Top-Player-Format: "&f%score% &6%player%"
+  Content:
+    Waiting:
+      - ""
+      - "&fКарта: &a%map_name%"
+      - "&fИгроки: &a%players%/%max_players%"
+      - ""
+      - "&fОжидание игроков..."
+      - ""
+      - "&epatreon.com/despical"
+    Starting:
+      - ""
+      - "&fКарта: &a%map_name%"
+      - "&fИгроки: &a%players%/%max_players%"
+      - ""
+      - "&fНачало через &a%formatted_time% &fчтобы"
+      - "&fдать время для"
+      - "&fдополнительных игроков"
+      - ""
+      - "&epatreon.com/despical"
+    Playing:
+      - ""
+      - "%top_player_1%"
+      - "%top_player_2%"
+      - "%top_player_3%"
+      - ""
+      - "&fКарта: &e%map_name%"
+      - "&fИгроки: &6%players%"
+      - "&fСчет: &6%kills%"
+      - ""
+      - "&fОсталось времени: &6%formatted_time%"
+      - ""
+      - "&epatreon.com/despical"
+
+# Оставьте любое сообщение пустым, чтобы скрыть строку в определенном состоянии арены.
+Game-Bar:
+  Waiting-For-Players: "&e&lИГРАЕМ &f&lONE IN THE CHAMBER &e&lот &b&lDespical"
+  Starting: "&e&lИГРАЕМ &f&lONE IN THE CHAMBER &e&lот &b&lDespical"
+  In-Game: ""
+  Ending: "&e&lИГРАЕМ &f&lONE IN THE CHAMBER &e&lот &b&lDespical"
+
+# Используется в большинстве игровых сообщений.
+In-Game:
+  Plugin-Prefix: "&8[&6OITC&8] "
+  Already-Playing: "&cВы уже зарегистрированы в игре! Вы можете покинуть игру с помощью /oitc leave."
+  Join-No-Permission: "&cУ вас нет разрешения &6%permission% &cдля входа на эту арену!"
+  Full-Game-No-Permission: "&cУ вас нет разрешения на участие в заполненной игре!"
+  No-Slots-For-Premium: "&cЭта игра уже полна премиум игроками! Извините..."
+  You-Are-Spectator: "&cТеперь вы наблюдатель! Вы можете летать!"
+  Spectating-Disabled-On-Bungee: "&cНаблюдение отключено на этом сервере!"
+  Only-Command-Ingame-Is-Leave: "&cСначала вы должны покинуть игру, чтобы выполнить команды. Единственная команда, которая работает, это /oitc leave!"
+  Join-Cancelled-Via-API: "&cВы не можете присоединиться к этой игре!"
+  Arena-Not-Configured: "&cАрена еще не настроена! Свяжитесь с администратором!"
+  Game-Chat-Format: "&7%player%: &f%message%"
+  Game-Death-Format: "&7[&4МЕРТВЫЙ ЧАТ&7] &r"
+  Game-Items:
+    Leave-Item:
+      Returning-Lobby: "&a&lТелепортация в лобби через 3 секунды...\n&a&lЩелкните правой кнопкой мыши снова, чтобы отменить телепорт!"
+      Teleport-Cancelled: "&c&lТелепортация отменена!"
+  Spectator:
+    Spectator-Menu-Name: "&8Телепорт"
+    Target-Player-Score: "&7Счет: %score%"
+    Settings-Menu:
+      Item-Name: "&b&lНастройки наблюдателя &7(Щелкните правой кнопкой)"
+      Inventory-Name: "&8Настройки наблюдателя"
+      Speed-Name: "&aСкорость"
+      No-Speed: "&aНет скорости"
+      Enable-Night-Vision: "&aВключить ночное зрение"
+      Enable-Night-Vision-Lore:
+        - "&7Щелкните, чтобы включить ночное зрение!"
+      Disable-Night-Vision: "&cОтключить ночное зрение"
+      Disable-Night-Vision-Lore:
+        - "&7Щелкните, чтобы отключить ночное зрение!"
+      Hide-Spectators: "&cСкрыть наблюдателей"
+      Hide-Spectators-Message: "&cТеперь вы не видите других наблюдателей!"
+      Hide-Spectators-Lore:
+        - "&7Щелкните, чтобы скрыть других наблюдателей!"
+      Show-Spectators: "&aПоказать наблюдателей"
+      Show-Spectators-Message: "&aТеперь вы видите других наблюдателей!"
+      Show-Spectators-Lore:
+        - "&7Щелкните, чтобы показать других наблюдателей!"
+  Messages:
+    Lobby-Messages:
+      Start-In: "&7Игра начнется через &b%number%&7 секунд!"
+      Waiting-For-Players: "&cОжидание игроков... Нам нужно как минимум %minplayers% игроков для начала."
+      Enough-Players-To-Start: "&7Теперь у нас достаточно игроков. Игра скоро начнется!"
+      Game-Started: "&7Игра началась! Первый игрок, набравший 25 убийств, побеждает!"
+      Kicked-For-Premium-Slot: "&c%player% удален из игры, чтобы освободить место для премиум игроков!"
+      You-Were-Kicked-For-Premium-Slot: "&cВы были удалены из игры, чтобы освободить место для премиум игрока!"
+    Join: "&b%player% &eприсоединился к игре &e(&b%players%&e/&b%maxplayers%&e)!"
+    Leave: "&b%player% &eпокинул игру &e(&b%players%&e/&b%maxplayers%&e)&7!"
+    Death: "&9%player% &eбыл убит &9%killer%!"
+    Unknown-Death: "&9%player% &eбыл убит &kкем-то&7!"
+    Already-Force-Start: "&cИгра уже начинается!"
+    Kill-Streak:
+      - "&9%killer% &eна серии убийств в &b%kill_streak%!"
+      - "&9%killer% &eнепобедим!"
+      - "2:&9%killer% &eубил 2 игроков подряд!"
+      - "5:&9%killer% &eубил 5 игроков подряд!"
+      - "10:&9%killer% &eдостиг 10 убийств подряд!"
+    Seconds-Left-Title: "&c%time% &eсекунд осталось!"
+    Seconds-Left-Subtitle: "&eПосле %time%с игра будет завершена"
+    Score-Subtitle: "&a&l+&6&l1"
+    Death-Subtitle: "&c&lВы умерли!"
+    Game-End-Messages:
+      Titles:
+        Win: "&fПобедитель"
+        Lose: ""
+      Subtitles:
+        Win: "&e%winner%"
+        Lose: "&c%winner% &aпобедил в игре!"
+      Summary-Message:
+        - "&a&m-------------------------------------------------"
+        - "&f&lOne in the Chamber"
+        - ""
+        - "&f&l%winner% &e&lПОБЕДИТЕЛЬ! (%winner_score%)"
+        - ""
+        - "&n&lВаша статистика:"
+        - ""
+        - "&7Ранг: %rank%"
+        - "&7Счет: %score%"
+        - "&7Смерти: %deaths%"
+        - ""
+        - "&a&m-------------------------------------------------"
+    Admin-Messages:
+      Set-Starting-In-To-0: "&bАдмин установил время ожидания на 0. Игра начинается сейчас!"
+      Stopped-Game: "&bАдмин принудительно остановил игру командой!"
+
+Signs:
+  Please-Type-Arena-Name: "&cПожалуйста, введите название арены во вторую строку!"
+  Arena-Doesnt-Exists: "&cАрены с таким именем не существует!"
+  Doesnt-Have-Permission: "&cУ вас нет достаточных прав для разрушения этой таблички!"
+  Sign-Created: "&aТабличка арены успешно создана!"
+  Sign-Removed: "&aТабличка успешно удалена!"
+  Look-Sign: "&cВы не смотрите на блок таблички!"
+  Already-A-Sign: "&cЭта табличка уже является игровой табличкой!"
+  Game-States:
+    Waiting: "&lОжидание..."
+    Starting: "&e&lНачало"
+    Playing: "&lВ игре"
+    Full-Game: "&c&lПОЛНАЯ"
+    Ending: "&lЗавершение"
+    Restarting: "&c&lПерезапуск"
+    Inactive: "&lНеактивна..."
+  Lines:
+    - "&4&lOITC"
+    - "%state%"
+    - "%map_name%"
+    - "&5[%players%/%max_players%]"
+
+Formatted-Arena-States:
+  Waiting: "Ожидание"
+  Starting: "Начало"
+  Playing: "В игре"
+  Ending: "Завершение"
+  Restarting: "Перезапуск"
+  Inactive: "Неактивна"
+
+# Если вы измените значение, файл будет заменен на стандартный yaml
+# Поэтому не следует редактировать здесь. Будьте осторожны при внесении изменений здесь!
+Language: default
