@@ -1,0 +1,218 @@
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#                                                         #
+#    You can translate One in the Chamber messages here   #
+#                Color codes (&) supported.               #
+#                                                         #
+#                 Use \n to make new line                 #
+#            Some messages are wrapped every 40           #
+#                characters automatically                 #
+#                                                         #
+#       Some messages support their own placeholders      #
+#                      like %player%                      #
+#                                                         #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+Commands:
+  Did-You-Mean: "&3Dali se mislili &b%command%&3?"
+  Correct-Usage: "&cIspravna upotreba: %usage%"
+  Removed-Game-Instance: "&aInstanca igre je uspešno uklonjena!"
+  No-Arena-Like-That: "&cNismo mogli da pronađemo nijednu arenu sa tim imenom!"
+  Type-Arena-Name: "&cUnesite naziv arene!"
+  No-Free-Arenas: "&cNe postoji nijedna dostupna arena!"
+  Statistics:
+    Type-Name: "&cUnesite naziv statistike za pregled!"
+    Invalid-Name: "&cNaziv statistike je nevažeći! Tip: kills, deaths, games_played, wins, loses, highest_score"
+    Header: "&8&m-------------------[&6 Top 10 &8&m]-------------------"
+    Format: "&e#%position% %name% - %value% &7%statistic%"
+  Only-By-Player: "&cOvu komandu možete izvršiti samo kao igrač!"
+  Not-Playing: "&cMorate igrati da biste izvršili ovu komandu!"
+  No-Permission: "&cNemate dozvolu da koristite ovu komandu!"
+  Leaderboard-Command:
+    Empty-Entry: "Prazno"
+    Unknown-Entry: "Nepoznat igrač"
+  Admin-Commands:
+    Teleported-To-Player: "&aTeleportovani se do igrača!"
+    Player-Not-Found: "&cIgrač nije pronađen!"
+    Success-Reload: "&aSistem je uspešno ponovo učitan, sve konfiguracije i arene!"
+    List-Command:
+      Format: "&aPostojeće arene: &7%list%"
+      No-Arenas-Created: "&cNema instanci igre za prikaz! Da napravimo jednu?"
+  Stats-Command:
+    Header: "&l-----[VAŠA STATISTIKA]-----"
+    Header-Other: "&l-----[STATISTIKA OD %player%]-----"
+    Messages:
+      - "%header%"
+      - "&8 * &aUbistva: &e%kills%"
+      - "&8 * &aSmrti: &e%deaths%"
+      - "&8 * &aPobede: &e%wins%"
+      - "&8 * &aPorazi: &e%loses%"
+      - "&8 * &aNajveći skor: &e%highest_score%"
+      - "&8 * &aOdigrane igre: &e%games_played%"
+      - "&l----------------------"
+
+# In game scoreboard messages.
+# Don't use more than 48 characters if you use old versions of Minecraft!
+# Can be used up to 144 characters in 1.14 and higher versions.
+Scoreboard:
+  Title: "&e&lOITC"
+  Top-Player-Format: "&f%score% &6%player%"
+  Content:
+    Waiting:
+      - ""
+      - "&fMapa: &a%map_name%"
+      - "&fIgrači: &a%players%/%max_players%"
+      - ""
+      - "&fČekaju se igrači..."
+      - ""
+      - "&epatreon.com/despical"
+    Starting:
+      - ""
+      - "&fMapa: &a%map_name%"
+      - "&fIgrači: &a%players%/%max_players%"
+      - ""
+      - "&fPočinje za &a%formatted_time% &fa"
+      - "&fpustimo vremena da"
+      - "&figrači udju"
+      - ""
+      - "&epatreon.com/despical"
+    Playing:
+      - ""
+      - "%top_player_1%"
+      - "%top_player_2%"
+      - "%top_player_3%"
+      - ""
+      - "&fMapa: &e%map_name%"
+      - "&fIgrači: &6%players%"
+      - "&fSkor: &6%kills%"
+      - ""
+      - "&fPreostalo vreme: &6%formatted_time%"
+      - ""
+      - "&epatreon.com/despical"
+
+# Leave any message empty to hide bar in a specific arena state.
+Game-Bar:
+  Waiting-For-Players: "&e&lIGRATE &f&lONE IN THE CHAMBER &e&lod &b&lDespical"
+  Starting: "&e&lIGRATE &f&lONE IN THE CHAMBER &e&lod &b&lDespical"
+  In-Game: ""
+  Ending: "&e&lIGRATE &f&lONE IN THE CHAMBER &e&lod &b&lDespical"
+
+# Used in most game messages.
+In-Game:
+  Plugin-Prefix: "&8[&6OITC&8] "
+  Already-Playing: "&cVeć ste u redu za igru! Možete napustiti igru sa /oitc leave."
+  Join-No-Permission: "&cNemate &6%permission% &cdozvolu da se pridružite ovoj areni!"
+  Full-Game-No-Permission: "&cNemate dozvolu da se pridružite punim igrama!"
+  No-Slots-For-Premium: "&cOva igra je već puna Premium igrača! Izvinite"
+  You-Are-Spectator: "&cSada si gledalac! Sada možete da letite!"
+  Spectating-Disabled-On-Bungee: "&cGledanje sada dozvoljeno na ovom serveru!"
+  Only-Command-Ingame-Is-Leave: "&cPrvo morate napustiti igru da biste izvršili komande. Jedina komanda koja radi je /oitc leave!"
+  Join-Cancelled-Via-API: "&cNe možete se pridružiti ovoj igri!"
+  Arena-Not-Configured: "&cArena još nije konfigurisana! Kontaktirajte osoblje!"
+  Game-Chat-Format: "&7%player%: &f%message%"
+  Game-Death-Format: "&7[&4CHAT ELIMINISANIH&7] &r"
+  Game-Items:
+    Leave-Item:
+      Returning-Lobby: "&a&lTeleportuje vas u Lobby za 3 sekunde...\n&a&lDesni-klik da prekinete tleportaciju!"
+      Teleport-Cancelled: "&c&lTeleportacija prekinuta!"
+  Spectator:
+    Spectator-Menu-Name: "&8Teleporter"
+    Target-Player-Score: "&7Skor: %score%"
+    Settings-Menu:
+      Item-Name: "&b&lPodešavanja za gledaoce &7(Desni Klik)"
+      Inventory-Name: "&8Podešavanja za gledaoce"
+      Speed-Name: "&aBrzina"
+      No-Speed: "&aBez Brzine"
+      Enable-Night-Vision: "&aUkljucite Night Vision"
+      Enable-Night-Vision-Lore:
+        - "&7Kliknite da ukljucite night vision!"
+      Disable-Night-Vision: "&cUgasite Night Vision"
+      Disable-Night-Vision-Lore:
+        - "&7Kliknite da ugasite night vision!"
+      Hide-Spectators: "&cSakrij Gledaoce"
+      Hide-Spectators-Message: "&cVise ne vidite ostale gledaoce!"
+      Hide-Spectators-Lore:
+        - "&7Kliknite da sakrijete ostale gledaoce!"
+      Show-Spectators: "&aPokazi Gledaoce"
+      Show-Spectators-Message: "&aSada vidite ostal gledaoce!"
+      Show-Spectators-Lore:
+        - "&7Kliknite da vidite ostale gledaoce!"
+  Messages:
+    Lobby-Messages:
+      Start-In: "&7Igra počinje za &b%number%&7 sekundi!"
+      Waiting-For-Players: "&cČekamo igrače... Treba nam najmanje %minplaiers% igrača za početak."
+      Enough-Players-To-Start: "&7Sada imamo dovoljno igrača. Igra uskoro počinje!"
+      Game-Started: "&7Igra je počela! Prvi igrač koji dobije 25 ubistava pobeđuje!"
+      Kicked-For-Premium-Slot: "&c%player% je uklonjen iz igre da bi napravio mesto za premium igrače!"
+      You-Were-Kicked-For-Premium-Slot: "&cIzbačeni ste iz igre da biste napravili mesto za premium igrača!"
+    Join: "&b%player% &epridruzio igri &e(&b%players%&e/&b%maxplayers%&e)!"
+    Leave: "&b%player% &eje napusio igru &e(&b%players%&e/&b%maxplayers%&e)&7!"
+    Death: "&9%player% &eje eliminisan od strane &9%killer%!"
+    Unknown-Death: "&9%player% &eje eliminisan od strane &ksomeoneunknown&7!"
+    Already-Force-Start: "&cIgra već počinje!"
+    Kill-Streak:
+      - "&9%killer% &eje na &b%kill_streak% &eeliminaciji za redom!"
+      - "&9%killer% &eje nezaustavljiv!"
+      - "2:&9%killer% &eje eliminisao 2 igraca zaredom!"
+      - "5:&9%killer% &eje eliminisao 5 igraca zaredom!"
+      - "10:&9%killer% &eje dostigao 10 eliminacija zaredom"
+    Seconds-Left-Title: "&c%time% &esekundi preostalo!"
+    Seconds-Left-Subtitle: "&ePosle %time%s igra se zavrsava"
+    Score-Subtitle: "&a&l+&6&l1"
+    Death-Subtitle: "&c&lEliminisani ste!"
+    Game-End-Messages:
+      Titles:
+        Win: "&fPobednik"
+        Lose: ""
+      Subtitles:
+        Win: "&e%winner%"
+        Lose: "&c%winner% &aje pobedio!"
+      Summary-Message:
+        - "&a&m-------------------------------------------------"
+        - "&f&lOne in the Chamber"
+        - ""
+        - "&f&l%winner% &e&lPOBEDNIK! (%winner_score%)"
+        - ""
+        - "&n&lVaša statistika:"
+        - ""
+        - "&7Rank: %rank%"
+        - "&7Skor: %score%"
+        - "&7Smri: %deaths%"
+        - ""
+        - "&a&m-------------------------------------------------"
+    Admin-Messages:
+      Set-Starting-In-To-0: "&bdministrator je postavio vreme čekanja na 0. Igra počinje sada!"
+      Stopped-Game: "&bAdministrator je prisilno zaustavio igru kommandom!"
+
+Signs:
+  Please-Type-Arena-Name: "&cUnesite naziv arene u drugi red!"
+  Arena-Doesnt-Exists: "&cArena sa tim imenom ne postoji!"
+  Doesnt-Have-Permission: "&cNemate dozvolu da razbijete ovaj znak!"
+  Sign-Created: "&aZnak arene je uspešno kreiran!"
+  Sign-Removed: "&aZnak je uspešno uklonjen!"
+  Look-Sign: "&cNe gledate ni u jedan znak!"
+  Already-A-Sign: "&cOvaj znak je već znak igre!"
+  Game-States:
+    Waiting: "&lČekanje..."
+    Starting: "&e&lPočinje"
+    Playing: "&lU igri"
+    Full-Game: "&c&lPUN Lobby"
+    Ending: "&lKraj"
+    Restarting: "&c&lRestartovanje"
+    Inactive: "&lNeaktivna..."
+  Lines:
+    - "&4&lOITC"
+    - "%state%"
+    - "%map_name%"
+    - "&5[%players%/%max_players%]"
+
+Formatted-Arena-States:
+  Waiting: "Čekanje"
+  Starting: "Počinje"
+  Playing: "U igri"
+  Ending: "Kraj"
+  Restarting: "Restartovanje"
+  Inactive: "Neaktivna"
+
+# If you change the value the file will be replaced with default yaml
+# So you shouldn't edit here. Be careful to make changes here!
+Language: sr
