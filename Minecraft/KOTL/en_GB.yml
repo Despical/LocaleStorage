@@ -7,7 +7,6 @@
 #     Some messages support their own placeholders
 #                 like %player%
 
-# King of the Ladder commands messages
 Commands:
   Did-You-Mean: "&cDid you mean &7%command%&c?"
   Correct-Usage: "&cCorrect usage: %usage%"
@@ -29,14 +28,17 @@ Commands:
   Stats-Command:
     Header: "&l[-----YOUR STATS-----]"  
     Header-Other: "&l[-----STATS FOR %player%-----]"
-    Footer: "&l[--------------------]"
-    Score: "&aScore: &e"
-    Tours-Played: "&aTours played: &e"
+    Messages:
+      - "%header%"
+      - "&8 * &fScore &a%score%"
+      - "&8 * &fTours Played &a%tours_played%"
+      - "&8 * &fKills &a%kills%"
+      - "&8 * &fDeaths &a%deaths%"
+      - "&l[--------------------]"
   List-Command:
     No-Arenas-Created: "&cThere aren't any arena to show!"
     Format: "&aExisting arenas: &7%list%"
 
-# Used in most game messages.
 In-Game:
   Plugin-Prefix: "&8[&6KOTL&8] "
   Join: "&7%player%&b joined the game!"
@@ -44,13 +46,19 @@ In-Game:
   Chat-Format: "&7%player%: &f%message%"
   Only-Command-Is-Leave: "&cYou have to leave the game first to perform commands."
   New-King: "&7%king% &bis the new king!"
-  There-Is-No-King: "Nobody"
   Clicked-Death-Block: "&7%player%&b clicked a death block and died!"
+  Killed-Player: "&7%victim% &bwas slain by &e%player%&b!"
+  # The message sent when a player gets killed by an external cause like the '/kill' command.
+  Kill-Command: "&7%victim% &bis killed by a magic!"
+  Cooldown-Format: "&6COOLDOWN &8&l[%progress%&8&l] &6%time%s"
+
+Placeholders:
+  There-Is-No-King: "Nobody"
+  Player-Not-Playing: "Not in arena"
 
 # Has usage only when boss bar is enabled in config
-# Also not compatible with the versions before Minecraft 1.9
-# Color values: PINK, BLUE, RED, GREEN, YELLOW, PURPLE and WHITE
-# Style values: SOLID, SEGMENTED_6, SEGMENTED_10, SEGMENTED_12, SEGMENTED_20
+# Not compatible with the versions before Minecraft 1.9
+# Leave any section empty to hide bar until next message.
 Boss-Bar:
   Color: "BLUE"
   Style: "SOLID"
@@ -60,13 +68,12 @@ Boss-Bar:
     - "&e&lTHANK YOU FOR &b&lSUPPORTING &e&lUS!"
     - "&e&lYOU LIKE THE PLUGIN? RATE US ON SPIGOT!"
 
-# In game scoreboard messages.
-# Don't use more than 48 characters if you use old versions of Minecraft!
-# Can be used up to 144 characters in 1.14 and higher versions.
+# Minecraft 1.8.x - 1.13.x: supports up to 48 characters.
+# Minecraft 1.14.x - 1.21.x supports up to 144 characters.
+# Minecraft 1.16.x+ supports RGB/Hex colors: <#rrggbb>
 Scoreboard:
   Title: "&e&lKOTL"
   Content:
-    # Can be found more information about placeholders on our wiki.
     Playing:
       - ""
       - "Arena: &a%arena%"
@@ -79,6 +86,5 @@ Scoreboard:
       - ""
       - "&epatreon.com/Despical"
 
-# If you change the value the file will be replaced with default yaml
-# So you shouldn't edit here. Be careful to make changes here!
+# Do not change this value manually.
 Language: default
