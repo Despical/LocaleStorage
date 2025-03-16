@@ -1,0 +1,232 @@
+#
+# _________  ________  ________  ________  ___  ___  ________  ________  ________
+#|\___   ___\\   __  \|\   __  \|\   ___ \|\  \|\  \|\   ____\|\   __  \|\   __  \
+#\|___ \  \_\ \  \|\  \ \  \|\  \ \  \_|\ \ \  \\\  \ \  \___|\ \  \|\  \ \  \|\  \
+#     \ \  \ \ \   _  _\ \   __  \ \  \ \\ \ \  \\\  \ \  \    \ \   __  \ \  \\\  \
+#      \ \  \ \ \  \\  \\ \  \ \  \ \  \_\\ \ \  \\\  \ \  \____\ \  \ \  \ \  \\\  \
+#       \ \__\ \ \__\\ _\\ \__\ \__\ \_______\ \_______\ \_______\ \__\ \__\ \_______\
+#        \|__|  \|__|\|__|\|__|\|__|\|_______|\|_______|\|_______|\|__|\|__|\|_______|
+#
+# FEITO POR WR  DISCORD ;  wrgam3s
+# https://discord.gg/ZjGBqNKpQe
+# PARA A REDE MOBY :)
+#
+#
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+#                                                         #
+#    You can translate One in the Chamber messages here   #
+#                Color codes (&) supported.               #
+#                                                         #
+#                 Use \n to make new line                 #
+#            Some messages are wrapped every 40           #
+#                characters automatically                 #
+#                                                         #
+#       Some messages support their own placeholders      #
+#                      like %player%                      #
+#                                                         #
+# # # # # # # # # # # # # # # # # # # # # # # # # # # # # #
+
+Commands:
+  Did-You-Mean: "&3Você quis dizer &b%command%&3?"
+  Correct-Usage: "&cUso correto: %usage%"
+  Removed-Game-Instance: "&aInstância de jogo removida com sucesso!"
+  No-Arena-Like-That: "&cNão conseguimos encontrar nenhuma arena com esse nome!"
+  Type-Arena-Name: "&cPor favor, digite o nome de uma arena!"
+  No-Free-Arenas: "&cNão há nenhuma arena disponível!"
+  Statistics:
+    Type-Name: "&cPor favor, digite o nome da estatística para visualizar!"
+    Invalid-Name: "&cNome da estatística inválido! Digite: kills, deaths, games_played, wins, loses, highest_score"
+    Header: "&8&m-------------------[&6 Top 10 &8&m]-------------------"
+    Format: "&e#%position% %name% - %value% &7%statistic%"
+  Only-By-Player: "&cVocê só pode executar este comando como jogador!"
+  Not-Playing: "&cVocê deve estar jogando para executar este comando!"
+  No-Permission: "&cVocê não tem permissão para usar este comando!"
+  Leaderboard-Command:
+    Empty-Entry: "Vazio"
+    Unknown-Entry: "Jogador Desconhecido"
+  Admin-Commands:
+    Teleported-To-Player: "&aTeleportado para o jogador!"
+    Player-Not-Found: "&cJogador não encontrado!"
+    Success-Reload: "&aO sistema recarregou todas as configurações e arenas com sucesso!"
+    List-Command:
+      Format: "&aArenas existentes: &7%list%"
+      No-Arenas-Created: "&cNão há nenhuma instância de jogo para mostrar! Que tal criar uma?"
+  Stats-Command:
+    Header: "&l-----[SUAS ESTATÍSTICAS]-----"
+    Header-Other: "&l-----[ESTATÍSTICAS DE %player%]-----"
+    Messages:
+      - "%header%"
+      - "&8 * &aEliminações: &e%kills%"
+      - "&8 * &aMortes: &e%deaths%"
+      - "&8 * &aVitórias: &e%wins%"
+      - "&8 * &aDerrotas: &e%loses%"
+      - "&8 * &aMaior pontuação: &e%highest_score%"
+      - "&8 * &aJogos jogados: &e%games_played%"
+      - "&l----------------------"
+
+# In game scoreboard messages.
+# Don't use more than 48 characters if you use old versions of Minecraft!
+# Can be used up to 144 characters in 1.14 and higher versions.
+Scoreboard:
+  Title: "&e&lOITC"
+  Top-Player-Format: "&f%score% &6%player%"
+  Content:
+    Waiting:
+      - ""
+      - "&fMapa: &a%map_name%"
+      - "&fJogadores: &a%players%/%max_players%"
+      - ""
+      - "&fAguardando jogadores..."
+      - ""
+      - "&eLoja.redemoby.com"
+    Starting:
+      - ""
+      - "&fMapa: &a%map_name%"
+      - "&fJogadores: &a%players%/%max_players%"
+      - ""
+      - "&fIniciando em &a%formatted_time% &fpara"
+      - "&fpermitir tempo para"
+      - "&fmais jogadores"
+      - ""
+      - "&eLoja.redemoby.com"
+    Playing:
+      - ""
+      - "%top_player_1%"
+      - "%top_player_2%"
+      - "%top_player_3%"
+      - ""
+      - "&fMapa: &e%map_name%"
+      - "&fJogadores: &6%players%"
+      - "&fPontuação: &6%kills%"
+      - ""
+      - "&fTempo restante: &6%formatted_time%"
+      - ""
+      - "&eLoja.redemoby.com"
+
+# Leave any message empty to hide bar in a specific arena state.
+Game-Bar:
+  Waiting-For-Players: "&e&lJOGANDO &f&lONE IN THE CHAMBER &e&lna RedeMoby"
+  Starting: "&e&lJOGANDO &f&lONE IN THE CHAMBER &e&lna RedeMoby"
+  In-Game: ""
+  Ending: "&e&lJOGANDO &f&lONE IN THE CHAMBER &e&lna RedeMoby"
+
+# Used in most game messages.
+In-Game:
+  Plugin-Prefix: "&8[&6OITC&8] "
+  Already-Playing: "&cVocê já está na fila de um jogo! Você pode sair do jogo com /oitc leave."
+  Join-No-Permission: "&cVocê não tem permissão &6%permission% &cpara entrar nesta arena!"
+  Full-Game-No-Permission: "&cVocê não tem permissão para entrar em jogos cheios!"
+  No-Slots-For-Premium: "&cEste jogo já está cheio de jogadores premium! Desculpe"
+  You-Are-Spectator: "&cAgora você é um espectador! Você pode voar agora!"
+  Spectating-Disabled-On-Bungee: "&cA observação agora é permitida neste servidor!"
+  Only-Command-Ingame-Is-Leave: "&cVocê precisa sair do jogo primeiro para executar comandos. O único comando que funciona é /oitc leave!"
+  Join-Cancelled-Via-API: "&cVocê não pode entrar neste jogo!"
+  Arena-Not-Configured: "&cA arena ainda não está configurada! Entre em contato com a equipe!"
+  Game-Chat-Format: "&7%player%: &f%message%"
+  Game-Death-Format: "&7[&4CHAT DOS MORTOS&7] &r"
+  Game-Items:
+    Leave-Item:
+      Returning-Lobby: "&a&lTeleportando você para o lobby em 3 segundos...\n&a&lClique novamente para cancelar o teletransporte!"
+      Teleport-Cancelled: "&c&lTeletransporte cancelado!"
+  Spectator:
+    Spectator-Menu-Name: "&8Teletransportador"
+    Target-Player-Score: "&7Pontuação: %score%"
+    Settings-Menu:
+      Item-Name: "&b&lConfigurações de espectador &7(Clique Direito)"
+      Inventory-Name: "&8Configurações de espectador"
+      Speed-Name: "&aVelocidade"
+      No-Speed: "&aSem Velocidade"
+      Enable-Night-Vision: "&aAtivar Visão Noturna"
+      Enable-Night-Vision-Lore:
+        - "&7Clique para ativar a visão noturna!"
+      Disable-Night-Vision: "&cDesativar Visão Noturna"
+      Disable-Night-Vision-Lore:
+        - "&7Clique para desativar a visão noturna!"
+      Hide-Spectators: "&cOcultar Espectadores"
+      Hide-Spectators-Message: "&cAgora você não pode ver outros espectadores!"
+      Hide-Spectators-Lore:
+        - "&7Clique para ocultar outros espectadores!"
+      Show-Spectators: "&aMostrar Espectadores"
+      Show-Spectators-Message: "&aAgora você pode ver outros espectadores!"
+      Show-Spectators-Lore:
+        - "&7Clique para mostrar outros espectadores!"
+  Messages:
+    Lobby-Messages:
+      Start-In: "&7O jogo começa em &b%number%&7 segundos!"
+      Waiting-For-Players: "&cAguardando jogadores... Precisamos de pelo menos %minplayers% jogadores para começar."
+      Enough-Players-To-Start: "&7Agora temos jogadores suficientes. O jogo começará em breve!"
+      Game-Started: "&7Jogo iniciado! O primeiro jogador a conseguir 25 eliminações vence!"
+      Kicked-For-Premium-Slot: "&c%player% foi removido do jogo para abrir espaço para jogadores premium!"
+      You-Were-Kicked-For-Premium-Slot: "&cVocê foi removido do jogo para abrir espaço para um jogador premium!"
+    Join: "&b%player% &eentrou no jogo &e(&b%players%&e/&b%maxplayers%&e)!"
+    Leave: "&b%player% &esaiu do jogo &e(&b%players%&e/&b%maxplayers%&e)&7!"
+    Death: "&9%player% &efoi eliminado por &9%killer%!"
+    Unknown-Death: "&9%player% &efoi eliminado por &kdesconhecido&7!"
+    Already-Force-Start: "&cO jogo já está começando!"
+    Kill-Streak:
+      - "&9%killer% &eestá em uma sequência de &b%kill_streak% &eeliminações!"
+      - "&9%killer% &éé imparável!"
+      - "2:&9%killer% &ederrotou 2 jogadores em sequência!"
+      - "5:&9%killer% &econseguiu 5 eliminações seguidas!"
+      - "10:&9%killer% &ealcançou 10 eliminações consecutivas!"
+    Seconds-Left-Title: "&c%time% &esegundos restantes!"
+    Seconds-Left-Subtitle: "&eApós %time%s o jogo será encerrado"
+    Score-Subtitle: "&a&l+&6&l1"
+    Death-Subtitle: "&c&lVocê morreu!"
+    Game-End-Messages:
+      Titles:
+        Win: "&fVencedor"
+        Lose: ""
+      Subtitles:
+        Win: "&e%winner%"
+        Lose: "&c%winner% &avenceu o jogo!"
+      Summary-Message:
+        - "&a&m-------------------------------------------------"
+        - "&f&lOne in the Chamber"
+        - ""
+        - "&f&l%winner% &e&lVENCEDOR! (%winner_score%)"
+        - ""
+        - "&n&lSuas Estatísticas:"
+        - ""
+        - "&7Rank: %rank%"
+        - "&7Pontuação: %score%"
+        - "&7Mortes: %deaths%"
+        - ""
+        - "&a&m-------------------------------------------------"
+    Admin-Messages:
+      Set-Starting-In-To-0: "&bUm administrador ajustou o tempo de espera para 0. O jogo começa agora!"
+      Stopped-Game: "&bUm administrador forçou o encerramento do jogo pelo comando!"
+
+Signs:
+  Please-Type-Arena-Name: "&cPor favor, digite o nome da arena na segunda linha!"
+  Arena-Doesnt-Exists: "&cArena com esse nome não existe!"
+  Doesnt-Have-Permission: "&cVocê não tem permissão suficiente para quebrar este sinal!"
+  Sign-Created: "&aPlaca da arena criada com sucesso!"
+  Sign-Removed: "&aPlaca removida com sucesso!"
+  Look-Sign: "&cVocê não está olhando para nenhuma placa!"
+  Already-A-Sign: "&cEsta placa já é uma placa de jogo!"
+  Game-States:
+    Waiting: "&lAguardando..."
+    Starting: "&e&lIniciando"
+    Playing: "&lJogando"
+    Full-Game: "&c&lCHEIO"
+    Ending: "&lFinalizando"
+    Restarting: "&c&lReiniciando"
+    Inactive: "&lInativo..."
+  Lines:
+    - "&4&lOITC"
+    - "%state%"
+    - "%map_name%"
+    - "&5[%players%/%max_players%]"
+
+Formatted-Arena-States:
+  Waiting: "Aguardando"
+  Starting: "Iniciando"
+  Playing: "Jogando"
+  Ending: "Finalizando"
+  Restarting: "Reiniciando"
+  Inactive: "Inativo"
+
+# If you change the value the file will be replaced with default yaml
+# So you shouldn't edit here. Be careful to make changes here!
+Language: pt_BR
